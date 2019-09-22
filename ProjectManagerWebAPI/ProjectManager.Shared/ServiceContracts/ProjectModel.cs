@@ -6,45 +6,19 @@ namespace ProjectManager.Shared.ServiceContracts
     [DataContract]
     public class ProjectModel
     {
-        int _projectID;
-        string _projectName = "";
-        DateTime _startDate = default(DateTime);
-        DateTime _endDate = default(DateTime);
-        int _priority;
-
         [DataMember(Name = "projectID")]
-        public int ProjectID
-        {
-            get { return _projectID; }
-            set { _projectID = value; }
-        }
+        public int Project_ID { get; set; }
 
         [DataMember(Name = "projectName")]
-        public string ProjectName
-        {
-            get { return _projectName; }
-            set { _projectName = value; }
-        }
+        public string ProjectName { get; set; }
 
         [DataMember(Name = "startDate")]
-        public DateTime StartDate
-        {
-            get { return _startDate; }
-            set { _startDate = value; }
-        }
+        public Nullable<System.DateTime> Start_Date { get; set; }
 
         [DataMember(Name = "endDate")]
-        public DateTime EndDate
-        {
-            get { return _endDate; }
-            set { _endDate = value; }
-        }
+        public Nullable<System.DateTime> End_Date { get; set; }
 
         [DataMember(Name = "priority")]
-        public int Priority
-        {
-            get { return _priority; }
-            set { _priority = value; }
-        }
+        public Nullable<int> Priority { get; set; }        
     }
 }

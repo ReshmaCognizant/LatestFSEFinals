@@ -1,12 +1,8 @@
 ﻿using AutoMapper;
 using ProjectManager.DataLayer;
 using ProjectManager.Shared.ServiceContracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace POPSService.Manager
+namespace ProjectManager.BusinessLayer
 {
     public class EntityMapper<TSource, TDestination> where TSource : class where TDestination : class
     {

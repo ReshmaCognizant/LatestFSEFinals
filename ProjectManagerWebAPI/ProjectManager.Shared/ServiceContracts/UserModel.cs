@@ -1,57 +1,27 @@
-﻿using System.Runtime.Serialization;
+﻿using System;
+using System.Runtime.Serialization;
 
 namespace ProjectManager.Shared.ServiceContracts
 {
     [DataContract]
     public class UserModel
     {
-        int _userID;
-        string _firstName = "";
-        string _lastName = "";
-        int _employeeID;
-        int _projectID;
-        int _taskID;
-
         [DataMember(Name = "userID")]
-        public int UserID
-        {
-            get { return _userID; }
-            set { _userID = value; }
-        }
+        public int User_ID { get; set; }
 
         [DataMember(Name = "firstName")]
-        public string FirstName
-        {
-            get { return _firstName; }
-            set { _firstName = value; }
-        }
+        public string FirstName { get; set; }
 
         [DataMember(Name = "lastName")]
-        public string LastName
-        {
-            get { return _lastName; }
-            set { _lastName = value; }
-        }
+        public string LastName { get; set; }
 
         [DataMember(Name = "employeeID")]
-        public int EmployeeID
-        {
-            get { return _employeeID; }
-            set { _employeeID = value; }
-        }
+        public Nullable<int> Employee_ID { get; set; }
 
         [DataMember(Name = "projectID")]
-        public int ProjectID
-        {
-            get { return _projectID; }
-            set { _projectID = value; }
-        }
+        public Nullable<int> Project_ID { get; set; }
 
         [DataMember(Name = "taskID")]
-        public int TaskID
-        {
-            get { return _taskID; }
-            set { _taskID = value; }
-        }
+        public Nullable<int> Task_ID { get; set; }
     }
 }

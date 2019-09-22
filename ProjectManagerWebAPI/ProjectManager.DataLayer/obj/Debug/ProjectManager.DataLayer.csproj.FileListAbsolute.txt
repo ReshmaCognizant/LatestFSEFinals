@@ -1,1 +1,2 @@
 C:\Reshma\ProjectManagerWebAPI\ProjectManager.DataLayer\obj\Debug\ProjectManager.DataLayer.csprojResolveAssemblyReference.cache
+C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.DataLayer\obj\Debug\ProjectManager.DataLayer.csprojResolveAssemblyReference.cache

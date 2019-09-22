@@ -1,12 +1,6 @@
-﻿using POPSService.Manager;
-using ProjectManager.DataLayer;
-using ProjectManager.DataRepository;
+﻿using ProjectManager.DataLayer;
 using ProjectManager.Shared.ServiceContracts;
-using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
 
 namespace ProjectManager.BusinessLayer
 {

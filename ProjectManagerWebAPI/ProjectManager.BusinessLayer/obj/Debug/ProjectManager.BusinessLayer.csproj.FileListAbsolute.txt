@@ -1,0 +1,3 @@
+C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer\obj\Debug\ProjectManager.BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer\obj\Debug\POPSService.Manager.dll
+C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer\obj\Debug\POPSService.Manager.pdb

@@ -5,15 +5,15 @@ import { ProjectService } from 'src/app/Project/project.service';
 import { DatePipe } from '@angular/common';
 
 @Component({
-  selector: 'app-pops-purchaseorder',
-  templateUrl: './pops-purchaseorder.component.html',
-  styleUrls: ['./pops-purchaseorder.component.css'],
+  selector: 'app-project-manager-project',
+  templateUrl: './project-manager-project.component.html',
+  styleUrls: ['./project-manager-project.component.css'],
   providers:[DatePipe]
 })
 export class ProjectManagerProjectComponent implements OnInit {
 
   purchaseOrderformlabel: string = 'Add Item';  
-  constructor(private formBuilder: FormBuilder, private router: Router, private purchaseOrderService: PurchaseOrderService, private datePipe: DatePipe) {  
+  constructor(private formBuilder: FormBuilder, private router: Router, private projectService: ProjectService, private datePipe: DatePipe) {  
   }  
   
   addForm: FormGroup;
@@ -28,35 +28,27 @@ export class ProjectManagerProjectComponent implements OnInit {
       quantity: []  
     });  
   
-    let purchaseOrder = localStorage.getItem('editPurchaseOrder');  
-    if (purchaseOrder != undefined && purchaseOrder != '') {
-      let purchaseOrderValue : string[] = purchaseOrder.split('|');
-      this.purchaseOrderService.searchPurchaseOrder(purchaseOrderValue[0], purchaseOrderValue[1]).subscribe(data => {  
-        this.addForm.patchValue(data); 
-        if(data.quantity === undefined || data.quantity === null || data.quantity == 0)
-        {
-          this.addForm.controls['quantity'].setValue("");
-        }
-        if(data.purchaseDate != undefined && data.purchaseDate != null)
-        {
-          this.addForm.controls['purchaseDate'].setValue(this.datePipe.transform(data.purchaseDate, 'yyyy-MM-dd'));
-        }        
+    let projectID = localStorage.getItem('editProjectID');
+    if (projectID != undefined && projectID != '') {      
+      this.projectService.searchProject(projectID).subscribe(data => {  
+        this.addForm.patchValue(data);        
       })  
       this.btnvisibility = false;
-      this.purchaseOrderformlabel = 'Edit Purchase Order';      
+      this.purchaseOrderformlabel = 'Edit Project';      
     } 
-  }  
+  }
+
   onSubmit() {
-    this.purchaseOrderService.createPurchaseOrder(this.addForm.value)  
+    this.projectService.createProject(this.addForm.value)  
       .subscribe((data: any) => {
         if(data)
         {  
-          alert("Purchase Order added successfully");        
-          this.router.navigate(['purchase-order-list']); 
+          alert("Project added successfully");        
+          this.router.navigate(['project-list']); 
         }
         else
         {
-          alert("Purchase Order add failed due to server error, kindly check whether Supplier No and Item Code exists and try again");     
+          alert("Project add failed due to server error, kindly check whether Supplier No and Item Code exists and try again");     
         }
       },  
       error => {  
@@ -64,16 +56,16 @@ export class ProjectManagerProjectComponent implements OnInit {
       });  
   }  
   onUpdate() {      
-    this.purchaseOrderService.updatePurchaseOrder(this.addForm.value).subscribe((data: any) => {
+    this.projectService.updateProject(this.addForm.value).subscribe((data: any) => {
       if(data)
       {  
-        alert("Purchase Order updated successfully");        
-        localStorage.removeItem('editPurchaseOrder') 
-        this.router.navigate(['purchase-order-list']);  
+        alert("Project updated successfully");        
+        localStorage.removeItem('editProjectID') 
+        this.router.navigate(['project-list']);  
       }
       else
       {
-        alert("Purchase Order update failed due to server error, kindly try again");     
+        alert("Project update failed due to server error, kindly try again");     
       }
     },  
     error => {  

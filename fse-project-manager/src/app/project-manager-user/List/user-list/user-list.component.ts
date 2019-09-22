@@ -36,12 +36,12 @@ export class UserListComponent implements OnInit {
     .subscribe((data: any) => {
       if(data)
       {  
-        alert("Supplier deleted successfully");        
+        alert("User deleted successfully");        
         this.getUsers();  
       }
       else
       {
-        alert("Supplier deletion failed due to server error, kindly try again");     
+        alert("User deletion failed due to server error, kindly try again");     
       }
     },  
     error => {  
@@ -51,7 +51,7 @@ export class UserListComponent implements OnInit {
   
   editUser(user: User): void {  
     localStorage.removeItem('editUserID');  
-    localStorage.setItem('editUserID', user.userID);  
+    localStorage.setItem('editUserID', user.userID.toString());  
     this.router.navigate(['projectmanageruser']);  
   }
 }

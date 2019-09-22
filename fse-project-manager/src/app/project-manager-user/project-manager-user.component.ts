@@ -39,7 +39,7 @@ export class ProjectManagerUserComponent implements OnInit {
       if(data)
       {  
         alert("User added successfully");        
-        this.router.navigate(['supplier-list']); 
+        this.router.navigate(['user-list']); 
       }
       else
       {
@@ -56,7 +56,7 @@ export class ProjectManagerUserComponent implements OnInit {
       {  
         alert("User updated successfully");        
         localStorage.removeItem('editSupplierNo') 
-        this.router.navigate(['supplier-list']);  
+        this.router.navigate(['user-list']);  
       }
       else
       {

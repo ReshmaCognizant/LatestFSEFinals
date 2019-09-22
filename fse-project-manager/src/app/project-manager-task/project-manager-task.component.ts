@@ -4,9 +4,9 @@ import { Router } from "@angular/router";
 import { TaskService } from './../Task/task.service';
 
 @Component({
-  selector: 'app-pops-item',
-  templateUrl: './pops-item.component.html',
-  styleUrls: ['./pops-item.component.css']
+  selector: 'app-project-manager-task',
+  templateUrl: './project-manager-task.component.html',
+  styleUrls: ['./project-manager-task.component.css']
 })
 export class ProjectManagerTaskComponent implements OnInit {
 
@@ -24,30 +24,26 @@ export class ProjectManagerTaskComponent implements OnInit {
       itemRate: []             
     });  
   
-    let itemcode = localStorage.getItem('editItemCode');  
-    if (itemcode != undefined && itemcode != '') {  
-      this.taskService.searchItem(itemcode).subscribe(data => {  
-        this.addForm.patchValue(data); 
-        if(data.itemRate == 0)
-        {
-          this.addForm.controls['itemRate'].setValue("");
-        }
+    let taskID = localStorage.getItem('editTaskID');  
+    if (taskID != undefined && taskID != '') {  
+      this.taskService.searchTask(taskID).subscribe(data => {  
+        this.addForm.patchValue(data);
       })  
       this.btnvisibility = false;
-      this.itemformlabel = 'Edit Item';      
+      this.taskformlabel = 'Edit Task';      
     }
   }  
   onSubmit() {
-    this.taskService.createItem(this.addForm.value)  
+    this.taskService.createTask(this.addForm.value)  
       .subscribe((data: any) => {
         if(data)
         {  
-          alert("Item added successfully");        
-          this.router.navigate(['item-list']); 
+          alert("Task added successfully");        
+          this.router.navigate(['task-list']); 
         }
         else
         {
-          alert("Item add failed due to server error, kindly check for duplicate record and try again");     
+          alert("Task add failed due to server error, kindly check for duplicate record and try again");     
         }
       },  
       error => {  
@@ -55,12 +51,12 @@ export class ProjectManagerTaskComponent implements OnInit {
       });  
   }  
   onUpdate() {      
-    this.taskService.updateItem(this.addForm.value).subscribe((data: any) => {
+    this.taskService.updateTask(this.addForm.value).subscribe((data: any) => {
       if(data)
       {  
-        alert("Item updated successfully");        
-        localStorage.removeItem('editItemCode') 
-        this.router.navigate(['item-list']);  
+        alert("Task updated successfully");        
+        localStorage.removeItem('editTaskID') 
+        this.router.navigate(['task-list']);  
       }
       else
       {

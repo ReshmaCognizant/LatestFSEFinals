@@ -37,8 +37,8 @@ export class ProjectService {
     );
   }
 
-  searchProject(purchaseOrderNo: string, itemCode: string) {  
-    return this.http.get<Project>(this.baseUrl + 'search/' + purchaseOrderNo + '/' + itemCode)
+  searchProject(projectID: string) {  
+    return this.http.get<Project>(this.baseUrl + 'search/' + projectID)
     .pipe(
       tap(_ => this.appHttpService.log('searched Project')),
       catchError(this.appHttpService.handleError)

@@ -1,47 +1,47 @@
 import { Component, OnInit } from '@angular/core';
-import { PurchaseOrderService } from 'src/app/Project/project.service';
+import { ProjectService } from 'src/app/Project/project.service';
 import { Router } from "@angular/router"; 
-import { PurchaseOrder } from '../../../Project/project';
+import { Project } from '../../../Project/project';
 
 @Component({
-  selector: 'app-purchase-order-list',
-  templateUrl: './purchase-order-list.component.html',
-  styleUrls: ['./purchase-order-list.component.css']
+  selector: 'app-project-list',
+  templateUrl: './project-list.component.html',
+  styleUrls: ['./project-list.component.css']
 })
-export class PurchaseOrderListComponent implements OnInit {
+export class ProjectListComponent implements OnInit {
 
   purchaseOrders: any;  
   
-  constructor(private purchaseOrderService: PurchaseOrderService, private router: Router, ) { }  
+  constructor(private projectService: ProjectService, private router: Router, ) { }  
   
   ngOnInit() { 
-      localStorage.removeItem('editPurchaseOrder')    
-      this.getPurchaseOrders();    
+      localStorage.removeItem('editProjectID')    
+      this.getProjects();    
   } 
 
-  getPurchaseOrders()
+  getProjects()
   {
-      this.purchaseOrderService.getPurchaseOrders()  
-      .subscribe((data: PurchaseOrder[]) => {
+      this.projectService.getProjects()  
+      .subscribe((data: Project[]) => {
         this.purchaseOrders = data;  
         if(data.length == 0)  
         {
-          alert("No purchase orders found");          
+          alert("No projects found");          
         }         
       });
   }
 
-  deletePurchaseOrder(purchaseOrder: PurchaseOrder): void {  
-    this.purchaseOrderService.deletePurchaseOrder(purchaseOrder.purchaseOrderNo, purchaseOrder.itemCode)  
+  deleteProject(project: Project): void {  
+    this.projectService.deleteProject(project.projectID)  
     .subscribe((data: any) => {
       if(data)
       {  
-        alert("Purchase Order deleted successfully");        
-        this.getPurchaseOrders();  
+        alert("Project deleted successfully");        
+        this.getProjects();  
       }
       else
       {
-        alert("Purchase Order deletion failed due to server error, kindly try again");     
+        alert("Project deletion failed due to server error, kindly try again");     
       }
     },  
     error => {  
@@ -49,9 +49,9 @@ export class PurchaseOrderListComponent implements OnInit {
     });  
   }  
   
-  editPurchaseOrder(purchaseOrder: PurchaseOrder): void {  
-    localStorage.removeItem('editPurchaseOrder');  
-    localStorage.setItem('editPurchaseOrder', purchaseOrder.purchaseOrderNo + "|" + purchaseOrder.itemCode);  
-    this.router.navigate(['popspurchaseorder']);  
+  editProject(project: Project): void {  
+    localStorage.removeItem('editProjectID');  
+    localStorage.setItem('editProjectID', project.projectID.toString());  
+    this.router.navigate(['projectmanagerproject']);  
   }
 }

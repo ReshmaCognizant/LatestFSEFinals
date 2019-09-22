@@ -8,7 +8,7 @@ import { Router } from "@angular/router";
   templateUrl: './task-list.component.html',
   styleUrls: ['./task-list.component.css']
 })
-export class ItemListComponent implements OnInit {
+export class TaskListComponent implements OnInit {
 
   taks: Task[];  
   
@@ -33,7 +33,7 @@ export class ItemListComponent implements OnInit {
 
   editTask(task: Task): void {  
     localStorage.removeItem('editTaskID');  
-    localStorage.setItem('editTaskID', task.TaskID);  
+    localStorage.setItem('editTaskID', task.taskID.toString());  
     this.router.navigate(['projectmanagertask']);  
   }
 }

@@ -37,7 +37,7 @@ export class TaskService {
     );
   }
 
-  searchTask(taskID: number) {  
+  searchTask(taskID: string) {  
     return this.http.get<Task>(this.baseUrl + 'search/' + taskID)
     .pipe(
       tap(_ => this.appHttpService.log('searched Task')),

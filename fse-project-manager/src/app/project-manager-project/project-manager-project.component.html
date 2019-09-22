@@ -4,44 +4,47 @@
   <h2 class="text-center">{{purchaseOrderformlabel}}</h2>  
   <form [formGroup]="addForm" novalidate class="form">  
     <div class="form-group">  
-      <label for="purchaseOrderNo">Purchase Order No:</label>  
-      <input formControlName="purchaseOrderNo" placeholder="Purchase Order No" name="purchaseOrderNo" class="form-control" id="purchaseOrderNo">  
+      <label for="purchaseOrderNo">Project:</label>  
+      <input formControlName="purchaseOrderNo" placeholder="Project name" name="purchaseOrderNo" class="form-control" id="purchaseOrderNo">  
       <div class="alert  alert-danger" *ngIf="addForm.get('purchaseOrderNo').hasError('required') && addForm.get('purchaseOrderNo').touched">
-        Purchase Order No is required and maximum characters allowed is 4.  
+        Project name is required.  
       </div>  
     </div>  
-  
+    
     <div class="form-group">  
-      <label for="purchaseDate">Purchase Date:</label>  
-      <input type="date" formControlName="purchaseDate" placeholder="Purchase Date" name="purchaseDate" class="form-control" id="purchaseDate" />    
+      <label for="priority" class="checklabel">Set Start Date & End Date</label>  
+      <input type="checkbox" formControlName="purchaseDate" placeholder="" name="priority" class="form-control" id="priority" />    
+    </div>
+    <div class="form-group col-md-6">  
+      <label for="purchaseDate">Start Date:</label>  
+      <input type="date" formControlName="purchaseDate" placeholder="Start Date" name="purchaseDate" class="form-control" id="startDate" />    
+    </div>
+    <div class="form-group col-md-6">  
+      <label for="purchaseDate">End Date:</label>  
+      <input type="date" formControlName="purchaseDate" placeholder="End Date" name="purchaseDate" class="form-control" id="endDate" />    
     </div>
   
     <div class="form-group">  
-      <label for="supplierNo">Supplier No:</label>  
-      <input formControlName="supplierNo" placeholder="Supplier No" name="supplierNo" class="form-control" id="supplierNo">  
-      <div class="alert  alert-danger" *ngIf="addForm.get('supplierNo').hasError('required') && addForm.get('supplierNo').touched">
-        Supplier No is required and maximum characters allowed is 4.  
+      <label for="points">Priority :</label>  
+      <input type="range" name="points" min="0" max="30" name="Priority">
+      <div class="alert alert-danger" *ngIf="addForm.get('Priority').hasError('required')">
+        Please set priority.  
       </div>  
     </div>
 
-    <div class="form-group">  
-      <label for="itemCode">Item Code:</label>  
-      <input formControlName="itemCode" placeholder="Item Code" name="itemCode" class="form-control" id="itemCode">  
-      <div class="alert  alert-danger" *ngIf="addForm.get('itemCode').hasError('required') && addForm.get('itemCode').touched">
-        Item Code is required is required and maximum characters allowed is 4.  .
+    
+    <div class="form-group row">  
+      <div class="col-md-2"><label for="manager" >Manager:</label></div>
+      <div class="col-md-8"><input formControlName="manager" placeholder="Manager" name="manager" class="form-control" id="quantity">  </div>
+      <div class="col-md-2"><button class='search '>Search</button></div>
+      <div class="alert  alert-danger" *ngIf="addForm.get('manager').hasError('required') && addForm.get('quantity').touched">
+        Manager name  is required.
       </div>  
     </div>
-
-    <div class="form-group">  
-      <label for="quantity">Quantity:</label>  
-      <input formControlName="quantity" placeholder="Quantity" name="quantity" class="form-control" id="quantity">  
-      <div class="alert  alert-danger" *ngIf="addForm.get('quantity').hasError('required') && addForm.get('quantity').touched">
-        Quantity is required.
-      </div>  
-    </div>
-  
-    <button class="btn btn-success" [disabled]='addForm.invalid' *ngIf="btnvisibility" (click)="onSubmit()">Save</button>  
-    <button class="btn btn-success" [disabled]='addForm.invalid' *ngIf="!btnvisibility" (click)="onUpdate()">Update</button>  
-  
+    <div class="form-group row col-md-12">  
+    <button class="btn btn-success"   (click)="onSubmit()">Add</button>  
+    <button class="btn btn-primary col-md-offset-2"   (click)="onUpdate()">reset</button>  
+  </div>
   </form>  
 </div>
+<app-project-list></app-project-list>

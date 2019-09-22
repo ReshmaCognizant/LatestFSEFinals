@@ -11,7 +11,7 @@ import { Router } from "@angular/router";
 })
 export class ProjectManagerUserComponent implements OnInit {
 
-  supplierformlabel: string = 'Add Supplier';   
+  supplierformlabel: string = 'Add User';   
   constructor(private formBuilder: FormBuilder, private router: Router, private userService: UserService) {  
   }  
   

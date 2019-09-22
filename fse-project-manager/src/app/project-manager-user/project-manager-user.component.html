@@ -3,32 +3,34 @@
     <br/>
     <h2 class="text-center">{{supplierformlabel}}</h2>  
     <form [formGroup]="addForm" novalidate class="form">  
-      <div class="form-group">  
-        <label for="supplierNo">Supplier No:</label>  
-        <input formControlName="supplierNo" placeholder="Supplier No" name="supplierNo" class="form-control" id="supplierNo">  
-        <div class="alert  alert-danger" *ngIf="addForm.get('supplierNo').hasError('required') && addForm.get('supplierNo').touched">  
-          Supplier No is required and maximum characters allowed is 4.  
-        </div>
-      </div>  
+        
     
       <div class="form-group">  
-        <label for="supplierName">Supplier Name:</label>  
-        <input formControlName="supplierName" placeholder="Supplier Name" name="supplierName" class="form-control" id="supplierName">  
+        <label for="supplierName">First Name:</label>  
+        <input formControlName="supplierName" placeholder="First Name" name="supplierName" class="form-control" id="supplierName">  
         <div class="alert  alert-danger" *ngIf="addForm.get('supplierName').hasError('required') && addForm.get('supplierName').touched">  
           Supplier Name is required.  
         </div>  
       </div>  
     
       <div class="form-group">  
-        <label for="supplierAddress">Supplier Address:</label>  
-        <input formControlName="supplierAddress" placeholder="Supplier Address" name="supplierAddress" class="form-control" id="supplierAddress">  
+        <label for="supplierAddress">Last Name:</label>  
+        <input formControlName="supplierAddress" placeholder="Last Name" name="supplierAddress" class="form-control" id="supplierAddress">  
         <div class="alert  alert-danger" *ngIf="addForm.get('supplierAddress').hasError('required') && addForm.get('supplierAddress').touched">
           Item Rate is required.
         </div>  
       </div>
+      <div class="form-group">  
+        <label for="supplierNo">Employee ID:</label>  
+        <input formControlName="supplierNo" placeholder="Employee ID" name="supplierNo" class="form-control" id="supplierNo">  
+        <div class="alert  alert-danger" *ngIf="addForm.get('supplierNo').hasError('required') && addForm.get('supplierNo').touched">  
+          Employee ID is required and maximum characters allowed is 4.  
+        </div>
+      </div>
     
-      <button class="btn btn-success" [disabled]='addForm.invalid' *ngIf="btnvisibility" (click)="onSubmit()">Save</button>  
-      <button class="btn btn-success" [disabled]='addForm.invalid' *ngIf="!btnvisibility" (click)="onUpdate()">Update</button>    
+      <button class="btn btn-success" [disabled]='addForm.invalid' *ngIf="btnvisibility" (click)="onSubmit()">Add</button>  
+      <button class="btn btn-success"   (click)="onUpdate()">Reset</button>    
        
     </form>  
   </div>
+  <app-user-list></app-user-list>

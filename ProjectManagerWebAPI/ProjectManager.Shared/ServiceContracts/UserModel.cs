@@ -16,7 +16,7 @@ namespace ProjectManager.Shared.ServiceContracts
         public string LastName { get; set; }
 
         [DataMember(Name = "employeeID")]
-        public Nullable<int> Employee_ID { get; set; }
+        public int Employee_ID { get; set; }
 
         [DataMember(Name = "projectID")]
         public Nullable<int> Project_ID { get; set; }

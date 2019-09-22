@@ -19,6 +19,6 @@ namespace ProjectManager.Shared.ServiceContracts
         public Nullable<System.DateTime> End_Date { get; set; }
 
         [DataMember(Name = "priority")]
-        public Nullable<int> Priority { get; set; }        
+        public int Priority { get; set; }        
     }
 }

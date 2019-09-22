@@ -7,8 +7,8 @@
     <ProjectGuid>{910A5905-39AE-4331-AC0C-EC4D201DFA47}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>POPSService.Manager</RootNamespace>
-    <AssemblyName>POPSService.Manager</AssemblyName>
+    <RootNamespace>ProjectManager.BusinessLayer</RootNamespace>
+    <AssemblyName>ProjectManager.BusinessLayer</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -33,7 +33,14 @@
     <Reference Include="AutoMapper">
       <HintPath>..\BusinessServices.Tests\bin\Debug\AutoMapper.dll</HintPath>
     </Reference>
+    <Reference Include="DataModel">
+      <HintPath>..\ProjectManagerWebAPI\ProjectManagerWebAPI\bin\DataModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Resolver">
+      <HintPath>..\ProjectManagerWebAPI\ProjectManagerWebAPI\bin\Resolver.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />

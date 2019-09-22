@@ -1,0 +1,14 @@
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+  <div class="container">
+      <a class="navbar-brand"><strong>{{title}}</strong></a>
+      <ul class="nav navbar-nav" routerLinkActive="active">          
+          <li class="nav-item"><a class="nav-link" routerLink="/popssupplier">Supplier</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/supplier-list">Supplier Details</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/popsitem">Item</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/item-list">Item Details</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/popspurchaseorder">Purchase Order</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/purchase-order-list">Purchase Order Details</a></li>          
+      </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>

@@ -1,0 +1,31 @@
+<div class="col-md-12">  
+    <br/>  
+    <br/>
+  <h2> Purchase Order Details </h2>  
+  <div class="table-responsive table-container">  
+    <table class="table">  
+      <thead>  
+        <tr>  
+          <th>Purchase Order No</th>  
+          <th>Purchase Date</th>
+          <th>Supplier No</th>
+          <th>Item Code</th>
+          <th>Quantity</th>            
+        </tr>  
+      </thead>  
+      <tbody>  
+        <tr *ngFor="let purchaseOrder of purchaseOrders">  
+          <td>{{purchaseOrder.purchaseOrderNo}}</td> 
+          <td>{{purchaseOrder.purchaseDate === "" ? "Not specified" : purchaseOrder.purchaseDate | date:'dd-MM-yyyy'}}</td>
+          <td>{{purchaseOrder.supplierNo}}</td>
+          <td>{{purchaseOrder.itemCode}}</td>
+          <td>{{purchaseOrder.quantity === 0 ? "Not specified" : purchaseOrder.quantity}}</td>
+          <td>  
+            <button (click)="deletePurchaseOrder(purchaseOrder)" class="btn btn-info">Delete</button>  
+            <button (click)="editPurchaseOrder(purchaseOrder)" style="margin-left: 20px;" class="btn btn-info">Edit</button>  
+          </td>  
+        </tr>  
+      </tbody>  
+    </table>  
+  </div>  
+</div>

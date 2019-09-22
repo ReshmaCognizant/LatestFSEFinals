@@ -1,0 +1,31 @@
+<div class="col-md-6">  
+    <br/>  
+    <br/>
+  <h2 class="text-center">{{itemformlabel}}</h2>  
+  <form [formGroup]="addForm" novalidate class="form">  
+    <div class="form-group">  
+      <label for="itemCode">Item Code:</label>  
+      <input formControlName="itemCode" placeholder="Item Code" name="itemCode" class="form-control" id="itemCode">  
+      <div class="alert alert-danger" *ngIf="addForm.get('itemCode').hasError('required') && addForm.get('itemCode').touched">  
+        Item Code is required and maximum characters allowed is 4. 
+      </div>
+    </div>  
+  
+    <div class="form-group">  
+      <label for="itemDesc">Item Description:</label>  
+      <input formControlName="itemDesc" placeholder="Item Description" name="itemDesc" class="form-control" id="itemDesc">  
+      <div class="alert alert-danger" *ngIf="addForm.get('itemDesc').hasError('required') && addForm.get('itemDesc').touched">  
+        Item Description is required. 
+      </div>  
+    </div>  
+  
+    <div class="form-group">  
+      <label for="itemRate">Item Rate:</label>  
+      <input formControlName="itemRate" placeholder="Item Rate" name="itemRate" class="form-control" id="itemRate">
+    </div>
+  
+    <button class="btn btn-success" [disabled]='addForm.invalid' *ngIf="btnvisibility" (click)="onSubmit()">Save</button>  
+    <button class="btn btn-success" [disabled]='addForm.invalid' *ngIf="!btnvisibility" (click)="onUpdate()">Update</button>  
+  
+  </form>  
+</div>

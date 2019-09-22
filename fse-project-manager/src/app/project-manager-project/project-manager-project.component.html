@@ -1,0 +1,47 @@
+<div class="col-md-6">  
+    <br/>  
+    <br/>
+  <h2 class="text-center">{{purchaseOrderformlabel}}</h2>  
+  <form [formGroup]="addForm" novalidate class="form">  
+    <div class="form-group">  
+      <label for="purchaseOrderNo">Purchase Order No:</label>  
+      <input formControlName="purchaseOrderNo" placeholder="Purchase Order No" name="purchaseOrderNo" class="form-control" id="purchaseOrderNo">  
+      <div class="alert  alert-danger" *ngIf="addForm.get('purchaseOrderNo').hasError('required') && addForm.get('purchaseOrderNo').touched">
+        Purchase Order No is required and maximum characters allowed is 4.  
+      </div>  
+    </div>  
+  
+    <div class="form-group">  
+      <label for="purchaseDate">Purchase Date:</label>  
+      <input type="date" formControlName="purchaseDate" placeholder="Purchase Date" name="purchaseDate" class="form-control" id="purchaseDate" />    
+    </div>
+  
+    <div class="form-group">  
+      <label for="supplierNo">Supplier No:</label>  
+      <input formControlName="supplierNo" placeholder="Supplier No" name="supplierNo" class="form-control" id="supplierNo">  
+      <div class="alert  alert-danger" *ngIf="addForm.get('supplierNo').hasError('required') && addForm.get('supplierNo').touched">
+        Supplier No is required and maximum characters allowed is 4.  
+      </div>  
+    </div>
+
+    <div class="form-group">  
+      <label for="itemCode">Item Code:</label>  
+      <input formControlName="itemCode" placeholder="Item Code" name="itemCode" class="form-control" id="itemCode">  
+      <div class="alert  alert-danger" *ngIf="addForm.get('itemCode').hasError('required') && addForm.get('itemCode').touched">
+        Item Code is required is required and maximum characters allowed is 4.  .
+      </div>  
+    </div>
+
+    <div class="form-group">  
+      <label for="quantity">Quantity:</label>  
+      <input formControlName="quantity" placeholder="Quantity" name="quantity" class="form-control" id="quantity">  
+      <div class="alert  alert-danger" *ngIf="addForm.get('quantity').hasError('required') && addForm.get('quantity').touched">
+        Quantity is required.
+      </div>  
+    </div>
+  
+    <button class="btn btn-success" [disabled]='addForm.invalid' *ngIf="btnvisibility" (click)="onSubmit()">Save</button>  
+    <button class="btn btn-success" [disabled]='addForm.invalid' *ngIf="!btnvisibility" (click)="onUpdate()">Update</button>  
+  
+  </form>  
+</div>

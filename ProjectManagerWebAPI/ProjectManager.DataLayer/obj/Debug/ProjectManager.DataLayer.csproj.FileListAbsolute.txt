@@ -1,0 +1,1 @@
+C:\Reshma\ProjectManagerWebAPI\ProjectManager.DataLayer\obj\Debug\ProjectManager.DataLayer.csprojResolveAssemblyReference.cache

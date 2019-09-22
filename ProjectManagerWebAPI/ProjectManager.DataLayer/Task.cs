@@ -11,32 +11,16 @@ namespace ProjectManager.DataLayer
 {
     using System;
     using System.Collections.Generic;
-    using System.Runtime.Serialization;
-
+    
     public partial class Task
     {
-        [DataMember(Name = "taskID")]
         public int Task_ID { get; set; }
-
-        [DataMember(Name = "taskName")]
+        public int Parent_ID { get; set; }
+        public int Project_ID { get; set; }
+        public System.DateTime Start_Date { get; set; }
+        public System.DateTime End_Date { get; set; }
+        public int Priority { get; set; }
+        public string Status { get; set; }
         public string TaskName { get; set; }
-
-        [DataMember(Name = "parentID")]
-        public Nullable<int> Parent_ID { get; set; }
-
-        [DataMember(Name = "projectID")]
-        public Nullable<int> Project_ID { get; set; }
-
-        [DataMember(Name = "startDate")]
-        public Nullable<System.DateTime> Start_Date { get; set; }
-
-        [DataMember(Name = "endDate")]
-        public Nullable<System.DateTime> End_Date { get; set; }
-
-        [DataMember(Name = "priority")]
-        public Nullable<int> Priority { get; set; }
-
-        [DataMember(Name = "status")]
-        public string Status { get; set; }        
     }
 }

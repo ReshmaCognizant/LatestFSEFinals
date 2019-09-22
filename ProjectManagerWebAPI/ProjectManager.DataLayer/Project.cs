@@ -17,7 +17,7 @@ namespace ProjectManager.DataLayer
         public int Project_ID { get; set; }
         public Nullable<System.DateTime> Start_Date { get; set; }
         public Nullable<System.DateTime> End_Date { get; set; }
-        public Nullable<int> Priority { get; set; }
+        public int Priority { get; set; }
         public string ProjectName { get; set; }
     }
 }

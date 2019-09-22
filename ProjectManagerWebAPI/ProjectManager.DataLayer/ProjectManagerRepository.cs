@@ -174,7 +174,7 @@ namespace ProjectManager.DataLayer
 
         public static List<Project> SearchProjects(string searchKeyWord, string sortBy)
         {
-            return DbContext.Projects.Where(x => x.Start_Date.Contains(searchKeyWord) || x.End_Date.Contains(searchKeyWord) || x.Priority.ToString().Contains(searchKeyWord) || x..ToString().Contains(searchKeyWord)).ToList().OrderBy(x => sortBy).ToList();
+            return DbContext.Projects.Where(x => x.Start_Date.ToString().Contains(searchKeyWord) || x.End_Date.ToString().Contains(searchKeyWord) || x.Priority.ToString().Contains(searchKeyWord)).ToList().OrderBy(x => sortBy).ToList();
         }
 
         public static bool InsertUser(User user)

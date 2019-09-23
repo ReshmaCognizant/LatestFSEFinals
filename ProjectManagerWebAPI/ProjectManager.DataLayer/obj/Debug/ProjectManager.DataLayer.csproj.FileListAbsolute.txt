@@ -8,4 +8,3 @@ C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager
 C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.DataLayer\obj\Debug\ProjectManager.DataLayer.dll
 C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.DataLayer\obj\Debug\ProjectManager.DataLayer.pdb
-C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.DataLayer\obj\Debug\ProjectManager.DataLayer.csprojResolveAssemblyReference.cache

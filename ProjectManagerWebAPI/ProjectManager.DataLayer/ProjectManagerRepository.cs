@@ -157,7 +157,7 @@ namespace ProjectManager.DataLayer
             return status;
         }
 
-        public static List<User> SearchUsers()
+        public static List<User> GetUsers()
         {
             return DbContext.Users.ToList();
         }

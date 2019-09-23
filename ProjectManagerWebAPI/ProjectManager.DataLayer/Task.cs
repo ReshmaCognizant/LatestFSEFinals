@@ -20,7 +20,7 @@ namespace ProjectManager.DataLayer
         public System.DateTime Start_Date { get; set; }
         public System.DateTime End_Date { get; set; }
         public int Priority { get; set; }
-        public string Status { get; set; }
+        public bool Status { get; set; }
         public string TaskName { get; set; }
     }
 }

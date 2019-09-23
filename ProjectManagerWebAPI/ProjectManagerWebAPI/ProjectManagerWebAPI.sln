@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManager.BusinessLaye
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManager.DataLayer.Tests", "..\ProjectManager.DataLayer.Tests\ProjectManager.DataLayer.Tests.csproj", "{A3957D79-BAB7-4C6F-B69F-CFF5A820D27E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManagerController.Tests", "..\ProjectManagerController.Tests\ProjectManagerController.Tests.csproj", "{CED1D168-4BD2-46E3-9C9A-40A49DDCBE82}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManagerController.Tests", "..\ProjectManagerController.Tests\ProjectManagerController.Tests.csproj", "{26019A83-3A52-4963-A614-4694D4AFA666}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,10 @@ Global
 		{A3957D79-BAB7-4C6F-B69F-CFF5A820D27E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3957D79-BAB7-4C6F-B69F-CFF5A820D27E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3957D79-BAB7-4C6F-B69F-CFF5A820D27E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CED1D168-4BD2-46E3-9C9A-40A49DDCBE82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CED1D168-4BD2-46E3-9C9A-40A49DDCBE82}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CED1D168-4BD2-46E3-9C9A-40A49DDCBE82}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CED1D168-4BD2-46E3-9C9A-40A49DDCBE82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26019A83-3A52-4963-A614-4694D4AFA666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26019A83-3A52-4963-A614-4694D4AFA666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26019A83-3A52-4963-A614-4694D4AFA666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26019A83-3A52-4963-A614-4694D4AFA666}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

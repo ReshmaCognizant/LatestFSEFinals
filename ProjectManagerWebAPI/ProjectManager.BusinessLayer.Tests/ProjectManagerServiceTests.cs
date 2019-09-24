@@ -425,6 +425,24 @@ namespace ProjectManager.BusinessLayer.Tests
         {
             var isSuccess = _projectManagerService.DeleteProject(1);
             Assert.AreEqual(true, isSuccess);
-        }       
+        }
+
+        [Test]
+        public void TranslateTest_TaskToTaskModel()
+        {
+            EntityMapper<TaskModel, Task> mapObj = new EntityMapper<TaskModel, Task>();
+            var taskModel = new TaskModel()
+            {
+                Parent_ID = 1,
+                Project_ID = 2,
+                TaskName = "Generate Scripts",
+                Start_Date = DateTime.Now,
+                End_Date = DateTime.Now.AddDays(1),
+                Priority = 1,
+                Status = true
+            };
+            var task = mapObj.Translate(taskModel);
+            Assert.IsNotNull(task);
+        }
     }
 }

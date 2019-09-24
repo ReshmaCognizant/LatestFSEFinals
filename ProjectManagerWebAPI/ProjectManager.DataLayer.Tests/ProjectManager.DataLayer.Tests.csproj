@@ -43,6 +43,9 @@
     <Reference Include="nunit.framework, Version=3.12.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\ProjectManagerWebAPI\packages\NUnit.3.12.0\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="ReportGenerator">
+      <HintPath>..\ProjectManagerWebAPI\packages\ReportGenerator_4.2.20\net47\ReportGenerator.exe</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />

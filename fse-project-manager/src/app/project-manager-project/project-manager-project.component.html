@@ -26,7 +26,7 @@
   
     <div class="form-group">  
       <label for="points">Priority :</label>  
-      <input type="range" name="points" min="0" max="30" name="Priority">
+      <input type="range" name="points" min="0" max="30" name="Priority" value=0>
       <div class="alert alert-danger" *ngIf="addForm.get('Priority').hasError('required')">
         Please set priority.  
       </div>  

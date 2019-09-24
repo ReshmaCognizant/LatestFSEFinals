@@ -2,19 +2,26 @@
   <br/>  
   <br/>
   <h2> Item Details </h2>  
-  <div class="table-responsive table-container">  
+  <div class="search list col-md-6"><input formControlName="" placeholder="search.." name="search" class="form-control" id="search">  
+    Sort:<button class="btn-filter">Start Date</button ><button class="btn-filter">End Date</button><button class="btn-filter">Priority </button><button class="btn-filter">completed</button></div>
+   
+  <div class="col-md-12 table-responsive table-container">  
     <table class="table">  
       <thead>  
         <tr>  
-          <th>Item Code</th>  
-          <th>Item Description</th>  
-          <th>Item Rate</th>          
+          <th>Task</th>  
+          <th>Parent</th>  
+          <th>Priority</th>
+          <th>Start</th>
+          <th>End</th>          
         </tr>  
       </thead>  
       <tbody>  
         <tr *ngFor="let item of items">  
           <td>{{item.itemCode}}</td>  
-          <td>{{item.itemDesc}}</td>  
+          <td>{{item.itemDesc}}</td> 
+          <td>{{item.itemDesc}}</td> 
+          <td>{{item.itemDesc}}</td> 
           <td>{{item.itemRate === 0 ? "Not specified" : item.itemRate}}</td>           
           <td>  
             <button (click)="deleteItem(item)" class="btn btn-info"> Delete</button>  

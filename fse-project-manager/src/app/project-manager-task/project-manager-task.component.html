@@ -1,31 +1,58 @@
 <div class="col-md-6">  
     <br/>  
     <br/>
-  <h2 class="text-center">{{itemformlabel}}</h2>  
+  
   <form [formGroup]="addForm" novalidate class="form">  
     <div class="form-group">  
-      <label for="itemCode">Item Code:</label>  
-      <input formControlName="itemCode" placeholder="Item Code" name="itemCode" class="form-control" id="itemCode">  
+      <label for="itemCode">Project</label>  
+      <input formControlName="itemCode" placeholder="Project" name="itemCode" class="form-control" id="itemCode">  
       <div class="alert alert-danger" *ngIf="addForm.get('itemCode').hasError('required') && addForm.get('itemCode').touched">  
         Item Code is required and maximum characters allowed is 4. 
       </div>
+      <button class="search">Search</button>
     </div>  
   
     <div class="form-group">  
-      <label for="itemDesc">Item Description:</label>  
-      <input formControlName="itemDesc" placeholder="Item Description" name="itemDesc" class="form-control" id="itemDesc">  
+      <label for="itemDesc">Task:</label>  
+      <input formControlName="itemDesc" placeholder="Task" name="itemDesc" class="form-control" id="itemDesc">  
       <div class="alert alert-danger" *ngIf="addForm.get('itemDesc').hasError('required') && addForm.get('itemDesc').touched">  
         Item Description is required. 
       </div>  
     </div>  
-  
     <div class="form-group">  
-      <label for="itemRate">Item Rate:</label>  
-      <input formControlName="itemRate" placeholder="Item Rate" name="itemRate" class="form-control" id="itemRate">
+        <label for="points">Priority :</label>  
+        <input type="range" name="points" min="0" max="30" name="Priority" value=0>
+        <div class="alert alert-danger" *ngIf="addForm.get('Priority').hasError('required')">
+          Please set priority.  
+        </div>  
+      </div>
+      <div class="form-group">  
+          <label for="itemCode">Parent task</label>  
+          <input formControlName="itemCode" placeholder="Parent task" name="itemCode" class="form-control" id="itemCode">  
+          <div class="alert alert-danger" *ngIf="addForm.get('itemCode').hasError('required') && addForm.get('itemCode').touched">  
+            Item Code is required and maximum characters allowed is 4. 
+          </div>
+          <button class="search">Search</button>
+        </div>
+    <div class="form-group">  
+      <label for="startdate">Start Date:</label>  
+      <input formControlName="itemRate" type="date" placeholder="Start Date" name="startdate" class="form-control" id="startdate">
     </div>
+    <div class="form-group">  
+        <label for="enddate">End Date:</label>  
+        <input formControlName="itemRate" type="date" placeholder="End Date" name="startdate" class="form-control" id="enddate">
+      </div>
+    <div class="form-group">  
+        <label for="itemCode">Parent task</label>  
+        <input formControlName="itemCode" placeholder="Parent  task" name="itemCode" class="form-control" id="itemCode">  
+        <div class="alert alert-danger" *ngIf="addForm.get('itemCode').hasError('required') && addForm.get('itemCode').touched">  
+          Item Code is required and maximum characters allowed is 4. 
+        </div>
+        <button class="search">Search</button>
+      </div>
   
-    <button class="btn btn-success" [disabled]='addForm.invalid' *ngIf="btnvisibility" (click)="onSubmit()">Save</button>  
-    <button class="btn btn-success" [disabled]='addForm.invalid' *ngIf="!btnvisibility" (click)="onUpdate()">Update</button>  
+    <button class="btn btn-success" [disabled]='addForm.invalid' *ngIf="btnvisibility" (click)="onSubmit()">Add Task</button>  
+    <button class="btn btn-success" [disabled]='addForm.invalid' *ngIf="!btnvisibility" (click)="onUpdate()">Reset</button>  
   
   </form>  
 </div>

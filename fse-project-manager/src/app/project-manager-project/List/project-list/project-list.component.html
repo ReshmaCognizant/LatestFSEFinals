@@ -1,16 +1,21 @@
 <div class="col-md-12">  
     <br/>  
     <br/>
-  <h2> Purchase Order Details </h2>  
-  <div class="table-responsive table-container">  
+    <div class="search list col-md-6"><input formControlName="" placeholder="search.." name="search" class="form-control" id="search">  
+      Sort:<button class="btn-filter">Start Date</button ><button class="btn-filter">End Date</button><button class="btn-filter">Priority </button><button class="btn-filter">completed</button></div>
+     
+   
+  <div class="col-md-12 table-responsive table-container"> 
+        
     <table class="table">  
       <thead>  
         <tr>  
-          <th>Purchase Order No</th>  
-          <th>Purchase Date</th>
-          <th>Supplier No</th>
-          <th>Item Code</th>
-          <th>Quantity</th>            
+          <th>Projects</th>  
+          <th>priority</th>
+          <th>No of tasks</th>
+          <th>completed</th>
+          <th>Start Date</th>
+          <th>End Date</th>              
         </tr>  
       </thead>  
       <tbody>  
@@ -19,10 +24,11 @@
           <td>{{purchaseOrder.purchaseDate === "" ? "Not specified" : purchaseOrder.purchaseDate | date:'dd-MM-yyyy'}}</td>
           <td>{{purchaseOrder.supplierNo}}</td>
           <td>{{purchaseOrder.itemCode}}</td>
+          <td>{{purchaseOrder.itemCode}}</td>
           <td>{{purchaseOrder.quantity === 0 ? "Not specified" : purchaseOrder.quantity}}</td>
           <td>  
-            <button (click)="deletePurchaseOrder(purchaseOrder)" class="btn btn-info">Delete</button>  
-            <button (click)="editPurchaseOrder(purchaseOrder)" style="margin-left: 20px;" class="btn btn-info">Edit</button>  
+            <button (click)="deletePurchaseOrder(purchaseOrder)" class="btn btn-info">update</button>  
+            <button (click)="editPurchaseOrder(purchaseOrder)" style="margin-left: 20px;" class="btn btn-info">Suspend</button>  
           </td>  
         </tr>  
       </tbody>  

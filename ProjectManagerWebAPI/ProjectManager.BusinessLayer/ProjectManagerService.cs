@@ -50,7 +50,7 @@ namespace ProjectManager.BusinessLayer
         public List<UserModel> GetUsers()
         {
             EntityMapper<User, UserModel> mapObj = new EntityMapper<User, UserModel>();
-            List<User> userList = ProjectManagerRepository.SearchUsers();
+            List<User> userList = ProjectManagerRepository.GetUsers();
             List<UserModel> userModels = new List<UserModel>();
             foreach (var user in userList)
             {
@@ -150,7 +150,14 @@ namespace ProjectManager.BusinessLayer
             var task = mapObj.Translate(taskModel);
             return ProjectManagerRepository.UpdateTask(task);
         }
-        
+
+        public bool UpdateParentTask(ParentTaskModel parentTaskModel)
+        {
+            EntityMapper<ParentTaskModel, ParentTask> mapObj = new EntityMapper<ParentTaskModel, ParentTask>();
+            var parentTask = mapObj.Translate(parentTaskModel);
+            return ProjectManagerRepository.UpdateParentTask(parentTask);
+        }
+
         public bool DeleteProject(int projectID)
         {
             return ProjectManagerRepository.DeleteProject(projectID);

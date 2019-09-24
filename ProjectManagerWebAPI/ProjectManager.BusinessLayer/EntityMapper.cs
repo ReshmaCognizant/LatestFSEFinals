@@ -4,18 +4,24 @@ using ProjectManager.Shared.ServiceContracts;
 
 namespace ProjectManager.BusinessLayer
 {
-    public class EntityMapper<TSource, TDestination> where TSource : class where TDestination : class
+    public class EntityMapper <TSource, TDestination> where TSource : class where TDestination : class
     {
+        MapperConfiguration _mapperConfiguration;
+
         public EntityMapper()
         {
-            Mapper.CreateMap<ProjectModel, Project>();
-            Mapper.CreateMap<ParentTaskModel, ParentTask>();
-            Mapper.CreateMap<UserModel, User>();
-            Mapper.CreateMap<TaskModel, Task>();
+            _mapperConfiguration = new MapperConfiguration(cfg => {
+                cfg.CreateMap<ProjectModel, Project>().ReverseMap();
+                cfg.CreateMap<ParentTaskModel, ParentTask>().ReverseMap();
+                cfg.CreateMap<UserModel, User>().ReverseMap();
+                cfg.CreateMap<TaskModel, Task>().ReverseMap();
+            });           
         }
+
         public TDestination Translate(TSource obj)
         {
-            return Mapper.Map<TDestination>(obj);
+            var mapper = _mapperConfiguration.CreateMapper();
+            return mapper.Map<TDestination>(obj);
         }
     }
 }

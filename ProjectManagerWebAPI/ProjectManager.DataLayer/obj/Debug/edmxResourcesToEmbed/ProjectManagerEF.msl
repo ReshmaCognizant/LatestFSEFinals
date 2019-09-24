@@ -4,16 +4,16 @@
     <EntitySetMapping Name="ParentTasks">
       <EntityTypeMapping TypeName="ProjectManagerModel.ParentTask">
         <MappingFragment StoreEntitySet="ParentTask">
-          <ScalarProperty Name="ParentTaskName" ColumnName="ParentTaskName" />
           <ScalarProperty Name="Parent_ID" ColumnName="Parent_ID" />
+          <ScalarProperty Name="ParentTaskName" ColumnName="ParentTaskName" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Projects">
       <EntityTypeMapping TypeName="ProjectManagerModel.Project">
         <MappingFragment StoreEntitySet="Project">
-          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
           <ScalarProperty Name="Project_ID" ColumnName="Project_ID" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
           <ScalarProperty Name="Start_Date" ColumnName="Start_Date" />
           <ScalarProperty Name="End_Date" ColumnName="End_Date" />
           <ScalarProperty Name="Priority" ColumnName="Priority" />
@@ -23,10 +23,10 @@
     <EntitySetMapping Name="Tasks">
       <EntityTypeMapping TypeName="ProjectManagerModel.Task">
         <MappingFragment StoreEntitySet="Task">
-          <ScalarProperty Name="TaskName" ColumnName="TaskName" />
           <ScalarProperty Name="Task_ID" ColumnName="Task_ID" />
           <ScalarProperty Name="Parent_ID" ColumnName="Parent_ID" />
           <ScalarProperty Name="Project_ID" ColumnName="Project_ID" />
+          <ScalarProperty Name="TaskName" ColumnName="TaskName" />
           <ScalarProperty Name="Start_Date" ColumnName="Start_Date" />
           <ScalarProperty Name="End_Date" ColumnName="End_Date" />
           <ScalarProperty Name="Priority" ColumnName="Priority" />
@@ -36,7 +36,7 @@
     </EntitySetMapping>
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="ProjectManagerModel.User">
-        <MappingFragment StoreEntitySet="Users">
+        <MappingFragment StoreEntitySet="User">
           <ScalarProperty Name="User_ID" ColumnName="User_ID" />
           <ScalarProperty Name="FirstName" ColumnName="FirstName" />
           <ScalarProperty Name="LastName" ColumnName="LastName" />

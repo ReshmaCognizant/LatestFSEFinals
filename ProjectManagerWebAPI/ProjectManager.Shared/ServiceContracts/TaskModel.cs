@@ -28,6 +28,6 @@ namespace ProjectManager.Shared.ServiceContracts
         public int Priority { get; set; }
 
         [DataMember(Name = "status")]
-        public string Status { get; set; }
+        public bool Status { get; set; }
     }
 }

@@ -14,7 +14,16 @@ namespace ProjectManager.DataLayer
     
     public partial class ParentTask
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public ParentTask()
+        {
+            this.Tasks = new HashSet<Task>();
+        }
+    
         public int Parent_ID { get; set; }
         public string ParentTaskName { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Task> Tasks { get; set; }
     }
 }

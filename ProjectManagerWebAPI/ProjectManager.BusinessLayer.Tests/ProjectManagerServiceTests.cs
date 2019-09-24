@@ -21,10 +21,9 @@ namespace ProjectManager.BusinessLayer.Tests
         {
             var validData = new TaskModel()
             {
-                Task_ID = 1,
-                TaskName = "Generate Scripts",
                 Parent_ID = 1,
-                Project_ID = 1,
+                Project_ID = 2,
+                TaskName = "Generate Scripts",                
                 Start_Date = DateTime.Now,
                 End_Date = DateTime.Now.AddDays(1),
                 Priority = 1,
@@ -39,7 +38,6 @@ namespace ProjectManager.BusinessLayer.Tests
         {
             var inValidData = new TaskModel()
             {
-                Task_ID = 1,
                 TaskName = null,
                 Parent_ID = 1,
                 Project_ID = 1,
@@ -64,12 +62,11 @@ namespace ProjectManager.BusinessLayer.Tests
         {
             var validData = new UserModel()
             {
-                User_ID = 1,
                 FirstName = "Reshma",
                 LastName = "Rajendran",
                 Employee_ID = 1,
-                Project_ID = 1,
-                Task_ID = 1
+                Project_ID = 2,
+                Task_ID = 12
             };
             var isSuccess = _projectManagerService.AddUser(validData);
             Assert.AreEqual(true, isSuccess);
@@ -80,7 +77,6 @@ namespace ProjectManager.BusinessLayer.Tests
         {
             var inValidData = new UserModel()
             {
-                User_ID = 1,
                 FirstName = null,
                 LastName = null,
                 Employee_ID = 1,
@@ -103,7 +99,6 @@ namespace ProjectManager.BusinessLayer.Tests
         {
             var validData = new ProjectModel()
             {
-                Project_ID = 1,
                 ProjectName = "Microsoft",
                 Start_Date = null,
                 End_Date = null,
@@ -118,7 +113,6 @@ namespace ProjectManager.BusinessLayer.Tests
         {
             var inValidData = new ProjectModel()
             {
-                Project_ID = 1,
                 ProjectName = null,
                 Start_Date = null,
                 End_Date = null,
@@ -140,7 +134,6 @@ namespace ProjectManager.BusinessLayer.Tests
         {
             var validData = new ParentTaskModel()
             {
-                Parent_ID = 1,
                 ParentTaskName = "Build Framework"
             };
             var isSuccess = _projectManagerService.AddParentTask(validData);
@@ -152,7 +145,6 @@ namespace ProjectManager.BusinessLayer.Tests
         {
             var inValidData = new ParentTaskModel()
             {
-                Parent_ID = 1,
                 ParentTaskName = null
             };
             var isSuccess = _projectManagerService.AddParentTask(inValidData);
@@ -422,31 +414,17 @@ namespace ProjectManager.BusinessLayer.Tests
         }
 
         [Test]
-        public void DeleteUserForValidDataTest()
+        public void DeleteUserTest()
         {
             var isSuccess = _projectManagerService.DeleteUser(1);
             Assert.AreEqual(true, isSuccess);
-        }
+        }        
 
         [Test]
-        public void DeleteProjectForInValidDataTest()
-        {
-            var isSuccess = _projectManagerService.DeleteUser(0);
-            Assert.AreEqual(false, isSuccess);
-        }
-
-        [Test]
-        public void DeleteProjectForValidData()
+        public void DeleteProjectTest()
         {
             var isSuccess = _projectManagerService.DeleteProject(1);
             Assert.AreEqual(true, isSuccess);
-        }
-
-        [Test]
-        public void DeleteProjectForInValidData()
-        {
-            var isSuccess = _projectManagerService.DeleteProject(0);
-            Assert.AreEqual(false, isSuccess);
-        }        
+        }       
     }
 }

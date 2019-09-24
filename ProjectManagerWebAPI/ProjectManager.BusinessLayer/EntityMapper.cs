@@ -11,10 +11,10 @@ namespace ProjectManager.BusinessLayer
         public EntityMapper()
         {
             _mapperConfiguration = new MapperConfiguration(cfg => {
-                cfg.CreateMap<ProjectModel, Project>();
-                cfg.CreateMap<ParentTaskModel, ParentTask>();
-                cfg.CreateMap<UserModel, User>();
-                cfg.CreateMap<TaskModel, Task>();
+                cfg.CreateMap<ProjectModel, Project>().ReverseMap();
+                cfg.CreateMap<ParentTaskModel, ParentTask>().ReverseMap();
+                cfg.CreateMap<UserModel, User>().ReverseMap();
+                cfg.CreateMap<TaskModel, Task>().ReverseMap();
             });           
         }
 

@@ -4,24 +4,17 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="ProjectManagerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'AMSSIT_BizPack.dbo.ParentTask' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+      <Schema Namespace="ProjectManagerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="ParentTask">
           <Key>
             <PropertyRef Name="Parent_ID" />
-            
           </Key>
           <Property Name="Parent_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ParentTaskName" Type="nvarchar" MaxLength="200" Nullable="false" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'AMSSIT_BizPack.dbo.Project' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="Project">
           <Key>
             <PropertyRef Name="Project_ID" />
-            
-            
           </Key>
           <Property Name="Project_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ProjectName" Type="nvarchar" MaxLength="200" Nullable="false" />
@@ -29,18 +22,9 @@ warning 6002: The table/view 'AMSSIT_BizPack.dbo.Project' does not have a primar
           <Property Name="End_Date" Type="datetime" />
           <Property Name="Priority" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'AMSSIT_BizPack.dbo.Task' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="Task">
           <Key>
             <PropertyRef Name="Task_ID" />
-            
-            
-            
-            
-            
-            
-            
           </Key>
           <Property Name="Task_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Parent_ID" Type="int" Nullable="false" />
@@ -51,14 +35,9 @@ warning 6002: The table/view 'AMSSIT_BizPack.dbo.Task' does not have a primary k
           <Property Name="Priority" Type="int" Nullable="false" />
           <Property Name="Status" Type="bit" Nullable="false" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'AMSSIT_BizPack.dbo.Users' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="Users">
+        <EntityType Name="User">
           <Key>
             <PropertyRef Name="User_ID" />
-            
-            
-            
           </Key>
           <Property Name="User_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="FirstName" Type="nvarchar" MaxLength="100" Nullable="false" />
@@ -67,46 +46,46 @@ warning 6002: The table/view 'AMSSIT_BizPack.dbo.Users' does not have a primary 
           <Property Name="Project_ID" Type="int" />
           <Property Name="Task_ID" Type="int" />
         </EntityType>
+        <Association Name="FK__Task__Parent_ID__19D553CC">
+          <End Role="ParentTask" Type="Self.ParentTask" Multiplicity="1" />
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ParentTask">
+              <PropertyRef Name="Parent_ID" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="Parent_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Task__Project_ID__1AC97805">
+          <End Role="Project" Type="Self.Project" Multiplicity="1" />
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Project">
+              <PropertyRef Name="Project_ID" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="Project_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="ProjectManagerModelStoreContainer">
-          <EntitySet Name="ParentTask" EntityType="Self.ParentTask" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [ParentTask].[Parent_ID] AS [Parent_ID], 
-    [ParentTask].[ParentTaskName] AS [ParentTaskName]
-    FROM [dbo].[ParentTask] AS [ParentTask]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="Project" EntityType="Self.Project" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [Project].[Project_ID] AS [Project_ID], 
-    [Project].[ProjectName] AS [ProjectName], 
-    [Project].[Start_Date] AS [Start_Date], 
-    [Project].[End_Date] AS [End_Date], 
-    [Project].[Priority] AS [Priority]
-    FROM [dbo].[Project] AS [Project]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="Task" EntityType="Self.Task" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [Task].[Task_ID] AS [Task_ID], 
-    [Task].[Parent_ID] AS [Parent_ID], 
-    [Task].[Project_ID] AS [Project_ID], 
-    [Task].[TaskName] AS [TaskName], 
-    [Task].[Start_Date] AS [Start_Date], 
-    [Task].[End_Date] AS [End_Date], 
-    [Task].[Priority] AS [Priority], 
-    [Task].[Status] AS [Status]
-    FROM [dbo].[Task] AS [Task]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="Users" EntityType="Self.Users" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [Users].[User_ID] AS [User_ID], 
-    [Users].[FirstName] AS [FirstName], 
-    [Users].[LastName] AS [LastName], 
-    [Users].[Employee_ID] AS [Employee_ID], 
-    [Users].[Project_ID] AS [Project_ID], 
-    [Users].[Task_ID] AS [Task_ID]
-    FROM [dbo].[Users] AS [Users]</DefiningQuery>
-          </EntitySet>
+          <EntitySet Name="ParentTask" EntityType="Self.ParentTask" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Project" EntityType="Self.Project" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Task" EntityType="Self.Task" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Task__Parent_ID__19D553CC" Association="Self.FK__Task__Parent_ID__19D553CC">
+            <End Role="ParentTask" EntitySet="ParentTask" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Task__Project_ID__1AC97805" Association="Self.FK__Task__Project_ID__1AC97805">
+            <End Role="Project" EntitySet="Project" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ProjectManagerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -116,16 +95,18 @@ warning 6002: The table/view 'AMSSIT_BizPack.dbo.Users' does not have a primary 
           </Key>
           <Property Name="Parent_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ParentTaskName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Tasks" Relationship="Self.FK__Task__Parent_ID__19D553CC" FromRole="ParentTask" ToRole="Task" />
         </EntityType>
         <EntityType Name="Project">
           <Key>
             <PropertyRef Name="Project_ID" />
           </Key>
           <Property Name="Project_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProjectName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Start_Date" Type="DateTime" Precision="3" />
           <Property Name="End_Date" Type="DateTime" Precision="3" />
           <Property Name="Priority" Type="Int32" Nullable="false" />
-          <Property Name="ProjectName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Tasks" Relationship="Self.FK__Task__Project_ID__1AC97805" FromRole="Project" ToRole="Task" />
         </EntityType>
         <EntityType Name="Task">
           <Key>
@@ -134,11 +115,13 @@ warning 6002: The table/view 'AMSSIT_BizPack.dbo.Users' does not have a primary 
           <Property Name="Task_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Parent_ID" Type="Int32" Nullable="false" />
           <Property Name="Project_ID" Type="Int32" Nullable="false" />
-          <Property Name="Start_Date" Type="DateTime" Precision="3" Nullable="false" />
-          <Property Name="End_Date" Type="DateTime" Precision="3" Nullable="false" />
-          <Property Name="Priority" Type="Int32" Nullable="false" />
-          <Property Name="Status" Type="String" Nullable="false" />
           <Property Name="TaskName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Start_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="End_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Priority" Type="Int32" Nullable="false" />
+          <Property Name="Status" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="ParentTask" Relationship="Self.FK__Task__Parent_ID__19D553CC" FromRole="Task" ToRole="ParentTask" />
+          <NavigationProperty Name="Project" Relationship="Self.FK__Task__Project_ID__1AC97805" FromRole="Task" ToRole="Project" />
         </EntityType>
         <EntityType Name="User">
           <Key>
@@ -151,11 +134,43 @@ warning 6002: The table/view 'AMSSIT_BizPack.dbo.Users' does not have a primary 
           <Property Name="Project_ID" Type="Int32" />
           <Property Name="Task_ID" Type="Int32" />
         </EntityType>
+        <Association Name="FK__Task__Parent_ID__19D553CC">
+          <End Role="ParentTask" Type="Self.ParentTask" Multiplicity="1" />
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ParentTask">
+              <PropertyRef Name="Parent_ID" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="Parent_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Task__Project_ID__1AC97805">
+          <End Role="Project" Type="Self.Project" Multiplicity="1" />
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Project">
+              <PropertyRef Name="Project_ID" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="Project_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="ProjectManagerEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ParentTasks" EntityType="Self.ParentTask" />
           <EntitySet Name="Projects" EntityType="Self.Project" />
           <EntitySet Name="Tasks" EntityType="Self.Task" />
           <EntitySet Name="Users" EntityType="Self.User" />
+          <AssociationSet Name="FK__Task__Parent_ID__19D553CC" Association="Self.FK__Task__Parent_ID__19D553CC">
+            <End Role="ParentTask" EntitySet="ParentTasks" />
+            <End Role="Task" EntitySet="Tasks" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Task__Project_ID__1AC97805" Association="Self.FK__Task__Project_ID__1AC97805">
+            <End Role="Project" EntitySet="Projects" />
+            <End Role="Task" EntitySet="Tasks" />
+          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -166,16 +181,16 @@ warning 6002: The table/view 'AMSSIT_BizPack.dbo.Users' does not have a primary 
           <EntitySetMapping Name="ParentTasks">
             <EntityTypeMapping TypeName="ProjectManagerModel.ParentTask">
               <MappingFragment StoreEntitySet="ParentTask">
-                <ScalarProperty Name="ParentTaskName" ColumnName="ParentTaskName" />
                 <ScalarProperty Name="Parent_ID" ColumnName="Parent_ID" />
+                <ScalarProperty Name="ParentTaskName" ColumnName="ParentTaskName" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Projects">
             <EntityTypeMapping TypeName="ProjectManagerModel.Project">
               <MappingFragment StoreEntitySet="Project">
-                <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
                 <ScalarProperty Name="Project_ID" ColumnName="Project_ID" />
+                <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
                 <ScalarProperty Name="Start_Date" ColumnName="Start_Date" />
                 <ScalarProperty Name="End_Date" ColumnName="End_Date" />
                 <ScalarProperty Name="Priority" ColumnName="Priority" />
@@ -185,10 +200,10 @@ warning 6002: The table/view 'AMSSIT_BizPack.dbo.Users' does not have a primary 
           <EntitySetMapping Name="Tasks">
             <EntityTypeMapping TypeName="ProjectManagerModel.Task">
               <MappingFragment StoreEntitySet="Task">
-                <ScalarProperty Name="TaskName" ColumnName="TaskName" />
                 <ScalarProperty Name="Task_ID" ColumnName="Task_ID" />
                 <ScalarProperty Name="Parent_ID" ColumnName="Parent_ID" />
                 <ScalarProperty Name="Project_ID" ColumnName="Project_ID" />
+                <ScalarProperty Name="TaskName" ColumnName="TaskName" />
                 <ScalarProperty Name="Start_Date" ColumnName="Start_Date" />
                 <ScalarProperty Name="End_Date" ColumnName="End_Date" />
                 <ScalarProperty Name="Priority" ColumnName="Priority" />
@@ -198,7 +213,7 @@ warning 6002: The table/view 'AMSSIT_BizPack.dbo.Users' does not have a primary 
           </EntitySetMapping>
           <EntitySetMapping Name="Users">
             <EntityTypeMapping TypeName="ProjectManagerModel.User">
-              <MappingFragment StoreEntitySet="Users">
+              <MappingFragment StoreEntitySet="User">
                 <ScalarProperty Name="User_ID" ColumnName="User_ID" />
                 <ScalarProperty Name="FirstName" ColumnName="FirstName" />
                 <ScalarProperty Name="LastName" ColumnName="LastName" />

@@ -34,7 +34,7 @@ namespace ProjectManager.DataLayer
                 DbContext.SaveChanges();
                 status = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 status = false;
             }
@@ -60,7 +60,7 @@ namespace ProjectManager.DataLayer
                 }
                 status = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 status = false;
             }
@@ -80,7 +80,7 @@ namespace ProjectManager.DataLayer
                 }
                 status = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 status = false;
             }
@@ -106,7 +106,7 @@ namespace ProjectManager.DataLayer
                 DbContext.SaveChanges();
                 status = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 status = false;
             }
@@ -120,8 +120,7 @@ namespace ProjectManager.DataLayer
             {
                 Project ProjectItem = DbContext.Projects.Where(x => x.Project_ID == project.Project_ID).FirstOrDefault();
                 if (ProjectItem != null)
-                {                    
-                    ProjectItem.Project_ID = project.Project_ID;
+                {  
                     ProjectItem.ProjectName = project.ProjectName;
                     ProjectItem.Start_Date = project.Start_Date;
                     ProjectItem.End_Date = project.End_Date;
@@ -130,7 +129,7 @@ namespace ProjectManager.DataLayer
                 }
                 status = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 status = false;
             }
@@ -142,6 +141,19 @@ namespace ProjectManager.DataLayer
             bool status;
             try
             {
+                var tasks = DbContext.Tasks.Where(x => x.Project_ID == projectID).ToList();
+                if (tasks != null && tasks.Count > 0)
+                {
+                    foreach (var task in tasks)
+                    {
+                        if (task != null)
+                        {
+                            DbContext.Tasks.Remove(task);
+                            DbContext.SaveChanges();
+                        }
+                    }
+                }
+
                 Project projectItem = DbContext.Projects.Where(x => x.Project_ID == projectID).FirstOrDefault();
                 if (projectItem != null)
                 {
@@ -150,7 +162,7 @@ namespace ProjectManager.DataLayer
                 }
                 status = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 status = false;
             }
@@ -186,7 +198,7 @@ namespace ProjectManager.DataLayer
                 DbContext.SaveChanges();
                 status = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 status = false;
             }
@@ -201,7 +213,6 @@ namespace ProjectManager.DataLayer
                 User UserItem = DbContext.Users.Where(x => x.User_ID == user.User_ID).FirstOrDefault();
                 if (UserItem != null)
                 {
-                    UserItem.User_ID = user.User_ID;
                     UserItem.FirstName = user.FirstName;
                     UserItem.LastName = user.LastName;
                     UserItem.Employee_ID = user.Employee_ID;
@@ -211,7 +222,7 @@ namespace ProjectManager.DataLayer
                 }
                 status = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 status = false;
             }
@@ -231,7 +242,7 @@ namespace ProjectManager.DataLayer
                 }
                 status = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 status = false;
             }
@@ -257,7 +268,7 @@ namespace ProjectManager.DataLayer
                 DbContext.SaveChanges();
                 status = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 status = false;
             }
@@ -272,13 +283,12 @@ namespace ProjectManager.DataLayer
                 ParentTask ParentTaskItem = DbContext.ParentTasks.Where(x => x.Parent_ID == parentTask.Parent_ID).FirstOrDefault();
                 if (ParentTaskItem != null)
                 {
-                    ParentTaskItem.Parent_ID = parentTask.Parent_ID;
                     ParentTaskItem.ParentTaskName = parentTask.ParentTaskName;                   
                     DbContext.SaveChanges();
                 }
                 status = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 status = false;
             }
@@ -298,7 +308,7 @@ namespace ProjectManager.DataLayer
                 }
                 status = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 status = false;
             }

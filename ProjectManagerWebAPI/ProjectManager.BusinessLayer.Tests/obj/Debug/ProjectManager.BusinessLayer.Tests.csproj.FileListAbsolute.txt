@@ -20,3 +20,5 @@ C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager
 C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\bin\Debug\EntityFramework.xml
 C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\obj\Debug\ProjectManager.BusinessLayer.Tests.dll
 C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\obj\Debug\ProjectManager.BusinessLayer.Tests.pdb
+C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\bin\Debug\EntityFramework.SqlServer.xml

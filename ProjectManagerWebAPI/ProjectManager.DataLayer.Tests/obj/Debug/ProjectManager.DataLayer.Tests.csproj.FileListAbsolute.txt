@@ -11,3 +11,6 @@ C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager
 C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.DataLayer.Tests\obj\Debug\ProjectManager.DataLayer.Tests.csprojResolveAssemblyReference.cache
 C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.DataLayer.Tests\obj\Debug\ProjectManager.DataLayer.Tests.dll
 C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.DataLayer.Tests\obj\Debug\ProjectManager.DataLayer.Tests.pdb
+C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.DataLayer.Tests\bin\Debug\ProjectManager.DataLayer.Tests.dll.config
+C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.DataLayer.Tests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.DataLayer.Tests\bin\Debug\EntityFramework.SqlServer.xml

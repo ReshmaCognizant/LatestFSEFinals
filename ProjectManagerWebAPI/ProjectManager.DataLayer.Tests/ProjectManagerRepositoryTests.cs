@@ -10,11 +10,10 @@ namespace ProjectManager.DataLayer.Tests
         public void InsertTaskForValidDataTest()
         {
             var validData = new Task()
-            {
-                Task_ID = 1,
-                TaskName = "Generate Scripts",
+            {                       
                 Parent_ID = 1,
                 Project_ID = 1,
+                TaskName = "Generate Scripts",
                 Start_Date = DateTime.Now,
                 End_Date = DateTime.Now.AddDays(1),
                 Priority = 1,
@@ -29,7 +28,6 @@ namespace ProjectManager.DataLayer.Tests
         {
             var inValidData = new Task()
             {
-                Task_ID = 1,
                 TaskName = null,
                 Parent_ID = 1,
                 Project_ID = 1,
@@ -54,7 +52,6 @@ namespace ProjectManager.DataLayer.Tests
         {
             var validData = new User()
             {
-                User_ID = 1,
                 FirstName = "Reshma",
                 LastName = "Rajendran",
                 Employee_ID = 1,
@@ -70,7 +67,6 @@ namespace ProjectManager.DataLayer.Tests
         {
             var inValidData = new User()
             {
-                User_ID = 1,
                 FirstName = null,
                 LastName = null,
                 Employee_ID = 1,
@@ -93,7 +89,6 @@ namespace ProjectManager.DataLayer.Tests
         {
             var validData = new Project()
             {
-                Project_ID = 1,
                 ProjectName = "Microsoft",
                 Start_Date = null,
                 End_Date = null,
@@ -108,7 +103,6 @@ namespace ProjectManager.DataLayer.Tests
         {
             var inValidData = new Project()
             {
-                Project_ID = 1,
                 ProjectName = null,
                 Start_Date = null,
                 End_Date = null,
@@ -130,7 +124,6 @@ namespace ProjectManager.DataLayer.Tests
         {
             var validData = new ParentTask()
             {
-                Parent_ID = 1,
                 ParentTaskName = "Build Framework"
             };
             var isSuccess = ProjectManagerRepository.InsertParentTask(validData);
@@ -142,7 +135,6 @@ namespace ProjectManager.DataLayer.Tests
         {
             var inValidData = new ParentTask()
             {
-                Parent_ID = 1,
                 ParentTaskName = null
             };
             var isSuccess = ProjectManagerRepository.InsertParentTask(inValidData);
@@ -329,8 +321,8 @@ namespace ProjectManager.DataLayer.Tests
                 FirstName = null,
                 LastName = null,
                 Employee_ID = 1,
-                Project_ID = 1,
-                Task_ID = 1
+                Project_ID = 2,
+                Task_ID = 12
             };
             var isSuccess = ProjectManagerRepository.UpdateUser(inValidData);
             Assert.AreEqual(false, isSuccess);
@@ -412,31 +404,17 @@ namespace ProjectManager.DataLayer.Tests
         }
 
         [Test]
-        public void DeleteUserForValidDataTest()
+        public void DeleteUserTest()
         {
             var isSuccess = ProjectManagerRepository.DeleteUser(1);
             Assert.AreEqual(true, isSuccess);
-        }
+        }        
 
         [Test]
-        public void DeleteProjectForInValidDataTest()
-        {
-            var isSuccess = ProjectManagerRepository.DeleteUser(0);
-            Assert.AreEqual(false, isSuccess);
-        }
-
-        [Test]
-        public void DeleteProjectForValidData()
+        public void DeleteProjectTest()
         {
             var isSuccess = ProjectManagerRepository.DeleteProject(1);
             Assert.AreEqual(true, isSuccess);
-        }
-
-        [Test]
-        public void DeleteProjectForInValidData()
-        {
-            var isSuccess = ProjectManagerRepository.DeleteProject(0);
-            Assert.AreEqual(false, isSuccess);
-        }
+        }        
     }
 }

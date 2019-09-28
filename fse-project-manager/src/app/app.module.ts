@@ -11,7 +11,7 @@ import { ProjectManagerProjectComponent } from './project-manager-project/projec
 import { TaskListComponent } from './project-manager-task/List/task-list/task-list.component';
 import { ProjectListComponent } from './project-manager-project/List/project-list/project-list.component';
 import { UserListComponent } from './project-manager-user/List/user-list/user-list.component';
-
+import { NgSelect2Module   } from 'ng-select2';
 @NgModule({
   declarations: [
     AppComponent,   
@@ -22,7 +22,8 @@ import { UserListComponent } from './project-manager-user/List/user-list/user-li
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule    
+    HttpClientModule,
+    NgSelect2Module      
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,26 +1,25 @@
 <div class="col-md-12">  
     <br/>  
-    <br/>
-  <h2> User Details </h2> 
+    <br/> 
   <div class="search list"><input formControlName="" placeholder="search.." name="search" class="form-control" id="search">  
   Sort:<button class="btn-filter">First Name</button ><button class="btn-filter">Last Name</button><button class="btn-filter">Id</button></div>
   <div class="table-responsive table-container">  
     <table class="table">  
       <thead>  
         <tr>  
-          <th>Employee Id</th>  
           <th>First Name</th>  
-          <th>Last Name</th>          
+          <th>Last Name</th>
+          <th>Employee ID</th>
         </tr>  
       </thead>  
       <tbody>  
-        <tr *ngFor="let supplier of suppliers">  
-          <td>{{supplier.supplierNo}}</td>  
-          <td>{{supplier.supplierName}}</td>  
-          <td>{{supplier.supplierAddress}}</td>         
+        <tr *ngFor="let user of users">  
+          <td>{{user.FirstName}}</td>  
+          <td>{{user.LastName}}</td>  
+          <td>{{user.EmployeeID}}</td>         
           <td>  
-            <button (click)="deleteSupplier(supplier)" class="btn btn-info">Delete</button>  
-            <button (click)="editSupplier(supplier)" style="margin-left: 20px;" class="btn btn-info">Edit</button>  
+            <button (click)="deleteUser(user)" class="btn btn-info">Delete</button>  
+            <button (click)="editUser(user)" style="margin-left: 20px;" class="btn btn-info">Edit</button>  
           </td>  
         </tr>  
       </tbody>  

@@ -41,7 +41,9 @@ namespace ProjectManager.BusinessLayer
             List<TaskModel> taskModels = new List<TaskModel>();
             foreach (var task in taskList)
             {
-                taskModels.Add(mapObj.Translate(task));
+                var taskModel = mapObj.Translate(task);
+                taskModel.ParentTaskName = ProjectManagerRepository.GetParentTask(task.Parent_ID).ParentTaskName;
+                taskModels.Add(taskModel);                
             }
 
             return taskModels;

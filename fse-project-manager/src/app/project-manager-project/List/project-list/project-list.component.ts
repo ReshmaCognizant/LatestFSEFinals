@@ -10,7 +10,7 @@ import { Project } from '../../../Project/project';
 })
 export class ProjectListComponent implements OnInit {
 
-  purchaseOrders: any;  
+  projects: any;  
   
   constructor(private projectService: ProjectService, private router: Router, ) { }  
   
@@ -23,7 +23,7 @@ export class ProjectListComponent implements OnInit {
   {
       this.projectService.getProjects()  
       .subscribe((data: Project[]) => {
-        this.purchaseOrders = data;  
+        this.projects = data;  
         if(data.length == 0)  
         {
           alert("No projects found");          

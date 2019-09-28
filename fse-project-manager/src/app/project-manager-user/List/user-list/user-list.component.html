@@ -14,9 +14,9 @@
       </thead>  
       <tbody>  
         <tr *ngFor="let user of users">  
-          <td>{{user.FirstName}}</td>  
-          <td>{{user.LastName}}</td>  
-          <td>{{user.EmployeeID}}</td>         
+          <td>{{user.firstName}}</td>  
+          <td>{{user.lastName}}</td>  
+          <td>{{user.employeeID}}</td>         
           <td>  
             <button (click)="deleteUser(user)" class="btn btn-info">Delete</button>  
             <button (click)="editUser(user)" style="margin-left: 20px;" class="btn btn-info">Edit</button>  

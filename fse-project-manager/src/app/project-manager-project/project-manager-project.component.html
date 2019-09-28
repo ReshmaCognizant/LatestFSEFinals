@@ -1,43 +1,39 @@
 <div class="col-md-6">  
     <br/>  
-    <br/>
-  <h2 class="text-center">{{purchaseOrderformlabel}}</h2>  
+    <br/>   
   <form [formGroup]="addForm" novalidate class="form">  
     <div class="form-group">  
-      <label for="purchaseOrderNo">Project:</label>  
-      <input formControlName="purchaseOrderNo" placeholder="Project name" name="purchaseOrderNo" class="form-control" id="purchaseOrderNo">  
-      <div class="alert  alert-danger" *ngIf="addForm.get('purchaseOrderNo').hasError('required') && addForm.get('purchaseOrderNo').touched">
+      <label for="projectName">Project:</label>  
+      <input formControlName="projectName" placeholder="Project name" name="projectName" class="form-control" id="projectName">  
+      <div class="alert  alert-danger" *ngIf="addForm.get('projectName').hasError('required') && addForm.get('projectName').touched">
         Project name is required.  
       </div>  
     </div>  
     
     <div class="form-group">  
       <label for="priority" class="checklabel">Set Start Date & End Date</label>  
-      <input type="checkbox" formControlName="purchaseDate" placeholder="" name="priority" class="form-control" id="priority" />    
+      <input type="checkbox" formControlName="startDate" placeholder="" name="priority" class="form-control" id="priority" />    
     </div>
     <div class="form-group col-md-6">  
-      <label for="purchaseDate">Start Date:</label>  
-      <input type="date" formControlName="purchaseDate" placeholder="Start Date" name="purchaseDate" class="form-control" id="startDate" />    
+      <label for="startDate">Start Date:</label>  
+      <input type="date" formControlName="startDate" placeholder="Start Date" name="purchaseDate" class="form-control" id="startDate" />    
     </div>
     <div class="form-group col-md-6">  
-      <label for="purchaseDate">End Date:</label>  
-      <input type="date" formControlName="purchaseDate" placeholder="End Date" name="purchaseDate" class="form-control" id="endDate" />    
+      <label for="endDate">End Date:</label>  
+      <input type="date" formControlName="endDate" placeholder="End Date" name="endDate" class="form-control" id="endDate" />    
     </div>
   
     <div class="form-group">  
       <label for="points">Priority :</label>  
-      <input type="range" name="points" min="0" max="30" name="Priority" value=0>
-      <div class="alert alert-danger" *ngIf="addForm.get('Priority').hasError('required')">
-        Please set priority.  
-      </div>  
+      <input type="range" name="points" min="0" max="30" name="Priority" value=0>     
     </div>
 
     
     <div class="form-group row">  
       <div class="col-md-2"><label for="manager" >Manager:</label></div>
-      <div class="col-md-8"><input formControlName="manager" placeholder="Manager" name="manager" class="form-control" id="quantity">  </div>
+      <div class="col-md-8"><input formControlName="managerName" placeholder="Manager" name="managerName" class="form-control" id="managerName">  </div>
       <div class="col-md-2"><button class='search '>Search</button></div>
-      <div class="alert  alert-danger" *ngIf="addForm.get('manager').hasError('required') && addForm.get('quantity').touched">
+      <div class="alert  alert-danger" *ngIf="addForm.get('managerName').hasError('required') && addForm.get('managerName').touched">
         Manager name  is required.
       </div>  
     </div>

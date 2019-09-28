@@ -12,7 +12,6 @@ import { DatePipe } from '@angular/common';
 })
 export class ProjectManagerProjectComponent implements OnInit {
 
-  purchaseOrderformlabel: string = 'Add Item';  
   constructor(private formBuilder: FormBuilder, private router: Router, private projectService: ProjectService, private datePipe: DatePipe) {  
   }  
   
@@ -21,11 +20,11 @@ export class ProjectManagerProjectComponent implements OnInit {
   ngOnInit() {  
   
     this.addForm = this.formBuilder.group({      
-      purchaseOrderNo: ['', [Validators.required, Validators.maxLength(4)]],
-      purchaseDate: [],  
-      supplierNo: ['', [Validators.required, Validators.maxLength(4)]], 
-      itemCode: ['', [Validators.required, Validators.maxLength(4)]],
-      quantity: []  
+      projectName: ['', [Validators.required, Validators.maxLength(4)]],
+      startDate: [],  
+      endDate: [],  
+      priority: [], 
+      managerName: ['', [Validators.required, Validators.maxLength(4)]]      
     });  
   
     let projectID = localStorage.getItem('editProjectID');
@@ -33,8 +32,7 @@ export class ProjectManagerProjectComponent implements OnInit {
       this.projectService.searchProject(projectID).subscribe(data => {  
         this.addForm.patchValue(data);        
       })  
-      this.btnvisibility = false;
-      this.purchaseOrderformlabel = 'Edit Project';      
+      this.btnvisibility = false;          
     } 
   }
 

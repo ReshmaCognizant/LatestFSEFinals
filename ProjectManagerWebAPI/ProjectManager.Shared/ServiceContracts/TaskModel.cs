@@ -15,6 +15,9 @@ namespace ProjectManager.Shared.ServiceContracts
         [DataMember(Name = "parentID")]
         public int Parent_ID { get; set; }
 
+        [DataMember(Name = "parentTaskName")]
+        public string ParentTaskName { get; set; }
+
         [DataMember(Name = "projectID")]
         public int Project_ID { get; set; }
 

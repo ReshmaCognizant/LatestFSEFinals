@@ -13,6 +13,4 @@ C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager
 C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer\bin\Debug\EntityFramework.xml
 C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer\obj\Debug\ProjectManager.BusinessLayer.dll
 C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer\obj\Debug\ProjectManager.BusinessLayer.pdb
-C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer\bin\Debug\DataModel.dll
-C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer\bin\Debug\Resolver.dll
 C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer\bin\Debug\ProjectManager.BusinessLayer.dll.config

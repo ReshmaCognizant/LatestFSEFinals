@@ -10,20 +10,20 @@ import { Router } from "@angular/router";
 })
 export class TaskListComponent implements OnInit {
 
-  taks: Task[];  
+  tasks: Task[];  
   
   constructor(private taskService: TaskService, private router: Router, ) { }  
   
   ngOnInit() {
     localStorage.removeItem('editTaskID')   
-    this.getTaks();
+    this.getTasks();
   }
 
-  getTaks()
+  getTasks()
   {
     this.taskService.getTasks()  
     .subscribe((data: Task[]) => {
-      this.taks = data;
+      this.tasks = data;
       if(data.length == 0)  
       {
         alert("No items found");   

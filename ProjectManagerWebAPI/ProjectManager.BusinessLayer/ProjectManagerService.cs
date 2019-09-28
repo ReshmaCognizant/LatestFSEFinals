@@ -1,6 +1,8 @@
 ﻿using ProjectManager.DataLayer;
 using ProjectManager.Shared.ServiceContracts;
 using System.Collections.Generic;
+using System.Linq;
+using System;
 
 namespace ProjectManager.BusinessLayer
 {
@@ -41,7 +43,9 @@ namespace ProjectManager.BusinessLayer
             List<TaskModel> taskModels = new List<TaskModel>();
             foreach (var task in taskList)
             {
-                taskModels.Add(mapObj.Translate(task));
+                var taskModel = mapObj.Translate(task);
+                taskModel.ParentTaskName = ProjectManagerRepository.GetParentTask(task.Parent_ID).ParentTaskName;
+                taskModels.Add(taskModel);                
             }
 
             return taskModels;
@@ -68,7 +72,10 @@ namespace ProjectManager.BusinessLayer
             List<ProjectModel> projectModels = new List<ProjectModel>();
             foreach (var project in projectList)
             {
-                projectModels.Add(mapObj.Translate(project));
+                var projectModel = mapObj.Translate(project);
+                projectModel.NoOfTasks = ProjectManagerRepository.GetTasks().Where(x => x.Project_ID == projectModel.Project_ID).ToList().Count;
+                projectModel.CompletedTasks = ProjectManagerRepository.GetTasks().Where(x => x.Project_ID == projectModel.Project_ID && x.End_Date.Date <= DateTime.Now.Date).ToList().Count;
+                projectModels.Add(projectModel);
             }
 
             return projectModels;

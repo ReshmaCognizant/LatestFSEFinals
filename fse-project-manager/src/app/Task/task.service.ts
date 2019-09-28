@@ -11,7 +11,7 @@ import { AppHttpService } from 'src/app/app-http.service';
 export class TaskService {
 
   constructor(private http: HttpClient, private appHttpService : AppHttpService) { }  
-  baseUrl: string = 'http://localhost:61012/api/item/';  
+  baseUrl: string = 'http://localhost:61012/api/task/';  
   
   getTasks(): Observable<Task[]> {
     return this.http.get<Task[]>(this.baseUrl + 'get')

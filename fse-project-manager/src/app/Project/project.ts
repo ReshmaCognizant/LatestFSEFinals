@@ -4,4 +4,6 @@ export class Project {
     startDate: Date;
     endDate: Date;
     priority: number;
+    noOfTasks: number;
+    completedTasks: number;
   }

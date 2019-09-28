@@ -7,7 +7,7 @@ using System.Web.Http.Cors;
 namespace ProjectManagerWebAPI.Controllers
 {
     [EnableCors(origins: "*", headers: "*", methods: "*")]
-    [RoutePrefix("api/POPS")]
+    [RoutePrefix("api/projectManager")]
     public class HelloController : BaseAPIController
     {
         [Route("sayHi")]

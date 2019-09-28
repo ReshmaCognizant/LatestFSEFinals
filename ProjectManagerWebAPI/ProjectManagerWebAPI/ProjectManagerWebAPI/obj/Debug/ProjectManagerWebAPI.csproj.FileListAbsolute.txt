@@ -88,3 +88,5 @@ C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager
 C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManagerWebAPI\ProjectManagerWebAPI\obj\Debug\ProjectManagerWebAPI.pdb
 C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManagerWebAPI\ProjectManagerWebAPI\bin\NBench.dll
 C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManagerWebAPI\ProjectManagerWebAPI\bin\ProjectManager.BusinessLayer.dll.config
+C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManagerWebAPI\ProjectManagerWebAPI\bin\EntityFramework.SqlServer.dll
+C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManagerWebAPI\ProjectManagerWebAPI\bin\EntityFramework.SqlServer.xml

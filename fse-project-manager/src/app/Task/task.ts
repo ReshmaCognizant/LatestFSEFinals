@@ -3,6 +3,7 @@ export class Task {
     parentID: number;
     projectID: number;
     taskName: string;
+    parentTaskName: string;
     startDate: Date;
     endDate: Date;
     priority: number;

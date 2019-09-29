@@ -6,6 +6,12 @@ import { UserService } from 'src/app/User/user.service';
 import { DatePipe } from '@angular/common';
 import { Select2OptionData } from 'ng-select2';
 import * as $ from 'jquery';
+import { formatDate } from '@angular/common';
+
+interface Post {
+  startDate: Date;
+  endDate: Date;
+}
 
 @Component({
   selector: 'app-project-manager-project',
@@ -17,6 +23,11 @@ export class ProjectManagerProjectComponent implements OnInit {
 
   searchProjects: Array<Select2OptionData>; 
   searchUsers: Array<Select2OptionData>;
+  
+  post: Post = {
+    startDate: new Date(Date.now()),
+    endDate: new Date(new Date(Date.now()).getTime() + 1000 * 60 * 60 * 24)
+  }
 
   constructor(private formBuilder: FormBuilder, private router: Router, private projectService: ProjectService, private userService: UserService, private datePipe: DatePipe) {  
   }  
@@ -27,8 +38,8 @@ export class ProjectManagerProjectComponent implements OnInit {
   
     this.addForm = this.formBuilder.group({      
       projectName: ['', [Validators.required]],   
-      startDate: [],  
-      endDate: [],  
+      startDate: [formatDate(this.post.startDate, 'yyyy-MM-dd', 'en'), [Validators.required]],
+      endDate: [formatDate(this.post.endDate, 'yyyy-MM-dd', 'en'), [Validators.required]], 
       priority: [], 
       managerName: []      
     });  

@@ -1,9 +1,5 @@
-<div class="col-md-6">  
-    <br/>  
-    <br/>    
-    <form [formGroup]="addForm" novalidate class="form">  
-        
-    
+<div class="col-md-6">     
+    <form [formGroup]="addForm" novalidate class="form">    
       <div class="form-group">  
         <label for="firstName">First Name:</label>  
         <input formControlName="firstName" placeholder="First Name" name="firstName" class="form-control" id="firstName">  
@@ -28,6 +24,7 @@
       </div>
     
       <button class="btn btn-success" [disabled]='addForm.invalid' *ngIf="btnvisibility" (click)="onSubmit()">Add</button>  
+      <button class="btn btn-success" [disabled]='addForm.invalid' *ngIf="!btnvisibility" (click)="onUpdate()">Update</button>
       <button class="btn btn-success" (click)="onReset()">Reset</button>    
        
     </form>  

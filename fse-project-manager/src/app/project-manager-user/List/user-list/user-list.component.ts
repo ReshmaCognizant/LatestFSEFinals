@@ -89,8 +89,10 @@ onSortID(){
   this.users = this.users.sort((a,b)=>a.userID.toString().localeCompare(b.userID.toString()));
 }
 
-userOnSelect(selectedUser){
-  this.users = this.users.filter(x => x.userID === selectedUser.userID);
+onUserSelect(selectedUser){
+  if (selectedUser != null)
+  {
+    this.users = this.users.filter(x=> x.userID.toString() == selectedUser.value);     
+  }
 }
-
 }

@@ -28,12 +28,12 @@ export class ProjectManagerTaskComponent implements OnInit {
     this.addForm = this.formBuilder.group({  
       projectID: [],
       taskName: [],
-      setParentTask: [],
+      setasparent: [],
       priority: [],
-      parentTaskID: [],
+      parentID: [],
       startDate: [],
       endDate: [],
-      user: []           
+      userID: []           
     });  
   
     let taskID = localStorage.getItem('editTaskID');  
@@ -45,12 +45,10 @@ export class ProjectManagerTaskComponent implements OnInit {
       this.taskformlabel = 'Edit Task';      
     }
 
-    this.getParentTaskDynamicList();
-    this.getUserDynamicList();
-    this.getProjectDynamicList();
+    this.getDynamicList();    
   }
   
-  getProjectDynamicList(){
+  getDynamicList(){
     this.projectService.getProjectList()  
     .subscribe((data: Array<Select2OptionData>) => {
       this.searchProjects = data;      
@@ -59,10 +57,7 @@ export class ProjectManagerTaskComponent implements OnInit {
         alert("No project List found");         
       }         
     }); 
-}
-
-getUserDynamicList(){
-  this.userService.getUserList()  
+    this.userService.getUserList()  
   .subscribe((data: Array<Select2OptionData>) => {
     this.searchUsers = data;      
     if(data.length == 0)  
@@ -70,9 +65,6 @@ getUserDynamicList(){
       alert("No user List found");         
     }         
   }); 
-}
-
-getParentTaskDynamicList(){
   this.taskService.getParentTaskList()  
   .subscribe((data: Array<Select2OptionData>) => {
     this.searchParentTasks = data;      
@@ -83,7 +75,7 @@ getParentTaskDynamicList(){
   }); 
 }
   
-  onSubmit() {
+  onSubmit() {    
     this.taskService.createTask(this.addForm.value)  
       .subscribe((data: any) => {
         if(data)

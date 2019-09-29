@@ -61,7 +61,16 @@ namespace ProjectManagerWebAPI.Controllers
         {
             return tryCatchWebMethod(() =>
             {
-                var isSuccess = new ProjectManagerService().AddTask(taskModel);
+                var isSuccess = false;
+                if (taskModel.SetAsParent)
+                {
+                    var parentTaskModel = new ParentTaskModel() { ParentTaskName = taskModel.TaskName };
+                    isSuccess = new ProjectManagerService().AddParentTask(parentTaskModel);
+                }
+                else
+                {
+                    isSuccess = new ProjectManagerService().AddTask(taskModel);
+                }
 
                 return Json(isSuccess);
             });

@@ -159,6 +159,16 @@ namespace ProjectManager.BusinessLayer
             return taskModel;
         }
 
+        public ParentTaskModel GetParentTask(int parentID)
+        {
+            EntityMapper<ParentTask, ParentTaskModel> mapObj = new EntityMapper<ParentTask, ParentTaskModel>();
+            ParentTask parentTask = ProjectManagerRepository.GetParentTask(parentID);
+            ParentTaskModel parentTaskModel = new ParentTaskModel();
+            parentTaskModel = mapObj.Translate(parentTask);
+
+            return parentTaskModel;
+        }
+
         public bool UpdateUser(UserModel userModel)
         {
             EntityMapper<UserModel, User> mapObj = new EntityMapper<UserModel, User>();

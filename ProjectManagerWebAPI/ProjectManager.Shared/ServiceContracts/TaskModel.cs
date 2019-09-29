@@ -32,5 +32,8 @@ namespace ProjectManager.Shared.ServiceContracts
 
         [DataMember(Name = "status")]
         public bool Status { get; set; }
+
+        [DataMember(Name = "setasparent")]
+        public bool SetAsParent { get; set; }
     }
 }

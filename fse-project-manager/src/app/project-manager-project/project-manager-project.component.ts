@@ -39,7 +39,8 @@ export class ProjectManagerProjectComponent implements OnInit {
     this.addForm = this.formBuilder.group({      
       projectName: ['', [Validators.required]],   
       startDate: [formatDate(this.post.startDate, 'yyyy-MM-dd', 'en'), [Validators.required]],
-      endDate: [formatDate(this.post.endDate, 'yyyy-MM-dd', 'en'), [Validators.required]], 
+      endDate: [formatDate(this.post.endDate, 'yyyy-MM-dd', 'en'), [Validators.required]],
+      setStartDateEndDate: [], 
       priority: [], 
       managerName: []      
     });  
@@ -94,7 +95,7 @@ getUserDynamicList(){
         if(data)
         {  
           alert("Project added successfully");        
-          this.ngOnInit();
+          location.reload();
         }
         else
         {

@@ -20,8 +20,8 @@
           <td>{{task.taskName}}</td>  
           <td>{{task.parentTaskName}}</td> 
           <td>{{task.priority}}</td> 
-          <td>{{task.startDate}}</td> 
-          <td>{{task.endDate}}</td>           
+          <td>{{task.startDate === "" ? "Not specified" : task.startDate | date:'dd-MM-yyyy'}}</td>
+          <td>{{task.endDate === "" ? "Not specified" : task.endDate | date:'dd-MM-yyyy'}}</td>                  
           <td>  
             <button (click)="editTask(task)" style="margin-left: 20px;" class="btn btn-info">Edit</button>  
             <button (click)="deleteItem(item)" class="btn btn-info">Delete</button>            

@@ -19,6 +19,14 @@ namespace ProjectManager.BusinessLayer
         {
             EntityMapper<ProjectModel, Project> mapObj = new EntityMapper<ProjectModel, Project>();
             var project = mapObj.Translate(projectModel);
+            if(project.Start_Date == default(DateTime))
+            {
+                project.Start_Date = null;
+            }
+            if (project.End_Date == default(DateTime))
+            {
+                project.End_Date = null;
+            }
             return ProjectManagerRepository.InsertProject(project);
         }
 

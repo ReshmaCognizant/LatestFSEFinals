@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from "@angular/router";  
 import { ProjectService } from 'src/app/Project/project.service';
+import { UserService } from 'src/app/User/user.service';
 import { DatePipe } from '@angular/common';
+import { Select2OptionData } from 'ng-select2';
 
 @Component({
   selector: 'app-project-manager-project',
@@ -12,7 +14,10 @@ import { DatePipe } from '@angular/common';
 })
 export class ProjectManagerProjectComponent implements OnInit {
 
-  constructor(private formBuilder: FormBuilder, private router: Router, private projectService: ProjectService, private datePipe: DatePipe) {  
+  searchProjects: Array<Select2OptionData>; 
+  searchUsers: Array<Select2OptionData>;
+
+  constructor(private formBuilder: FormBuilder, private router: Router, private projectService: ProjectService, private userService: UserService, private datePipe: DatePipe) {  
   }  
   
   addForm: FormGroup;
@@ -20,11 +25,11 @@ export class ProjectManagerProjectComponent implements OnInit {
   ngOnInit() {  
   
     this.addForm = this.formBuilder.group({      
-      projectName: ['', [Validators.required, Validators.maxLength(4)]],
+      projectName: ['', [Validators.required]],   
       startDate: [],  
       endDate: [],  
       priority: [], 
-      managerName: ['', [Validators.required, Validators.maxLength(4)]]      
+      managerName: []      
     });  
   
     let projectID = localStorage.getItem('editProjectID');
@@ -34,7 +39,32 @@ export class ProjectManagerProjectComponent implements OnInit {
       })  
       this.btnvisibility = false;          
     } 
+
+    this.getProjectDynamicList();
+    this.getUserDynamicList();
   }
+
+  getProjectDynamicList(){
+    this.projectService.getProjectList()  
+    .subscribe((data: Array<Select2OptionData>) => {
+      this.searchProjects = data;      
+      if(data.length == 0)  
+      {
+        alert("No project List found");         
+      }         
+    }); 
+}
+
+getUserDynamicList(){
+  this.userService.getUserList()  
+  .subscribe((data: Array<Select2OptionData>) => {
+    this.searchUsers = data;      
+    if(data.length == 0)  
+    {
+      alert("No user List found");         
+    }         
+  }); 
+}
 
   onSubmit() {
     this.projectService.createProject(this.addForm.value)  
@@ -42,7 +72,7 @@ export class ProjectManagerProjectComponent implements OnInit {
         if(data)
         {  
           alert("Project added successfully");        
-          this.router.navigate(['project-list']); 
+          this.ngOnInit();
         }
         else
         {
@@ -59,7 +89,7 @@ export class ProjectManagerProjectComponent implements OnInit {
       {  
         alert("Project updated successfully");        
         localStorage.removeItem('editProjectID') 
-        this.router.navigate(['project-list']);  
+        this.ngOnInit(); 
       }
       else
       {
@@ -68,6 +98,16 @@ export class ProjectManagerProjectComponent implements OnInit {
     },  
     error => {  
       alert(error);  
+    });
+  }
+
+  onReset() {      
+    this.addForm = this.formBuilder.group({      
+      projectName: ['', [Validators.required]],   
+      startDate: [],  
+      endDate: [],  
+      priority: [], 
+      managerName: []      
     });
   }
 }

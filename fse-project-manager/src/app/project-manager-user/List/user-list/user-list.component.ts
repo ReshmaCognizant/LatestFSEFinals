@@ -73,7 +73,24 @@ export class UserListComponent implements OnInit {
   
   editUser(user: User): void {  
     localStorage.removeItem('editUserID');  
-    localStorage.setItem('editUserID', user.userID.toString());  
-    this.router.navigate(['projectmanageruser']);  
+    localStorage.setItem('editUserID', user.userID.toString());
+    location.reload();
   }
+
+  onSortF(){
+    this.users = this.users.sort((a,b)=>a.firstName.localeCompare(b.firstName));
+}
+
+onSortL(){
+  this.users = this.users.sort((a,b)=>a.lastName.localeCompare(b.lastName));
+}
+
+onSortID(){
+  this.users = this.users.sort((a,b)=>a.userID.toString().localeCompare(b.userID.toString()));
+}
+
+userOnSelect(selectedUser){
+  this.users = this.users.filter(x => x.userID === selectedUser.userID);
+}
+
 }

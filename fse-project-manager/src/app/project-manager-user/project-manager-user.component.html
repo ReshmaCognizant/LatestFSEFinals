@@ -5,30 +5,30 @@
         
     
       <div class="form-group">  
-        <label for="supplierName">First Name:</label>  
-        <input formControlName="supplierName" placeholder="First Name" name="supplierName" class="form-control" id="supplierName">  
-        <div class="alert  alert-danger" *ngIf="addForm.get('supplierName').hasError('required') && addForm.get('supplierName').touched">  
-          Supplier Name is required.  
+        <label for="firstName">First Name:</label>  
+        <input formControlName="firstName" placeholder="First Name" name="firstName" class="form-control" id="firstName">  
+        <div class="alert  alert-danger" *ngIf="addForm.get('firstName').hasError('required') && addForm.get('firstName').touched">  
+          First Name is required.  
         </div>  
       </div>  
     
       <div class="form-group">  
-        <label for="supplierAddress">Last Name:</label>  
-        <input formControlName="supplierAddress" placeholder="Last Name" name="supplierAddress" class="form-control" id="supplierAddress">  
-        <div class="alert  alert-danger" *ngIf="addForm.get('supplierAddress').hasError('required') && addForm.get('supplierAddress').touched">
-          Item Rate is required.
+        <label for="lastName">Last Name:</label>  
+        <input formControlName="lastName" placeholder="Last Name" name="lastName" class="form-control" id="lastName">  
+        <div class="alert  alert-danger" *ngIf="addForm.get('lastName').hasError('required') && addForm.get('lastName').touched">
+          Last Name is required.
         </div>  
       </div>
       <div class="form-group">  
-        <label for="supplierNo">Employee ID:</label>  
-        <input formControlName="supplierNo" placeholder="Employee ID" name="supplierNo" class="form-control" id="supplierNo">  
-        <div class="alert  alert-danger" *ngIf="addForm.get('supplierNo').hasError('required') && addForm.get('supplierNo').touched">  
-          Employee ID is required and maximum characters allowed is 4.  
+        <label for="employeeID">Employee ID:</label>  
+        <input formControlName="employeeID" placeholder="Employee ID" name="employeeID" class="form-control" id="employeeID">  
+        <div class="alert  alert-danger" *ngIf="addForm.get('employeeID').hasError('required') && addForm.get('employeeID').touched">  
+          Employee ID is required.  
         </div>
       </div>
     
       <button class="btn btn-success" [disabled]='addForm.invalid' *ngIf="btnvisibility" (click)="onSubmit()">Add</button>  
-      <button class="btn btn-success"   (click)="onUpdate()">Reset</button>    
+      <button class="btn btn-success" (click)="onReset()">Reset</button>    
        
     </form>  
   </div>

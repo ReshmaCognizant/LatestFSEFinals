@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from "@angular/router";  
 import { TaskService } from './../Task/task.service';
+import { Select2OptionData } from 'ng-select2';
+import { ProjectService } from 'src/app/Project/project.service';
+import { UserService } from 'src/app/User/user.service';
 
 @Component({
   selector: 'app-project-manager-task',
@@ -10,8 +13,12 @@ import { TaskService } from './../Task/task.service';
 })
 export class ProjectManagerTaskComponent implements OnInit {
 
+  searchProjects: Array<Select2OptionData>; 
+  searchUsers: Array<Select2OptionData>;
+  searchParentTasks: Array<Select2OptionData>;
+
   taskformlabel: string = 'Add Task';  
-  constructor(private formBuilder: FormBuilder, private router: Router, private taskService: TaskService) {  
+  constructor(private formBuilder: FormBuilder, private router: Router, private taskService: TaskService, private projectService: ProjectService, private userService: UserService) {  
   }  
   
   addForm: FormGroup;  
@@ -32,7 +39,45 @@ export class ProjectManagerTaskComponent implements OnInit {
       this.btnvisibility = false;
       this.taskformlabel = 'Edit Task';      
     }
-  }  
+
+    this.getParentTaskDynamicList();
+    this.getUserDynamicList();
+    this.getProjectDynamicList();
+  }
+  
+  getProjectDynamicList(){
+    this.projectService.getProjectList()  
+    .subscribe((data: Array<Select2OptionData>) => {
+      this.searchProjects = data;      
+      if(data.length == 0)  
+      {
+        alert("No project List found");         
+      }         
+    }); 
+}
+
+getUserDynamicList(){
+  this.userService.getUserList()  
+  .subscribe((data: Array<Select2OptionData>) => {
+    this.searchUsers = data;      
+    if(data.length == 0)  
+    {
+      alert("No user List found");         
+    }         
+  }); 
+}
+
+getParentTaskDynamicList(){
+  this.taskService.getParentTaskList()  
+  .subscribe((data: Array<Select2OptionData>) => {
+    this.searchParentTasks = data;      
+    if(data.length == 0)  
+    {
+      alert("No parent task List found");         
+    }         
+  }); 
+}
+  
   onSubmit() {
     this.taskService.createTask(this.addForm.value)  
       .subscribe((data: any) => {

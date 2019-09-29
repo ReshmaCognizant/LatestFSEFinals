@@ -20,9 +20,9 @@ export class ProjectManagerUserComponent implements OnInit {
   ngOnInit() {  
   
     this.addForm = this.formBuilder.group({      
-      supplierNo: ['', [Validators.required, Validators.maxLength(4)]],  
-      supplierName: ['', Validators.required],  
-      supplierAddress: []  
+      firstName: ['', [Validators.required]],  
+      lastName: ['', Validators.required],  
+      employeeID: ['', Validators.required]
     });  
   
     let userID = localStorage.getItem('editUserID');  
@@ -38,8 +38,8 @@ export class ProjectManagerUserComponent implements OnInit {
     .subscribe((data: any) => {
       if(data)
       {  
-        alert("User added successfully");        
-        this.router.navigate(['user-list']); 
+        alert("User added successfully");
+        location.reload();        
       }
       else
       {
@@ -55,8 +55,8 @@ export class ProjectManagerUserComponent implements OnInit {
       if(data)
       {  
         alert("User updated successfully");        
-        localStorage.removeItem('editSupplierNo') 
-        this.router.navigate(['user-list']);  
+        localStorage.removeItem('editSupplierNo');   
+        location.reload();     
       }
       else
       {
@@ -65,6 +65,14 @@ export class ProjectManagerUserComponent implements OnInit {
     },  
     error => {  
       alert(error);  
+    });
+  }
+
+  onReset() {      
+    this.addForm = this.formBuilder.group({      
+      firstName: ['', [Validators.required]],  
+      lastName: ['', Validators.required],  
+      employeeID: ['', Validators.required]
     });
   }
 }

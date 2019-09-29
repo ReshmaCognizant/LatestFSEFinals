@@ -4,15 +4,15 @@
   <form [formGroup]="addForm" novalidate class="form">  
     <div class="form-group">  
       <label for="projectName">Project:</label>  
-      <input formControlName="projectName" placeholder="Project name" name="projectName" class="form-control" id="projectName">  
-      <div class="alert  alert-danger" *ngIf="addForm.get('projectName').hasError('required') && addForm.get('projectName').touched">
-        Project name is required.  
+      <input formControlName="projectName" name="projectName" class="form-control" id="projectName">  
+      <div class="alert  alert-danger" *ngIf="addForm.get('projectName').hasError('required') && addForm.get('projectName').touched">  
+        Project Name is required.  
       </div>  
-    </div>  
+    </div>
     
     <div class="form-group">  
-      <label for="priority" class="checklabel">Set Start Date & End Date</label>  
-      <input type="checkbox" formControlName="priority" placeholder="" name="priority" class="form-control" id="priority" />    
+      <label for="setStartDateEndDate" class="checklabel">Set Start Date & End Date</label>  
+      <input type="checkbox" formControlName="setStartDateEndDate" placeholder="" name="setStartDateEndDate" class="form-control" id="setStartDateEndDate" />    
     </div>
     <div class="form-group col-md-6">  
       <label for="startDate">Start Date:</label>  
@@ -31,12 +31,12 @@
     
     <div class="form-group row">  
       <div class="col-md-2"><label for="manager" >Manager:</label></div>
-      <div class="col-md-8"><input formControlName="managerName" placeholder="Manager" name="managerName" class="form-control" id="managerName">  </div>
-      <div class="col-md-2"><button class='search'>Search</button></div>     
+      <ng-select2 [data]="searchUsers" [placeholder]="'Search...'" [width]="300">	
+      </ng-select2>     
     </div>
     <div class="form-group row col-md-12">  
     <button class="btn btn-success"   (click)="onSubmit()">Add</button>  
-    <button class="btn btn-primary col-md-offset-2"   (click)="onUpdate()">reset</button>  
+    <button class="btn btn-primary col-md-offset-2" (click)="onReset()">reset</button>  
   </div>
   </form>  
 </div>

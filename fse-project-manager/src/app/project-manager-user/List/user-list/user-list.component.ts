@@ -37,7 +37,7 @@ export class UserListComponent implements OnInit {
       this.users = data;      
       if(data.length == 0)  
       {
-        alert("No suppliers found");         
+        alert("No users found");         
       }         
     });    
   }
@@ -89,10 +89,25 @@ onSortID(){
   this.users = this.users.sort((a,b)=>a.userID.toString().localeCompare(b.userID.toString()));
 }
 
-onUserSelect(selectedUser){
-  if (selectedUser != null)
+onUserSelect(userSelected){
+  if (userSelected != null)
   {
-    this.users = this.users.filter(x=> x.userID.toString() == selectedUser.value);     
+    this.userService.getUsers()  
+    .subscribe((data: User[]) => {
+      this.users = data;
+      if(userSelected.value != null)
+      {
+      this.users = this.users.filter(x=> x.userID.toString() == userSelected.value); 
+      }
+      else
+      {
+      this.users = this.users.filter(x=> x.userID.toString() == userSelected);
+      }      
+      if(data.length == 0)  
+      {
+        alert("No users found");         
+      }         
+    });            
   }
 }
 }

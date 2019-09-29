@@ -45,8 +45,14 @@ export class ProjectListComponent implements OnInit {
     }); 
 }
 
-  deleteProject(project: Project): void {  
-    this.projectService.deleteProject(project.projectID)  
+updateProject(project: Project): void {  
+  localStorage.removeItem('editProjectID');  
+  localStorage.setItem('editProjectID', project.projectID.toString());
+  location.reload();
+}
+
+suspendProject(project: Project): void {  
+  this.projectService.deleteProject(project.projectID)  
     .subscribe((data: any) => {
       if(data)
       {  
@@ -60,8 +66,8 @@ export class ProjectListComponent implements OnInit {
     },  
     error => {  
       alert(error);  
-    });  
-  }  
+    }); 
+}
   
   editProject(project: Project): void {  
     localStorage.removeItem('editProjectID');  

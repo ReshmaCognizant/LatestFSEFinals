@@ -16,7 +16,7 @@
     </div>
     <div class="form-group">  
       <label for="setasparent" class="checklabel setasparentlabel">set Parent task</label>  
-      <input type="checkbox" formControlName="setasparent" placeholder="" name="setasparent" class="form-control" id="setasparent" />    
+      <input type="checkbox"   (change)="changeValue($event)"  formControlName="setasparent" placeholder="" name="setasparent" class="form-control" id="setasparent" />    
     </div>  
     <div class="form-group">  
         <label for="priority">Priority :</label>  

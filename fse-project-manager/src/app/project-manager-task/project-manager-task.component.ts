@@ -5,6 +5,7 @@ import { TaskService } from './../Task/task.service';
 import { Select2OptionData } from 'ng-select2';
 import { ProjectService } from 'src/app/Project/project.service';
 import { UserService } from 'src/app/User/user.service';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-project-manager-task',
@@ -35,7 +36,7 @@ export class ProjectManagerTaskComponent implements OnInit {
       endDate: [],
       user: []           
     });  
-  
+    
     let taskID = localStorage.getItem('editTaskID');  
     if (taskID != undefined && taskID != '') {  
       this.taskService.searchTask(taskID).subscribe(data => {  
@@ -49,7 +50,15 @@ export class ProjectManagerTaskComponent implements OnInit {
     this.getUserDynamicList();
     this.getProjectDynamicList();
   }
-  
+  changeValue(e){
+        var isChecked = e.target.checked;
+    if(isChecked){
+      $("#setasparent").parent().nextAll().not("button").hide();
+    }else{
+      $("#setasparent").parent().nextAll().show();
+    }
+
+  }
   getProjectDynamicList(){
     this.projectService.getProjectList()  
     .subscribe((data: Array<Select2OptionData>) => {

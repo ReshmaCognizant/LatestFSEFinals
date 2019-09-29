@@ -5,6 +5,7 @@ import { ProjectService } from 'src/app/Project/project.service';
 import { UserService } from 'src/app/User/user.service';
 import { DatePipe } from '@angular/common';
 import { Select2OptionData } from 'ng-select2';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-project-manager-project',
@@ -43,7 +44,17 @@ export class ProjectManagerProjectComponent implements OnInit {
     this.getProjectDynamicList();
     this.getUserDynamicList();
   }
+  changeValue(e){
+    var isChecked = e.target.checked;
+if(isChecked){
+  $("#setStartDateEndDate").parent().next().show();
+  $("#setStartDateEndDate").parent().next().next().show();
+}else{
+  $("#setStartDateEndDate").parent().next().hide();
+  $("#setStartDateEndDate").parent().next().next().hide();
+}
 
+}
   getProjectDynamicList(){
     this.projectService.getProjectList()  
     .subscribe((data: Array<Select2OptionData>) => {

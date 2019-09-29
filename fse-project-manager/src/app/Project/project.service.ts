@@ -4,6 +4,7 @@ import { Project } from './project';
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 import { AppHttpService } from 'src/app/app-http.service';
+import { Select2OptionData } from 'ng-select2';
 
 @Injectable({
   providedIn: 'root'
@@ -20,6 +21,14 @@ export class ProjectService {
         catchError(this.appHttpService.handleError)
       );
   }
+
+  getProjectList(): Observable<Array<Select2OptionData>> {
+    return this.http.get<Array<Select2OptionData>>(this.baseUrl + 'getProjects')
+      .pipe(
+        tap(_ => this.appHttpService.log('fetched project List')),
+        catchError(this.appHttpService.handleError)
+      );
+  } 
   
   deleteProject(projectID: number) {  
     return this.http.delete(this.baseUrl + 'delete/' + projectID)

@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/User/user.service';
 import { Router } from "@angular/router"; 
 import { User } from '../../../User/user';
+import { Select2OptionData } from 'ng-select2';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/delay';
+import { TestBed } from '@angular/core/testing';
 
 @Component({
   selector: 'app-user-list',
@@ -10,26 +14,44 @@ import { User } from '../../../User/user';
 })
 export class UserListComponent implements OnInit {
 
-  users: User[];  
-  
+  users: User[];
+  searchUsers: Array<Select2OptionData>;
+  public startValue: Observable<string>;  
+   
   constructor(private userService: UserService, private router: Router, ) { }  
   
   ngOnInit() {  
       localStorage.removeItem('editUserID');    
-      this.getUsers();     
+      this.getUsers();
+      this.getUserDynamicList();  
+      // this.startValue = Observable.create(obs => {
+      // obs.next('dyn3');
+      // obs.complete();
+      // }).delay(6000);
   } 
   
   getUsers()
   {
     this.userService.getUsers()  
     .subscribe((data: User[]) => {
-      this.users = data; 
+      this.users = data;      
       if(data.length == 0)  
       {
         alert("No suppliers found");         
-      }      
-    });
+      }         
+    });    
   }
+
+  getUserDynamicList(){
+    this.userService.getUserList()  
+    .subscribe((data: Array<Select2OptionData>) => {
+      this.searchUsers = data;      
+      if(data.length == 0)  
+      {
+        alert("No user List found");         
+      }         
+    }); 
+}
   
   deleteUser(user: User): void {  
     this.userService.deleteUser(user.userID)  

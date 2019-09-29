@@ -81,6 +81,20 @@ namespace ProjectManager.BusinessLayer
             return projectModels;
         }
 
+        public List<ParentTaskModel> GetParentTasks()
+        {
+            EntityMapper<ParentTask, ParentTaskModel> mapObj = new EntityMapper<ParentTask, ParentTaskModel>();
+            List<ParentTask> parentTaskList = ProjectManagerRepository.GetParentTasks();
+            List<ParentTaskModel> parentTaskModels = new List<ParentTaskModel>();
+            foreach (var parent in parentTaskList)
+            {
+                var parentTaskModel = mapObj.Translate(parent);                
+                parentTaskModels.Add(parentTaskModel);
+            }
+
+            return parentTaskModels;
+        }
+
         public List<UserModel> SearchUsers(string searchKeyWord, string sortBy)
         {
             EntityMapper<User, UserModel> mapObj = new EntityMapper<User, UserModel>();

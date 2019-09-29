@@ -26,6 +26,23 @@ namespace ProjectManagerWebAPI.Controllers
             });
         }
 
+        [Route("getParentTasks")]
+        [HttpGet]
+        public IHttpActionResult GetParentTasks()
+        {
+            return tryCatchWebMethod(() =>
+            {
+                var parentTasks = new ProjectManagerService().GetParentTasks();
+                var parentTaskList = new List<object>();
+                foreach (var parentTask in parentTasks)
+                {
+                    parentTaskList.Add(new { id = parentTask.Parent_ID, text = parentTask.ParentTaskName });
+                }
+
+                return Json(parentTaskList);
+            });
+        }
+
         [Route("search/{taskID}")]
         [HttpGet]
         public IHttpActionResult Search(int taskID)

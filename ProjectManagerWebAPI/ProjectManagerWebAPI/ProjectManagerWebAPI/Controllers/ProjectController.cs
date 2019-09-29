@@ -1,5 +1,6 @@
 ﻿using ProjectManager.BusinessLayer;
 using ProjectManager.Shared.ServiceContracts;
+using System.Collections.Generic;
 using System.Web.Http;
 using System.Web.Http.Cors;
 
@@ -21,7 +22,25 @@ namespace ProjectManagerWebAPI.Controllers
                 });
             }
 
-            [Route("search/{projectID}")]
+            [Route("getProjects")]
+            [HttpGet]
+            public IHttpActionResult GetProjects()
+            {
+                return tryCatchWebMethod(() =>
+                {
+                    var projects = new ProjectManagerService().GetProjects();
+
+                    var projectList = new List<object>();
+                    foreach (var project in projects)
+                    {
+                        projectList.Add(new { id = project.Project_ID, text = project.ProjectName });
+                    }
+
+                    return Json(projectList);
+                });
+            }
+
+        [Route("search/{projectID}")]
             [HttpGet]
             public IHttpActionResult Search(int projectID)
             {

@@ -26,6 +26,23 @@ namespace ProjectManagerWebAPI.Controllers
             });
         }
 
+        [Route("getUsers")]
+        [HttpGet]
+        public IHttpActionResult GetUsers()
+        {
+            return tryCatchWebMethod(() =>
+            {
+                var users = new ProjectManagerService().GetUsers();
+                var userList = new List<object>();
+                foreach(var user in users)
+                {
+                    userList.Add(new { id = user.User_ID, text = user.FirstName + " " + user.LastName });
+                }
+
+                return Json(userList);
+            });
+        }
+
         [Route("search/{userID}")]
         [HttpGet]
         public IHttpActionResult Search(int userID)

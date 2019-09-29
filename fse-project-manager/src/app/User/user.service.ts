@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 import { AppHttpService } from 'src/app/app-http.service';
+import { Select2OptionData } from 'ng-select2';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +20,15 @@ export class UserService {
         tap(_ => this.appHttpService.log('fetched users')),
         catchError(this.appHttpService.handleError)
       );
-  }
+  } 
+  
+  getUserList(): Observable<Array<Select2OptionData>> {
+    return this.http.get<Array<Select2OptionData>>(this.baseUrl + 'getUsers')
+      .pipe(
+        tap(_ => this.appHttpService.log('fetched user List')),
+        catchError(this.appHttpService.handleError)
+      );
+  } 
   
   deleteUser(userID: number) {  
     return this.http.delete(this.baseUrl + 'delete/' + userID)

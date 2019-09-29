@@ -1,10 +1,9 @@
 <div class="col-md-12">  
     <br/>  
-    <br/> 
-  <div class="search list"><input formControlName="" placeholder="search.." name="search" class="form-control" id="search">  
-    <ng-select2 [(ngModel)]="fruit" [data]="fruitList" [placeholder]="'Please select a fruit...'">	
+    <br/>  
+    <ng-select2 [data]="searchUsers" [placeholder]="'Search...'" [width]="300">	
 </ng-select2>
-  Sort:<button class="btn-filter">First Name</button ><button class="btn-filter">Last Name</button><button class="btn-filter">Id</button></div>
+  Sort:<button class="btn-filter">First Name</button ><button class="btn-filter">Last Name</button><button class="btn-filter">Id</button>
   <div class="table-responsive table-container">  
     <table class="table">  
       <thead>  

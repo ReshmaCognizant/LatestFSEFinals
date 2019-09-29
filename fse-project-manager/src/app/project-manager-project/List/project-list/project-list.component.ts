@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProjectService } from 'src/app/Project/project.service';
 import { Router } from "@angular/router"; 
 import { Project } from '../../../Project/project';
+import { Select2OptionData } from 'ng-select2';
 
 @Component({
   selector: 'app-project-list',
@@ -10,13 +11,15 @@ import { Project } from '../../../Project/project';
 })
 export class ProjectListComponent implements OnInit {
 
-  projects: any;  
+  projects: any; 
+  searchProjects: Array<Select2OptionData>; 
   
   constructor(private projectService: ProjectService, private router: Router, ) { }  
   
   ngOnInit() { 
       localStorage.removeItem('editProjectID')    
-      this.getProjects();    
+      this.getProjects();  
+      this.getProjectDynamicList();  
   } 
 
   getProjects()
@@ -30,6 +33,17 @@ export class ProjectListComponent implements OnInit {
         }         
       });
   }
+
+  getProjectDynamicList(){
+    this.projectService.getProjectList()  
+    .subscribe((data: Array<Select2OptionData>) => {
+      this.searchProjects = data;      
+      if(data.length == 0)  
+      {
+        alert("No user List found");         
+      }         
+    }); 
+}
 
   deleteProject(project: Project): void {  
     this.projectService.deleteProject(project.projectID)  

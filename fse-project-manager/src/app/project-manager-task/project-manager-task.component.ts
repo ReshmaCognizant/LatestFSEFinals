@@ -26,9 +26,14 @@ export class ProjectManagerTaskComponent implements OnInit {
   ngOnInit() {  
   
     this.addForm = this.formBuilder.group({  
-      itemCode: ['', [Validators.required, Validators.maxLength(4)]],
-      itemDesc: ['', Validators.required],
-      itemRate: []             
+      projectID: [],
+      taskName: [],
+      setParentTask: [],
+      priority: [],
+      parentTaskID: [],
+      startDate: [],
+      endDate: [],
+      user: []           
     });  
   
     let taskID = localStorage.getItem('editTaskID');  

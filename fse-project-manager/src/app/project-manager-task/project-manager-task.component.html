@@ -8,22 +8,19 @@
           </ng-select2>     
         </div>  
     <div class="form-group">  
-      <label for="itemDesc">Task:</label>  
-      <input formControlName="itemDesc" placeholder="Task" name="itemDesc" class="form-control" id="itemDesc">  
-      <div class="alert alert-danger" *ngIf="addForm.get('itemDesc').hasError('required') && addForm.get('itemDesc').touched">  
-        Item Description is required. 
+      <label for="taskName">Task:</label>  
+      <input formControlName="taskName" name="taskName" class="form-control" id="taskName">  
+      <div class="alert alert-danger" *ngIf="addForm.get('taskName').hasError('required') && addForm.get('taskName').touched">  
+        Task Name is required. 
       </div>  
     </div>
     <div class="form-group">  
-      <label for="setasparent" class="checklabel">set Parent task</label>  
+      <label for="setasparent" class="checklabel setasparentlabel">set Parent task</label>  
       <input type="checkbox" formControlName="setasparent" placeholder="" name="setasparent" class="form-control" id="setasparent" />    
     </div>  
     <div class="form-group">  
-        <label for="points">Priority :</label>  
-        <input type="range" name="points" min="0" max="30" name="Priority" value=0>
-        <div class="alert alert-danger" *ngIf="addForm.get('Priority').hasError('required')">
-          Please set priority.  
-        </div>  
+        <label for="priority">Priority :</label>  
+        <input type="range" name="priority" id="priority" min="1" max="30" name="priority" value="">         
       </div>
       <div class="form-group row">  
           <div class="col-md-2"><label for="parentTask" >Parent Task:</label></div>
@@ -31,12 +28,12 @@
           </ng-select2>     
         </div> 
     <div class="form-group">  
-      <label for="startdate">Start Date:</label>  
-      <input formControlName="itemRate" type="date" placeholder="Start Date" name="startdate" class="form-control" id="startdate">
+      <label for="startDate">Start Date:</label>  
+      <input formControlName="startDate" type="date" placeholder="Start Date" name="startDate" class="form-control" id="startDate">
     </div>
     <div class="form-group">  
-        <label for="enddate">End Date:</label>  
-        <input formControlName="itemRate" type="date" placeholder="End Date" name="startdate" class="form-control" id="enddate">
+        <label for="endDate">End Date:</label>  
+        <input formControlName="endDate" type="date" placeholder="End Date" name="endDate" class="form-control" id="endDate">
       </div>
       <div class="form-group row">  
           <div class="col-md-2"><label for="user" >User:</label></div>

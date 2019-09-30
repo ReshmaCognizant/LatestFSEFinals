@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using System.Net;
 using System.Linq;
+using NBench;
 
 namespace ProjectManagerController.Tests
 {
@@ -17,6 +18,10 @@ namespace ProjectManagerController.Tests
     {
         private const string ServiceBaseURL = "http://localhost:50875/";
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void GetTest()
         {
@@ -35,6 +40,10 @@ namespace ProjectManagerController.Tests
             Assert.AreEqual(responseResult.Any(), true);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void SearchTest()
         {
@@ -51,7 +60,11 @@ namespace ProjectManagerController.Tests
             var responseResult = JsonConvert.DeserializeObject<TaskModel>(httpActionResult.Content.ReadAsStringAsync().Result);
             Assert.AreEqual(httpActionResult.StatusCode, HttpStatusCode.OK);           
         }
-        
+
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void PostTest()
         {
@@ -82,6 +95,10 @@ namespace ProjectManagerController.Tests
             Assert.IsTrue(responseResult);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void PutTest()
         {

@@ -59,9 +59,9 @@ exit /b %errorlevel%
 :RunReportGeneratorOutput
 "%ReportGeneratorExe%" ^
  -reports:"%~dp0\GeneratedReports\CoverageReport_DataLayer.xml" ^
- -targetdir:"%~dp0\GeneratedReports\ReportGenerator Output"
+ -targetdir:"%~dp0\GeneratedReports\ReportGenerator Output Data"
 exit /b %errorlevel%
 
 :RunLaunchReport
-start "report" "%~dp0\GeneratedReports\ReportGenerator Output\index.htm"
+start "report" "%~dp0\GeneratedReports\ReportGenerator Output Data\index.htm"
 exit /b %errorlevel%

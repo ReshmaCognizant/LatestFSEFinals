@@ -1,0 +1,4342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="4.7.922.0">
+  <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+  <Modules>
+    <Module skippedDueTo="Filter" hash="55-0E-29-16-B3-EB-4C-56-F0-D5-39-08-D9-18-AD-69-F1-64-D9-E8">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_64\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll</ModulePath>
+      <ModuleTime>2019-08-13T01:01:45.2535033Z</ModuleTime>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="C3-AA-1C-1C-8E-82-1A-33-B0-D2-15-D7-67-2F-0B-23-E3-D3-35-BD">
+      <ModulePath>C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\packages\NUnit.ConsoleRunner.3.10.0\tools\nunit3-console.exe</ModulePath>
+      <ModuleTime>2019-03-24T08:23:50Z</ModuleTime>
+      <ModuleName>nunit3-console</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="E5-59-C6-FC-25-3D-4F-63-13-7A-12-DC-C3-3E-F3-A8-9F-49-A3-D6">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</ModulePath>
+      <ModuleTime>2019-07-25T00:54:12.1077282Z</ModuleTime>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="56-19-46-EE-B2-F2-BE-59-B4-C3-2F-4A-6E-93-59-8A-52-CC-E1-25">
+      <ModulePath>C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\packages\NUnit.ConsoleRunner.3.10.0\tools\nunit.engine.api.dll</ModulePath>
+      <ModuleTime>2019-03-24T08:23:50Z</ModuleTime>
+      <ModuleName>nunit.engine.api</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="F3-B1-83-1B-09-4C-8B-4B-4D-F1-AE-22-3B-BF-1C-83-85-41-B0-4C">
+      <ModulePath>C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\packages\NUnit.ConsoleRunner.3.10.0\tools\nunit.engine.dll</ModulePath>
+      <ModuleTime>2019-03-24T08:23:50Z</ModuleTime>
+      <ModuleName>nunit.engine</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="C9-90-56-C8-34-0E-96-2A-07-09-EA-81-19-89-AB-9B-B6-6C-C4-D4">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</ModulePath>
+      <ModuleTime>2019-07-01T02:35:06.3915775Z</ModuleTime>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="1C-14-6C-36-24-44-FD-FE-0D-97-15-5C-7C-62-31-AE-F8-9D-95-A9">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_64\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll</ModulePath>
+      <ModuleTime>2019-05-24T22:51:26.8476704Z</ModuleTime>
+      <ModuleName>System.Web</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="99-11-EB-F5-78-AC-B1-38-60-82-1D-90-D3-48-FC-57-C0-00-EA-04">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Remoting\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll</ModulePath>
+      <ModuleTime>2019-07-01T02:35:06.0831201Z</ModuleTime>
+      <ModuleName>System.Runtime.Remoting</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="9D-4A-D9-EF-6E-3C-A9-69-99-30-1A-B3-AA-5A-7C-F2-17-66-83-59">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</ModulePath>
+      <ModuleTime>2019-07-01T02:35:05.7829095Z</ModuleTime>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="8A-2E-8F-D6-9D-39-02-4A-2F-30-FC-06-42-F7-0F-A8-32-69-07-72">
+      <ModulePath>C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\packages\NUnit.ConsoleRunner.3.10.0\tools\Mono.Cecil.dll</ModulePath>
+      <ModuleTime>2019-03-24T08:23:50Z</ModuleTime>
+      <ModuleName>Mono.Cecil</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="DD-03-C0-F6-30-61-DA-66-3E-7C-57-4F-A1-08-5C-81-F5-6E-EF-AA">
+      <ModulePath>C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\packages\NUnit.ConsoleRunner.3.10.0\tools\nunit-agent.exe</ModulePath>
+      <ModuleTime>2019-03-24T08:23:50Z</ModuleTime>
+      <ModuleName>nunit-agent</ModuleName>
+      <Classes />
+    </Module>
+    <Module hash="9B-2E-1C-9C-2D-F2-EF-54-0A-49-10-2E-FB-9D-3F-3C-92-2A-D1-72">
+      <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+      <ModulePath>C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManagerController.Tests\bin\Debug\nunit.framework.dll</ModulePath>
+      <ModuleTime>2019-05-14T15:37:20Z</ModuleTime>
+      <ModuleName>nunit.framework</ModuleName>
+      <Files />
+      <Classes>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;Module&gt;</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.FrameworkPackageSettings</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Compatibility.AttributeHelper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Compatibility.LongLivedMarshalByRefObject</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Assert</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Delegate">
+          <FullName>NUnit.Framework.TestDelegate</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Delegate">
+          <FullName>NUnit.Framework.AsyncTestDelegate</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.AssertionHelper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Assume</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.ApartmentAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.AuthorAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.CategoryAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.CombinatorialAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.CombiningStrategyAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.CultureAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.DataAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.DatapointAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.DatapointsAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.DatapointSourceAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.DefaultFloatingPointToleranceAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.DescriptionAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.ExplicitAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.IgnoreAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.IncludeExcludeAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.LevelOfParallelismAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.MaxTimeAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.NonParallelizableAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.NonTestAssemblyAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.NUnitAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.OneTimeSetUpAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.OneTimeTearDownAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.OrderAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.PairwiseAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.ParallelizableAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.PlatformAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.PropertyAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute/RandomDataSource</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute/RandomDataSource`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute/RandomDataSource`1/&lt;GetData&gt;d__8</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute/RandomDataConverter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute/RandomDataConverter/&lt;GetData&gt;d__2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute/IntDataSource</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute/UIntDataSource</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute/LongDataSource</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute/ULongDataSource</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute/ShortDataSource</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute/UShortDataSource</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute/DoubleDataSource</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute/FloatDataSource</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute/ByteDataSource</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute/SByteDataSource</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute/EnumDataSource</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute/EnumDataSource/&lt;GetData&gt;d__3</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RandomAttribute/DecimalDataSource</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RangeAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RepeatAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RepeatAttribute/RepeatedTestCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RequiresThreadAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RetryAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.RetryAttribute/RetryCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.SequentialAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.SetCultureAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.SetUICultureAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.SetUpAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.SetUpFixtureAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.SingleThreadedAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TearDownAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestActionAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestAssemblyDirectoryResolveAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestCaseAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestCaseAttribute/&lt;BuildFrom&gt;d__61</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestCaseSourceAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestCaseSourceAttribute/&lt;BuildFrom&gt;d__19</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestFixtureAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestFixtureAttribute/&lt;BuildFrom&gt;d__46</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestFixtureAttribute/&lt;BuildFrom&gt;d__47</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestFixtureSourceAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestFixtureSourceAttribute/&lt;BuildFrom&gt;d__16</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestOfAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TheoryAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TimeoutAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.ValuesAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.ValueSourceAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.CollectionAssert</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Contains</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.DirectoryAssert</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Does</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.AssertionException</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.IgnoreException</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.InconclusiveException</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.MultipleAssertException</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.ResultStateException</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.SuccessException</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Extensions</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Extensions/&lt;Skip&gt;d__6</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.FileAssert</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Guard</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Has</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Is</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Iz</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.List</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.ListMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.StringAssert</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestCaseData</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestContext</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestContext/TestAdapter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestContext/ResultAdapter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestContext/PropertyBagAdapter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestContext/&lt;&gt;c__DisplayClass63_0`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestContext/&lt;&gt;c__DisplayClass63_1`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestFixtureData</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.TestParameters</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Throws</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Warn</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.AssemblyHelper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.AsyncToSyncAdapter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.AsyncToSyncAdapter/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.AsyncToSyncAdapter/&lt;&gt;c__DisplayClass3_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.AsyncToSyncAdapter/&lt;&gt;c__DisplayClass3_1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.AwaitAdapter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ConstraintUtils</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.CSharpPatternBasedAwaitAdapter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.CSharpPatternBasedAwaitAdapter/AwaitShapeInfo</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.CSharpPatternBasedAwaitAdapter/ReflectionAdapter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.CultureDetector</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.DefaultBlockingAwaitAdapter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ExceptionHelper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TextMessageWriter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.GenericMethodHelper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.GenericMethodHelper/ConflictingTypesMarkerClass</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.InvalidDataSourceException</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.InvalidPlatformException</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.InvalidTestFixtureException</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.InternalTrace</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.InternalTraceWriter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Logger</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.MessagePumpStrategy</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.MessagePumpStrategy/NoMessagePumpStrategy</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.MessagePumpStrategy/WindowsFormsMessagePumpStrategy</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.MessagePumpStrategy/WindowsFormsMessagePumpStrategy/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.MessagePumpStrategy/WpfMessagePumpStrategy</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.MessagePumpStrategy/WpfMessagePumpStrategy/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.MessagePumpStrategy/SingleThreadedTestMessagePumpStrategy</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.MessagePumpStrategy/SingleThreadedTestMessagePumpStrategy/&lt;&gt;c__DisplayClass2_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.MessagePumpStrategy/&lt;&gt;c__DisplayClass6_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.MessagePumpStrategy/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.MethodWrapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.NUnitCallContext</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.NUnitException</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.On</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.On/DisposableAction</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.OSPlatform</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.OSPlatform/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ParamAttributeTypeConversions</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ParameterWrapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.PlatformHelper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.PreFilter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.PreFilter/FilterElement</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.PropertyBag</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.PropertyNames</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Randomizer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Reflect</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Reflect/BaseTypesFirstComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Reflect/&lt;&gt;c__DisplayClass8_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Reflect/&lt;&gt;c__DisplayClass11_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Reflect/&lt;TypeAndBaseTypes&gt;d__17</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Reflect/&lt;&gt;c__DisplayClass18_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Reflect/&lt;&gt;c__DisplayClass19_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestCaseResult</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestResult</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestResult/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestSuiteResult</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.RuntimeFramework</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.RuntimeFramework/&lt;&gt;c__DisplayClass30_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.RuntimeFramework/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.SandboxedThreadState</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.SingleThreadedTestSynchronizationContext</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.StackFilter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.StringUtil</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TaskAwaitAdapter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TaskAwaitAdapter/NonGenericAdapter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TaskAwaitAdapter/GenericAdapter`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TaskAwaitAdapter/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestCaseParameters</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestCaseTimeoutException</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestExecutionContext</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestExecutionContext/IsolatedContext</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestExecutionContext/AdhocContext</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestExecutionContext/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestFilter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestFilter/EmptyFilter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestFixtureParameters</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestListener</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestNameGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestNameGenerator/NameFragment</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestNameGenerator/TestIDFragment</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestNameGenerator/FixedTextFragment</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestNameGenerator/MethodNameFragment</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestNameGenerator/NamespaceFragment</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestNameGenerator/MethodFullNameFragment</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestNameGenerator/ClassNameFragment</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestNameGenerator/ClassFullNameFragment</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestNameGenerator/ArgListFragment</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestNameGenerator/ArgumentFragment</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestParameters</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestProgressReporter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ParameterizedFixtureSuite</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ParameterizedMethodSuite</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.SetUpFixture</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Test</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestAssembly</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestFixture</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestMethod</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TestSuite</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ThreadUtility</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ThreadUtility/DelayClosure</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ThreadUtility/CheckOnAbortingThreadState</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TypeHelper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TypeNameDifferenceResolver</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TypeNameDifferenceResolver/&lt;&gt;c__DisplayClass3_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.TypeWrapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/ByteValueGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/ByteValueGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/Step</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/DecimalValueGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/DecimalValueGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/DefaultValueGenerator`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/DoubleValueGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/DoubleValueGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/Int16ValueGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/Int16ValueGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/Int32ValueGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/Int32ValueGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/Int64ValueGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/Int64ValueGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/SByteValueGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/SByteValueGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/SingleValueGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/SingleValueGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/UInt16ValueGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/UInt16ValueGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/UInt32ValueGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/UInt32ValueGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/UInt64ValueGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/UInt64ValueGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator`1/ComparableStep`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator`1/Step</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.ValueGenerator`1/&lt;GenerateRange&gt;d__2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Filters.AndFilter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Filters.CategoryFilter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Filters.ClassNameFilter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Filters.CompositeFilter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Filters.FullNameFilter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Filters.IdFilter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Filters.MethodNameFilter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Filters.NamespaceFilter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Filters.NotFilter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Filters.OrFilter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Filters.PropertyFilter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Filters.TestNameFilter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Filters.ValueMatchFilter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.CompositeWorkItem</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.CompositeWorkItem/OneTimeTearDownWorkItem</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.EventListenerTextWriter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.EventPump</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.Event</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.TestStartedEvent</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.TestFinishedEvent</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.TestOutputEvent</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.TestMessageEvent</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.EventQueue</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.MainThreadWorkItemDispatcher</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.ParallelWorkItemDispatcher</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.ParallelWorkItemDispatcher/&lt;get_Shifts&gt;d__16</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.ParallelWorkItemDispatcher/&lt;get_Queues&gt;d__18</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.QueuingEventListener</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.SimpleWorkItem</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.SimpleWorkItemDispatcher</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.TestWorker</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Delegate">
+          <FullName>NUnit.Framework.Internal.Execution.TestWorker/TestWorkerEventHandler</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.TextCapture</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.WorkItem</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.WorkItemBuilder</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.WorkItemBuilder/WorkItemOrderComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.WorkItemQueue</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.WorkItemQueue/SavedState</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Delegate">
+          <FullName>NUnit.Framework.Internal.Execution.ShiftChangeEventHandler</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Execution.WorkShift</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.AfterTestActionCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.AfterTestActionCommand/&lt;&gt;c__DisplayClass0_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.AfterTestCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.ApplyChangesToContextCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.ApplyChangesToContextCommand/&lt;&gt;c__DisplayClass0_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand/&lt;&gt;c__DisplayClass1_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.BeforeTestActionCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.BeforeTestActionCommand/&lt;&gt;c__DisplayClass0_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.BeforeTestCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.ConstructFixtureCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.DelegatingTestCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.DisposeFixtureCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.DisposeFixtureCommand/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.EmptyTestCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.MaxTimeCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.MaxTimeCommand/&lt;&gt;c__DisplayClass0_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.OneTimeSetUpCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.OneTimeSetUpCommand/&lt;&gt;c__DisplayClass0_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.OneTimeTearDownCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.OneTimeTearDownCommand/&lt;&gt;c__DisplayClass0_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.SetUpTearDownCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.SetUpTearDownCommand/&lt;&gt;c__DisplayClass0_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.SetUpTearDownItem</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.SetUpTearDownItem/&lt;&gt;c__DisplayClass8_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.SkipCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.TestActionCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.TestActionCommand/&lt;&gt;c__DisplayClass0_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.TestActionItem</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.TestCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.TestMethodCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.TestMethodCommand/&lt;&gt;c__DisplayClass4_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.TheoryResultCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.TheoryResultCommand/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.TimeoutCommand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.TimeoutCommand/&lt;&gt;c__DisplayClass3_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Commands.TimeoutCommand/&lt;&gt;c__DisplayClass3_1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.CombinatorialStrategy</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.DatapointProvider</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.DefaultSuiteBuilder</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.DefaultTestCaseBuilder</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.DefaultTestCaseBuilder/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.NamespaceTreeBuilder</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.NUnitTestCaseBuilder</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.NUnitTestFixtureBuilder</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.PairwiseStrategy</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.PairwiseStrategy/FleaRand</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.PairwiseStrategy/FeatureInfo</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.PairwiseStrategy/FeatureTuple</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.PairwiseStrategy/TestCaseInfo</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.PairwiseStrategy/PairwiseTestCaseGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.ParameterDataProvider</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.ParameterDataProvider/&lt;GetDataFor&gt;d__3</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.ParameterDataSourceProvider</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.ProviderCache</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.ProviderCache/CacheEntry</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Internal.Builders.SequentialStrategy</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Interfaces.AssertionResult</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Interfaces.ResultState</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Interfaces.TestAttachment</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Interfaces.TestMessage</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Interfaces.TestOutput</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Interfaces.TNode</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Interfaces.TNode/NodeFilter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Interfaces.NodeList</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Interfaces.AttributeDictionary</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.AllItemsConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.AndConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.AndConstraint/AndConstraintResult</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.AnyOfConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.AssignableFromConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.AssignableToConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.AttributeConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.AttributeExistsConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.BinaryConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.BinarySerializableConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.CollectionConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.CollectionContainsConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.CollectionContainsConstraint/&lt;&gt;c__DisplayClass9_0`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.CollectionEquivalentConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.CollectionEquivalentConstraintResult</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.CollectionItemsEqualConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.CollectionOrderedConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.CollectionOrderedConstraint/OrderingStep</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.CollectionOrderedConstraint/CollectionOrderedConstraintResult</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.CollectionSubsetConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.CollectionSupersetConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.CollectionSupersetConstraint/&lt;&gt;c__DisplayClass7_0`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.CollectionTally</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.CollectionTally/CollectionTallyResult</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ComparisonAdapter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ComparisonAdapter/DefaultComparisonAdapter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ComparisonAdapter/ComparerAdapter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ComparisonAdapter/ComparerAdapter`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ComparisonAdapter/ComparisonAdapterForComparison`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ComparisonConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Delegate">
+          <FullName>NUnit.Framework.Constraints.ActualValueDelegate`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Constraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Constraint/&lt;&gt;c__DisplayClass16_0`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ConstraintBuilder</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ConstraintBuilder/OperatorStack</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ConstraintBuilder/ConstraintStack</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ConstraintExpression</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ConstraintResult</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ContainsConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.DelayedConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.DelayedConstraint/WithRawDelayInterval</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.DelayedConstraint/WithDimensionedDelayInterval</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.DelayedConstraint/WithRawPollingInterval</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.DelayedConstraint/&lt;&gt;c__DisplayClass19_0`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.DictionaryContainsKeyConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.DictionaryContainsKeyConstraint/&lt;&gt;c__DisplayClass16_0`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.DictionaryContainsKeyConstraint/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.DictionaryContainsKeyConstraint/&lt;&gt;c__DisplayClass24_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.DictionaryContainsKeyConstraint/&lt;&gt;c__DisplayClass24_1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.DictionaryContainsKeyConstraint/&lt;GetBaseTypes&gt;d__25</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.DictionaryContainsValueConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.DictionaryContainsValueConstraint/&lt;&gt;c__DisplayClass9_0`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.EachItemConstraintResult</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.EmptyCollectionConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.EmptyConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.EmptyDirectoryConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.EmptyStringConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.EndsWithConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.EqualConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.EqualConstraintResult</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.EqualityAdapter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.EqualityAdapter/ComparerAdapter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.EqualityAdapter/EqualityComparerAdapter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.EqualityAdapter/PredicateEqualityAdapter`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.EqualityAdapter/GenericEqualityAdapter`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.EqualityAdapter/EqualityComparerAdapter`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.EqualityAdapter/ComparerAdapter`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.EqualityAdapter/ComparisonAdapter`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ExactCountConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ExactCountConstraintResult</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ExactTypeConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ExceptionNotThrownConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ExceptionTypeConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ExceptionTypeConstraint/ExceptionTypeConstraintResult</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.FalseConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.FileExistsConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.FileOrDirectoryExistsConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.FloatingPointNumerics</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.GreaterThanConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.GreaterThanOrEqualConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.InstanceOfTypeConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Interval</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ItemsConstraintExpression</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.LessThanConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.LessThanOrEqualConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.MessageWriter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Delegate">
+          <FullName>NUnit.Framework.Constraints.ValueFormatter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Delegate">
+          <FullName>NUnit.Framework.Constraints.ValueFormatterFactory</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.MsgUtils</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.MsgUtils/&lt;&gt;c__DisplayClass14_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.MsgUtils/&lt;&gt;c__DisplayClass14_1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.MsgUtils/&lt;&gt;c__DisplayClass14_2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.MsgUtils/&lt;&gt;c__DisplayClass14_3</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.MsgUtils/&lt;&gt;c__DisplayClass14_4</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.MsgUtils/&lt;&gt;c__DisplayClass14_5</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.MsgUtils/&lt;&gt;c__DisplayClass14_6</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.MsgUtils/&lt;&gt;c__DisplayClass14_7</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.MsgUtils/&lt;&gt;c__DisplayClass14_8</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.MsgUtils/&lt;&gt;c__DisplayClass14_9</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.MsgUtils/&lt;&gt;c__DisplayClass14_10</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.MsgUtils/&lt;&gt;c__DisplayClass14_11</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.MsgUtils/&lt;&gt;c__DisplayClass14_12</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.MsgUtils/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.NaNConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.NoItemConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.NotConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.NullConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Numerics</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.NUnitComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.NUnitEqualityComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.NUnitEqualityComparer/FailurePoint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.AllOperator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.AndOperator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.AttributeOperator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.BinaryOperator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.CollectionOperator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ConstraintOperator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ExactCountOperator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.NoneOperator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.NotOperator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.OrOperator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.PrefixOperator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.PropOperator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.SelfResolvingOperator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.SomeOperator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ThrowsOperator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.WithOperator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.OrConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.PathConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.PredicateConstraint`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.PrefixConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.PropertyConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.PropertyConstraintResult</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.PropertyExistsConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.RangeConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.RegexConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ResolvableConstraintExpression</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ReusableConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.SameAsConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.SamePathConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.SamePathOrUnderConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.SomeItemsConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.StartsWithConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.StringConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.SubPathConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.SubstringConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ThrowsConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ThrowsConstraint/ThrowsConstraintResult</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ThrowsExceptionConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ThrowsExceptionConstraint/ThrowsExceptionConstraintResult</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.ThrowsNothingConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Tolerance</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.TrueConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.TypeConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.UniqueItemsConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.XmlSerializableConstraint</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Comparers.ArraysComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Comparers.CharsComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Comparers.DateTimeOffsetsComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Comparers.DictionariesComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Comparers.DictionaryEntriesComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Comparers.DirectoriesComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Comparers.EnumerablesComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Comparers.EquatablesComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Comparers.KeyValuePairsComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Comparers.NumericsComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Comparers.StreamsComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Comparers.StringsComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Comparers.TimeSpanToleranceComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Comparers.TupleComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Comparers.TupleComparerBase</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Constraints.Comparers.ValueTupleComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Api.DefaultTestAssemblyBuilder</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Api.FrameworkController</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Api.FrameworkController/ActionCallback</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Api.FrameworkController/FrameworkControllerAction</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Api.FrameworkController/LoadTestsAction</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Api.FrameworkController/ExploreTestsAction</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Api.FrameworkController/CountTestsAction</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Api.FrameworkController/RunTestsAction</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Api.FrameworkController/RunAsyncAction</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Api.FrameworkController/StopRunAction</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Api.FrameworkController/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Api.NUnitTestAssemblyRunner</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Api.NUnitTestAssemblyRunner/&lt;&gt;c__DisplayClass33_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Api.NUnitTestAssemblyRunner/&lt;&gt;c__DisplayClass34_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>NUnit.Framework.Api.NUnitTestAssemblyRunner/&lt;&gt;c__DisplayClass38_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;PrivateImplementationDetails&gt;</FullName>
+          <Methods />
+        </Class>
+      </Classes>
+    </Module>
+    <Module skippedDueTo="Filter" hash="D6-F7-07-23-10-28-AF-AF-FD-23-71-4A-C6-9D-69-30-97-FB-25-29">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</ModulePath>
+      <ModuleTime>2019-05-21T01:12:13.6370499Z</ModuleTime>
+      <ModuleName>System.Core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="4B-B5-A1-82-04-B2-3C-38-D0-2B-32-6C-DC-FF-D2-87-B7-10-4C-D0">
+      <ModulePath>C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManagerController.Tests\bin\Debug\ProjectManagerController.Tests.dll</ModulePath>
+      <ModuleTime>2019-09-24T05:41:06.8703543Z</ModuleTime>
+      <ModuleName>ProjectManagerController.Tests</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="AC-C3-A2-F1-C0-76-1F-1E-51-A3-B2-05-25-EA-0A-0F-BD-AD-9D-7D">
+      <ModulePath>C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManagerController.Tests\bin\Debug\NBench.dll</ModulePath>
+      <ModuleTime>2018-07-24T14:20:44Z</ModuleTime>
+      <ModuleName>NBench</ModuleName>
+      <Classes />
+    </Module>
+    <Module hash="21-F1-68-8B-7C-38-9B-80-1C-6C-31-33-C7-A0-75-F2-CA-F2-DC-6B">
+      <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+      <ModulePath>C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManagerController.Tests\bin\Debug\ProjectManagerWebAPI.dll</ModulePath>
+      <ModuleTime>2019-09-24T05:41:06.3950219Z</ModuleTime>
+      <ModuleName>ProjectManagerWebAPI</ModuleName>
+      <Files />
+      <Classes>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;Module&gt;</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType0`3</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType1`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType2`3</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType3`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.BundleConfig</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.FilterConfig</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.RouteConfig</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.WebApiConfig</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.WebApiApplication</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Controllers.BaseAPIController</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Delegate">
+          <FullName>ProjectManagerWebAPI.Controllers.BaseAPIController/WebMethodDelegate</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Controllers.HelloController</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Controllers.UserController</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Controllers.UserController/&lt;&gt;c__DisplayClass1_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Controllers.UserController/&lt;&gt;c__DisplayClass2_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Controllers.UserController/&lt;&gt;c__DisplayClass3_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Controllers.UserController/&lt;&gt;c__DisplayClass4_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Controllers.UserController/&lt;&gt;c__DisplayClass5_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Controllers.TaskController</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Controllers.TaskController/&lt;&gt;c__DisplayClass1_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Controllers.TaskController/&lt;&gt;c__DisplayClass2_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Controllers.TaskController/&lt;&gt;c__DisplayClass3_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Controllers.ProjectController</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Controllers.ProjectController/&lt;&gt;c__DisplayClass1_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Controllers.ProjectController/&lt;&gt;c__DisplayClass2_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Controllers.ProjectController/&lt;&gt;c__DisplayClass3_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Controllers.ProjectController/&lt;&gt;c__DisplayClass4_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Controllers.ProjectController/&lt;&gt;c__DisplayClass5_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ApiDescriptionExtensions</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.HelpPageConfig</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.HelpPageAreaRegistration</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.HelpPageConfigurationExtensions</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.HelpPageConfigurationExtensions/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.HelpPageConfigurationExtensions/&lt;&gt;c__DisplayClass14_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.HelpPageConfigurationExtensions/&lt;&gt;c__DisplayClass15_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.HelpPageConfigurationExtensions/&lt;&gt;c__DisplayClass16_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.HelpPageSampleGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.HelpPageSampleGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.HelpPageSampleGenerator/&lt;GetAllActionSamples&gt;d__30</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.HelpPageSampleKey</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ImageSample</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.InvalidSample</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ObjectGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ObjectGenerator/SimpleTypeObjectGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ObjectGenerator/SimpleTypeObjectGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.TextSample</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.XmlDocumentationProvider</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.XmlDocumentationProvider/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.Models.HelpPageApiModel</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ModelDescriptions.CollectionModelDescription</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ModelDescriptions.DictionaryModelDescription</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ModelDescriptions.EnumValueDescription</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ModelDescriptions.ModelDescription</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator/&lt;&gt;c__DisplayClass3_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ModelDescriptions.ModelNameAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ModelDescriptions.ModelNameHelper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ModelDescriptions.ModelNameHelper/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ModelDescriptions.ParameterAnnotation</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ModelDescriptions.ParameterDescription</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.ModelDescriptions.SimpleTypeModelDescription</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.Controllers.HelpController</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManagerWebAPI.Areas.HelpPage.Controllers.HelpController/&lt;&gt;o__7</FullName>
+          <Methods />
+        </Class>
+      </Classes>
+    </Module>
+    <Module skippedDueTo="Filter" hash="F0-75-95-99-12-3B-46-21-20-80-FA-42-E8-4F-23-D2-EA-2D-7B-0A">
+      <ModulePath>C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManagerController.Tests\bin\Debug\System.Web.Http.dll</ModulePath>
+      <ModuleTime>2018-11-28T05:01:00Z</ModuleTime>
+      <ModuleName>System.Web.Http</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="69-3A-ED-95-E2-8E-57-1E-A9-89-0A-FB-BF-A5-16-AA-97-32-11-91">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Net.Http\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Net.Http.dll</ModulePath>
+      <ModuleTime>2019-07-01T02:35:08.6251179Z</ModuleTime>
+      <ModuleName>System.Net.Http</ModuleName>
+      <Classes />
+    </Module>
+    <Module hash="7E-63-57-CB-D2-FC-74-4A-71-2E-66-D3-1D-14-47-A1-6C-EE-3F-C3">
+      <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+      <ModulePath>C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManagerController.Tests\bin\Debug\ProjectManager.Shared.dll</ModulePath>
+      <ModuleTime>2019-09-23T13:08:32.1201897Z</ModuleTime>
+      <ModuleName>ProjectManager.Shared</ModuleName>
+      <Files />
+      <Classes>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;Module&gt;</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Shared.ServiceContracts.ParentTaskModel</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Shared.ServiceContracts.UserModel</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Shared.ServiceContracts.ProjectModel</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Shared.ServiceContracts.TaskModel</FullName>
+          <Methods />
+        </Class>
+      </Classes>
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="CB-C5-10-52-0F-CD-85-DB-C1-C8-2B-02-E8-20-40-70-2A-CA-9B-79">
+      <ModulePath>C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManagerController.Tests\bin\Debug\Newtonsoft.Json.dll</ModulePath>
+      <ModuleTime>2019-04-21T17:06:16Z</ModuleTime>
+      <ModuleName>Newtonsoft.Json</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="0D-FF-46-1B-E2-E0-4E-BF-6D-A5-F4-F2-D3-EB-63-9C-C2-E0-A8-B5">
+      <ModulePath>C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManagerController.Tests\bin\Debug\System.Net.Http.Formatting.dll</ModulePath>
+      <ModuleTime>2018-11-28T05:00:36Z</ModuleTime>
+      <ModuleName>System.Net.Http.Formatting</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="31-3C-03-6D-B1-13-F3-EA-5F-93-9F-C0-AF-39-94-B1-A7-1E-AD-84">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll</ModulePath>
+      <ModuleTime>2019-06-08T02:12:45.8408672Z</ModuleTime>
+      <ModuleName>System.Runtime.Serialization</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="F8-A8-4A-F9-8D-2C-F5-B0-C6-F2-AD-A8-7B-53-EB-47-D2-8B-B6-68">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\SMDiagnostics\v4.0_4.0.0.0__b77a5c561934e089\SMDiagnostics.dll</ModulePath>
+      <ModuleTime>2019-06-08T02:12:46.5752476Z</ModuleTime>
+      <ModuleName>SMDiagnostics</ModuleName>
+      <Classes />
+    </Module>
+    <Module hash="B6-C6-45-AE-06-B0-50-72-AC-27-60-52-F8-6E-24-4C-48-9C-77-0E">
+      <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+      <ModulePath>C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManagerController.Tests\bin\Debug\ProjectManager.BusinessLayer.dll</ModulePath>
+      <ModuleTime>2019-09-24T05:41:01.9998203Z</ModuleTime>
+      <ModuleName>ProjectManager.BusinessLayer</ModuleName>
+      <Files />
+      <Classes>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;Module&gt;</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.BusinessLayer.EntityMapper`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.BusinessLayer.EntityMapper`2/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.BusinessLayer.ProjectManagerService</FullName>
+          <Methods />
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="C5-0D-E6-DA-54-08-9F-23-CD-7D-6C-7D-42-D7-1B-C7-92-EB-70-57">
+      <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+      <ModulePath>C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManagerController.Tests\bin\Debug\ProjectManager.DataLayer.dll</ModulePath>
+      <ModuleTime>2019-09-24T05:38:33.9489866Z</ModuleTime>
+      <ModuleName>ProjectManager.DataLayer</ModuleName>
+      <Files />
+      <Classes>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;Module&gt;</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.ParentTask</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.Project</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.ProjectManagerEntities</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.ProjectManagerRepository</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.ProjectManagerRepository/&lt;&gt;c__DisplayClass3_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.ProjectManagerRepository/&lt;&gt;c__DisplayClass5_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.ProjectManagerRepository/&lt;&gt;c__DisplayClass6_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.ProjectManagerRepository/&lt;&gt;c__DisplayClass8_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.ProjectManagerRepository/&lt;&gt;c__DisplayClass10_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.ProjectManagerRepository/&lt;&gt;c__DisplayClass11_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.ProjectManagerRepository/&lt;&gt;c__DisplayClass13_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.ProjectManagerRepository/&lt;&gt;c__DisplayClass14_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.ProjectManagerRepository/&lt;&gt;c__DisplayClass15_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.ProjectManagerRepository/&lt;&gt;c__DisplayClass17_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.ProjectManagerRepository/&lt;&gt;c__DisplayClass18_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.ProjectManagerRepository/&lt;&gt;c__DisplayClass20_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.ProjectManagerRepository/&lt;&gt;c__DisplayClass22_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.ProjectManagerRepository/&lt;&gt;c__DisplayClass23_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.Task</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.DataLayer.User</FullName>
+          <Methods />
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="D9-3D-36-FF-8F-67-45-DA-6D-A1-5B-27-7A-0E-15-71-FD-B4-9A-C8">
+      <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+      <ModulePath>C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManagerController.Tests\bin\Debug\AutoMapper.dll</ModulePath>
+      <ModuleTime>2019-08-12T04:42:04Z</ModuleTime>
+      <ModuleName>AutoMapper</ModuleName>
+      <Files />
+      <Classes>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;Module&gt;</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType0`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType1`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType2`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType3`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType4`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType5`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType6`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType7`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType8`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType9`4</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType10`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType11`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType12`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>Microsoft.CodeAnalysis.EmbeddedAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>System.Runtime.CompilerServices.IsReadOnlyAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.AdvancedConfiguration</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.AutoMapAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.AutoMapperConfigurationException</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.AutoMapperConfigurationException/TypeMapConfigErrors</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.AutoMapperConfigurationException/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.AutoMapperMappingException</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.AutoMapperMappingException/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ConfigurationValidator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ConfigurationValidator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ConstructorMap</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ConstructorMap/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ConstructorMap/&lt;&gt;c__DisplayClass13_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ConstructorMap/&lt;&gt;c__DisplayClass13_1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ConstructorParameterMap</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.DefaultMemberMap</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.DuplicateTypeMapConfigurationException</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.DuplicateTypeMapConfigurationException/TypeMapConfigErrors</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ExpressionExtensions</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ExpressionExtensions/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ExpressionExtensions/&lt;GetMembers&gt;d__2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.IgnoreMapAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ObjectMapper`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.LockingConcurrentDictionary`2/&lt;&gt;c__DisplayClass2_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.LockingConcurrentDictionary`2/&lt;&gt;c__DisplayClass2_1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.LockingConcurrentDictionary`2/&lt;&gt;c__DisplayClass7_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.LowerUnderscoreNamingConvention</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.MapperConfiguration</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.MapperConfiguration/&lt;&gt;c__DisplayClass8_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.MapperConfiguration/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.MapperConfiguration/&lt;&gt;c__DisplayClass60_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.MapperConfiguration/&lt;&gt;c__DisplayClass67_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.MapperConfiguration/&lt;&gt;c__DisplayClass67_1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.MapperConfiguration/&lt;GetDerivedTypeMaps&gt;d__68</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.MapperConfiguration/&lt;GetIncludedTypeMaps&gt;d__69</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.MapperConfiguration/&lt;&gt;c__DisplayClass70_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.MapperConfiguration/&lt;&gt;c__DisplayClass71_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.MapperConfigurationExpressionValidator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.MapperConfigurationExpressionValidator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.MappingOperationOptions`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.MappingOperationOptions`2/&lt;&gt;c__DisplayClass20_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.MappingOperationOptions`2/&lt;&gt;c__DisplayClass21_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.MappingOperationOptions`2/&lt;&gt;c__DisplayClass22_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.MappingOperationOptions`2/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.MemberFinderVisitor</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.PascalCaseNamingConvention</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.PathMap</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Profile</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Profile/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Profile/&lt;&gt;c__DisplayClass76_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Profile/&lt;&gt;c__DisplayClass82_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Profile/&lt;&gt;c__DisplayClass83_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Profile/&lt;&gt;c__DisplayClass84_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Profile/&lt;&gt;c__DisplayClass85_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Profile/&lt;&gt;c__DisplayClass86_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Profile/&lt;&gt;c__DisplayClass87_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ProfileMap</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ProfileMap/&lt;&gt;c__DisplayClass4_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ProfileMap/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ProfileMap/&lt;&gt;c__DisplayClass64_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ProfileMap/&lt;&gt;c__DisplayClass67_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ProfileMap/&lt;&gt;c__DisplayClass69_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ProfileMap/&lt;&gt;c__DisplayClass70_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.PropertyMap</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.PropertyMap/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ReflectionExtensions</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ResolutionContext</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeDetails</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeDetails/&lt;&gt;c__DisplayClass0_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeDetails/&lt;&gt;c__DisplayClass1_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeDetails/&lt;PossibleNames&gt;d__1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeDetails/&lt;&gt;c__DisplayClass2_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeDetails/&lt;&gt;c__DisplayClass3_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeDetails/&lt;&gt;c__DisplayClass30_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeDetails/&lt;&gt;c__DisplayClass30_1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeDetails/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeDetails/&lt;&gt;c__DisplayClass40_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeDetails/&lt;&gt;c__DisplayClass40_1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeExtensions</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeExtensions/&lt;GetTypeInheritance&gt;d__7</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeExtensions/&lt;&gt;c__DisplayClass9_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeExtensions/&lt;&gt;c__DisplayClass10_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeExtensions/&lt;&gt;c__DisplayClass12_0`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeExtensions/&lt;&gt;c__12`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeExtensions/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeMap</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeMap/&lt;&gt;c__DisplayClass20_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeMap/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeMap/&lt;&gt;c__DisplayClass142_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeMap/&lt;&gt;c__DisplayClass149_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeMap/&lt;&gt;c__DisplayClass150_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeMap/&lt;&gt;c__DisplayClass163_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeMap/&lt;&gt;c__DisplayClass164_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeMap/&lt;&gt;c__DisplayClass165_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypeMapFactory</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypePair/InterfaceComparer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypePair/InterfaceComparer/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypePair/InterfaceComparer/&lt;&gt;c__DisplayClass2_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypePair/&lt;&gt;c__DisplayClass20_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypePair/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.TypePair/&lt;GetAllTypes&gt;d__21</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.HashCodeCombiner</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ValueConverterConfiguration</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ValueResolverConfiguration</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.ValueTransformerConfigurationExtensions</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionBuilder</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionBuilder/NewFinderVisitor</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionBuilder/NullSubstitutionConversionVisitor</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionBuilder/ParameterExpressionVisitor</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionBuilder/ParameterExpressionVisitor/ObjectParameterExpressionReplacementVisitor</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionBuilder/ParameterExpressionVisitor/ConstantExpressionReplacementVisitor</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionBuilder/FirstPassLetPropertyMaps</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionBuilder/FirstPassLetPropertyMaps/GetMemberAccessesVisitor</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionBuilder/FirstPassLetPropertyMaps/GetMemberAccessesVisitor/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionBuilder/FirstPassLetPropertyMaps/ReplaceMemberAccessesVisitor</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionBuilder/FirstPassLetPropertyMaps/&lt;&gt;c__DisplayClass10_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionBuilder/FirstPassLetPropertyMaps/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionBuilder/&lt;&gt;c__DisplayClass5_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionBuilder/&lt;&gt;c__DisplayClass15_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionBuilder/&lt;&gt;c__DisplayClass15_1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionBuilder/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionBuilder/&lt;&gt;c__DisplayClass16_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.LetPropertyMaps</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.LetPropertyMaps/PropertyPath/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionBuilderExtensions</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.PropertyExpression</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionRequest</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionRequest/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ExpressionResolutionResult</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.Extensions</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.NullableSourceExpressionBinder</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.NullsafeQueryRewriter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.NullsafeQueryRewriter/&lt;&gt;c__DisplayClass2_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ProjectionExpression</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ProjectionExpression/&lt;&gt;c__4`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ProjectionExpression/&lt;&gt;c__6`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.ProjectionExpression/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.Impl.AssignableExpressionBinder</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.Impl.CustomProjectionExpressionBinder</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.Impl.EnumerableExpressionBinder</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.Impl.MappedTypeExpressionBinder</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.Impl.MemberAccessQueryMapperVisitor</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.Impl.MemberGetterExpressionResultConverter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.Impl.MemberResolverExpressionResultConverter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.Impl.NullableDestinationExpressionBinder</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.Impl.NullableDestinationExpressionBinder/&lt;&gt;c__DisplayClass2_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.Impl.QueryMapperHelper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.Impl.QueryMapperHelper/&lt;&gt;c__DisplayClass0_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.Impl.QueryMapperHelper/&lt;&gt;c__DisplayClass1_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.Impl.QueryMapperVisitor</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.QueryableExtensions.Impl.StringExpressionBinder</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ArrayCopyMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ArrayCopyMapper/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ArrayMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ArrayMapper/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.AssignableMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.CollectionMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ConvertMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ConvertMapper/&lt;&gt;c__DisplayClass1_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ConvertMapper/&lt;&gt;c__DisplayClass1_1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ConvertMapper/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.DictionaryMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.EnumerableMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.EnumerableMapperBase</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.EnumerableToDictionaryMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.EnumToEnumMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.EnumToEnumMapper/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.EnumToStringMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.EnumToStringMapper/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.EnumToUnderlyingTypeMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.EnumToUnderlyingTypeMapper/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ExplicitConversionOperatorMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ExplicitConversionOperatorMapper/&lt;&gt;c__DisplayClass1_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ExplicitConversionOperatorMapper/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.FlagsEnumMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.FlagsEnumMapper/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.FromDynamicMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.FromStringDictionaryMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.FromStringDictionaryMapper/&lt;&gt;c__3`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.HashSetMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ImplicitConversionOperatorMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ImplicitConversionOperatorMapper/&lt;&gt;c__DisplayClass1_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.MapperRegistry</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.MultidimensionalArrayMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.MultidimensionalArrayMapper/MultidimensionalArrayFiller</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.NameValueCollectionMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.NullableDestinationMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.NullableSourceMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ReadOnlyCollectionMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ReadOnlyCollectionMapper/&lt;&gt;c__DisplayClass1_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ReadOnlyDictionaryMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ReadOnlyDictionaryMapper/&lt;&gt;c__DisplayClass1_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.StringMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.StringToEnumMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.StringToEnumMapper/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ToDynamicMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ToStringDictionaryMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ToStringDictionaryMapper/&lt;&gt;c__DisplayClass3_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.ToStringDictionaryMapper/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.TypeConverterMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.UnderlyingTypeToEnumMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.UnderlyingTypeToEnumMapper/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.Internal.CollectionMapperExpressionFactory</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Delegate">
+          <FullName>AutoMapper.Mappers.Internal.CollectionMapperExpressionFactory/MapItem</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.Internal.ElementTypeHelper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Mappers.Internal.ElementTypeHelper/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Features.FeatureExtensions</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Features.FeatureExtensions/&lt;&gt;c__DisplayClass2_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Features.FeatureExtensions/&lt;&gt;c__DisplayClass3_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Features.FeatureExtensions/&lt;&gt;c__DisplayClass4_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Features.FeatureExtensions/&lt;&gt;c__DisplayClass5_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Features.Features`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Execution.DelegateFactory</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Execution.DelegateFactory/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Execution.ExpressionBuilder</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Execution.ExpressionBuilder/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Execution.PropertyEmitter</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Execution.PropertyEmitter/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Execution.ProxyBase</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Execution.ProxyGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Execution.ProxyGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Execution.TypeDescription/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Execution.TypeMapPlanBuilder</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Execution.TypeMapPlanBuilder/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Execution.TypeMapPlanBuilder/&lt;&gt;c__DisplayClass31_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Internal.MemberPath/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Internal.ExpressionFactory</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Internal.ExpressionFactory/ConvertingVisitor</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Internal.ExpressionFactory/ReplaceExpressionVisitor</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Internal.ExpressionFactory/ExpressionConcatVisitor</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Internal.ExpressionFactory/&lt;&gt;c__DisplayClass7_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Internal.ExpressionFactory/&lt;&gt;c__DisplayClass8_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Internal.ExpressionFactory/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Internal.MemberVisitor</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Internal.MemberVisitor/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Internal.ReflectionHelper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Internal.ReflectionHelper/&lt;GetMemberPath&gt;d__8</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.CtorParamConfigurationExpression`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.CtorParamConfigurationExpression`1/&lt;&gt;c__DisplayClass5_0`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.CtorParamConfigurationExpression`1/&lt;&gt;c__DisplayClass6_0`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MapperConfigurationExpression</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MapperConfigurationExpression/NamedProfile</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MapperConfigurationExpression/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MapperConfigurationExpression/&lt;&gt;c__DisplayClass29_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpression</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpression/MemberConfigurationExpression</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpression/MemberConfigurationExpression/&lt;&gt;c__DisplayClass1_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpression/MemberConfigurationExpression/&lt;&gt;c__DisplayClass2_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpression/MemberConfigurationExpression/&lt;&gt;c__DisplayClass3_0`4</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpression/MemberConfigurationExpression/&lt;&gt;c__DisplayClass4_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpression/MemberConfigurationExpression/&lt;&gt;c__DisplayClass5_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpression/MemberConfigurationExpression/&lt;&gt;c__DisplayClass6_0`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpression/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpression/&lt;&gt;c__DisplayClass6_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpression/&lt;&gt;c__DisplayClass7_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpression/&lt;&gt;c__DisplayClass8_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpression`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpression`2/&lt;&gt;c__DisplayClass5_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpression`2/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpression`2/&lt;&gt;c__DisplayClass8_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpression`2/&lt;&gt;c__DisplayClass9_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpression`2/&lt;&gt;c__DisplayClass17_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase/&lt;&gt;c__DisplayClass1_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase/&lt;&gt;c__DisplayClass40_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase/&lt;&gt;c__DisplayClass43_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase/&lt;&gt;c__DisplayClass45_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase/&lt;&gt;c__DisplayClass46_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase`3</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase`3/&lt;&gt;c__DisplayClass3_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase`3/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase`3/&lt;&gt;c__DisplayClass6_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase`3/&lt;&gt;c__DisplayClass7_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase`3/&lt;&gt;c__8`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase`3/&lt;&gt;c__DisplayClass9_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase`3/&lt;&gt;c__DisplayClass10_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase`3/&lt;&gt;c__11`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase`3/&lt;&gt;c__DisplayClass14_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase`3/&lt;&gt;c__DisplayClass19_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase`3/&lt;&gt;c__DisplayClass20_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase`3/&lt;&gt;c__DisplayClass21_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase`3/&lt;&gt;c__DisplayClass22_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase`3/&lt;&gt;c__DisplayClass23_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase`3/&lt;&gt;c__DisplayClass24_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase`3/&lt;&gt;c__26`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MappingExpressionBase`3/&lt;&gt;c__DisplayClass30_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass10_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass11_0`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass12_0`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass13_0`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass14_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass15_0`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass16_0`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass17_0`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass18_0`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass20_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass21_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass22_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass23_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass24_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass25_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass26_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass27_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass28_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass29_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass30_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass31_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass34_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass37_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__38`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass39_0`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass40_0`2</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass41_0`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass42_0`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass43_0`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.MemberConfigurationExpression`3/&lt;&gt;c__DisplayClass46_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.PathConfigurationExpression`3</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.PathConfigurationExpression`3/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.PathConfigurationExpression`3/&lt;&gt;c__DisplayClass13_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.PathConfigurationExpression`3/&lt;&gt;c__DisplayClass21_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.PrimitiveExtensions</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.SourceMappingExpression</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.SourceMappingExpression/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.SourceMemberConfig</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Internal.PrimitiveHelper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Internal.PrimitiveHelper/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Internal.PrimitiveHelper/&lt;&gt;c__DisplayClass2_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Internal.PrimitiveHelper/&lt;&gt;c__DisplayClass14_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Internal.PrimitiveHelper/&lt;&gt;c__DisplayClass19_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.AllMemberInfo</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.AllMemberInfo/&lt;&gt;c__DisplayClass1_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.CaseInsensitiveName</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.CaseInsensitiveName/&lt;&gt;c__DisplayClass0_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.CaseSensitiveName</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.CaseSensitiveName/&lt;&gt;c__DisplayClass4_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.DefaultMember</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.DefaultName</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.MapToAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.MemberConfiguration</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.MemberConfiguration/&lt;&gt;c__7`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.MemberConfiguration/&lt;&gt;c__8`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.MemberNameReplacer</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.NameSplitMember</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.NameSplitMember/NameSnippet</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.ParentSourceToDestinationNameMapper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.PrePostfixName</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.PrePostfixName/&lt;&gt;c__DisplayClass13_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.PrePostfixName/&lt;&gt;c__DisplayClass13_1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.PrePostfixName/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.PrePostfixName/&lt;&gt;c__DisplayClass14_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.PrePostfixName/&lt;PossibleNames&gt;d__14</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.PrePostfixName/&lt;&gt;c__DisplayClass15_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.ReplaceName</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.ReplaceName/&lt;&gt;c__DisplayClass5_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.ReplaceName/&lt;&gt;c__DisplayClass5_1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.ReplaceName/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.ReplaceName/&lt;&gt;c__DisplayClass6_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.SourceToDestinationMapperAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.SourceToDestinationNameMapperAttributesMember</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.SourceToDestinationNameMapperAttributesMember/&lt;&gt;c__DisplayClass2_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Conventions.SourceToDestinationNameMapperAttributesMember/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Annotations.IgnoreAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Annotations.MapAtRuntimeAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Annotations.MappingOrderAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Annotations.NullSubstituteAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Annotations.SourceMemberAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Annotations.UseExistingValueAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Annotations.ValueConverterAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>AutoMapper.Configuration.Annotations.ValueResolverAttribute</FullName>
+          <Methods />
+        </Class>
+      </Classes>
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="89-C2-D1-D7-5C-2C-0A-DE-8C-49-76-E0-A1-79-0D-7B-DA-3D-D6-4E">
+      <ModulePath>C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManagerController.Tests\bin\Debug\EntityFramework.dll</ModulePath>
+      <ModuleTime>2019-09-14T09:01:18Z</ModuleTime>
+      <ModuleName>EntityFramework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="7F-FF-EF-06-DF-CE-91-04-E3-81-6A-68-B2-5D-E7-3C-77-96-E6-18">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_64\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll</ModulePath>
+      <ModuleTime>2018-10-11T01:25:04.9147609Z</ModuleTime>
+      <ModuleName>System.Data</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="61-67-DF-B9-10-44-6B-CC-0C-63-6B-A9-6D-B7-C2-AD-17-CD-39-64">
+      <ModulePath>C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManagerController.Tests\bin\Debug\EntityFramework.SqlServer.dll</ModulePath>
+      <ModuleTime>2019-09-14T09:01:36Z</ModuleTime>
+      <ModuleName>EntityFramework.SqlServer</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="">
+      <ModulePath>RefEmit_InMemoryManifestModule</ModulePath>
+      <ModuleTime>0001-01-01T00:00:00</ModuleTime>
+      <ModuleName>Anonymously Hosted DynamicMethods Assembly</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="D4-54-32-B5-B1-E2-7D-BE-A8-0C-10-C4-98-E4-C8-76-00-FF-CA-2D">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_64\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll</ModulePath>
+      <ModuleTime>2018-09-11T01:24:05.9699056Z</ModuleTime>
+      <ModuleName>System.Transactions</ModuleName>
+      <Classes />
+    </Module>
+  </Modules>
+</CoverageSession>

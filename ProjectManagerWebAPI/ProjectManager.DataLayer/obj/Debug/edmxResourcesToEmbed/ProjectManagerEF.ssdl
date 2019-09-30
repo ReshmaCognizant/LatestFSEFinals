@@ -41,7 +41,7 @@
     <Property Name="Project_ID" Type="int" />
     <Property Name="Task_ID" Type="int" />
   </EntityType>
-  <Association Name="FK__Task__Parent_ID__19D553CC">
+  <Association Name="FK__Task__Parent_ID__21D600EE">
     <End Role="ParentTask" Type="Self.ParentTask" Multiplicity="1" />
     <End Role="Task" Type="Self.Task" Multiplicity="*" />
     <ReferentialConstraint>
@@ -53,7 +53,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Task__Project_ID__1AC97805">
+  <Association Name="FK__Task__Project_ID__22CA2527">
     <End Role="Project" Type="Self.Project" Multiplicity="1" />
     <End Role="Task" Type="Self.Task" Multiplicity="*" />
     <ReferentialConstraint>
@@ -70,11 +70,11 @@
     <EntitySet Name="Project" EntityType="Self.Project" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Task" EntityType="Self.Task" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK__Task__Parent_ID__19D553CC" Association="Self.FK__Task__Parent_ID__19D553CC">
+    <AssociationSet Name="FK__Task__Parent_ID__21D600EE" Association="Self.FK__Task__Parent_ID__21D600EE">
       <End Role="ParentTask" EntitySet="ParentTask" />
       <End Role="Task" EntitySet="Task" />
     </AssociationSet>
-    <AssociationSet Name="FK__Task__Project_ID__1AC97805" Association="Self.FK__Task__Project_ID__1AC97805">
+    <AssociationSet Name="FK__Task__Project_ID__22CA2527" Association="Self.FK__Task__Project_ID__22CA2527">
       <End Role="Project" EntitySet="Project" />
       <End Role="Task" EntitySet="Task" />
     </AssociationSet>

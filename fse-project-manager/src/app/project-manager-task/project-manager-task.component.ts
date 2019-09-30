@@ -51,8 +51,12 @@ export class ProjectManagerTaskComponent implements OnInit {
     
     let taskID = localStorage.getItem('editTaskID');  
     if (taskID != undefined && taskID != '') {  
-      this.taskService.searchTask(taskID).subscribe(data => {  
+      this.taskService.searchTask(taskID).subscribe(data => {
+        let sDate = formatDate(data.startDate, 'yyyy-MM-dd', 'en'); 
+        let eDate = formatDate(data.startDate, 'yyyy-MM-dd', 'en');        
         this.addForm.patchValue(data);
+        this.addForm.controls['startDate'].setValue(sDate);
+        this.addForm.controls['endDate'].setValue(eDate);
       })  
       this.btnvisibility = false;
       this.taskformlabel = 'Edit Task';      

@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using NBench;
+using NUnit.Framework;
 using ProjectManager.Shared.ServiceContracts;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,10 @@ namespace ProjectManager.BusinessLayer.Tests
             _projectManagerService = new ProjectManagerService();
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void AddTaskForValidDataTest()
         {
@@ -33,6 +38,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(true, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void AddTaskForInValidDataTest()
         {
@@ -50,6 +59,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(false, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void AddTaskForNullTest()
         {
@@ -57,6 +70,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(false, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void AddUserForValidDataTest()
         {
@@ -72,6 +89,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(true, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void AddUserForInValidDataTest()
         {
@@ -87,6 +108,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(false, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void AddUserForNullTest()
         {
@@ -94,6 +119,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(false, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void AddProjectForValidDataTest()
         {
@@ -108,6 +137,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(true, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void AddProjectForInValidDataTest()
         {
@@ -122,6 +155,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(false, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void AddProjectForNullTest()
         {
@@ -129,6 +166,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(false, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void AddParentTaskForValidDataTest()
         {
@@ -140,6 +181,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(true, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void AddParentTaskForInValidDataTest()
         {
@@ -151,13 +196,21 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(false, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void AddParentTaskForNullTest()
         {
             var isSuccess = _projectManagerService.AddParentTask(null);
             Assert.AreEqual(false, isSuccess);
-        }       
+        }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void GetTasksTest()
         {
@@ -165,6 +218,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.NotZero(tasks.Count);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void GetUsersTest()
         {
@@ -172,6 +229,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.NotZero(tasks.Count);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void GetProjectsTest()
         {
@@ -179,6 +240,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.NotZero(tasks.Count);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void GetTaskTestForValidDataTest()
         {
@@ -186,13 +251,21 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.IsNotNull(task);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void GetTaskTestForInValidDataTest()
         {
             var task = _projectManagerService.GetTask(0);
             Assert.IsNull(task);
         }
-        
+
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void GetUserTestForValidDataTest()
         {
@@ -200,13 +273,21 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.IsNotNull(task);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void GetUserTestForInValidDataTest()
         {
             var task = _projectManagerService.GetUser(0);
             Assert.IsNull(task);
-        }     
+        }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void GetProjectTestForValidDataTest()
         {
@@ -214,13 +295,21 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.IsNotNull(task);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void GetProjectForInValidDataTest()
         {
             var task = _projectManagerService.GetProject(0);
             Assert.IsNull(task);
-        }        
+        }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void SearchUsersForValidDataTest()
         {
@@ -228,6 +317,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.NotZero(users.Count);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void SearchUsersForInValidDataTest()
         {
@@ -235,6 +328,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.Zero(users.Count);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void SearchUsersForNullTest()
         {
@@ -242,6 +339,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.Zero(users.Count);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void SearchProjectsForValidDataTest()
         {
@@ -249,6 +350,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.NotZero(projects.Count);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void SearchProjectsForInValidDataTest()
         {
@@ -256,6 +361,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.Zero(projects.Count);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void SearchProjectsForNullTest()
         {
@@ -263,6 +372,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.Zero(projects.Count);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void UpdateTaskForValidDataTest()
         {
@@ -281,6 +394,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(true, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void UpdateTaskForInValidDataTest()
         {
@@ -299,6 +416,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(false, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void UpdateTaskForNullTest()
         {
@@ -306,6 +427,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(false, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void UpdateUserForValidDataTest()
         {
@@ -322,6 +447,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(true, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void UpdateUserForInValidDataTest()
         {
@@ -338,6 +467,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(false, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void UpdateUserForNullTest()
         {
@@ -345,6 +478,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(false, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void UpdateProjectForValidDataTest()
         {
@@ -360,6 +497,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(true, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void UpdateProjectForInValidDataTest()
         {
@@ -375,6 +516,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(false, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void UpdateProjectForNullTest()
         {
@@ -382,6 +527,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(false, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void UpdateParentTaskForValidDataTest()
         {
@@ -394,6 +543,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(true, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void UpdateParentTaskForInValidDataTest()
         {
@@ -406,6 +559,10 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(false, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void UpdateParentTaskForNullTest()
         {
@@ -413,21 +570,31 @@ namespace ProjectManager.BusinessLayer.Tests
             Assert.AreEqual(false, isSuccess);
         }
 
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         [Test]
         public void DeleteUserTest()
         {
             var isSuccess = _projectManagerService.DeleteUser(1);
             Assert.AreEqual(true, isSuccess);
-        }        
+        }
 
-        [Test]
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         public void DeleteProjectTest()
         {
             var isSuccess = _projectManagerService.DeleteProject(1);
             Assert.AreEqual(true, isSuccess);
         }
 
-        [Test]
+        [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
+        [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]
+        [MemoryAssertion(MemoryMetric.TotalBytesAllocated, MustBe.LessThanOrEqualTo, ByteConstants.ThirtyTwoKb)]
+        [GcTotalAssertion(GcMetric.TotalCollections, GcGeneration.Gen2, MustBe.ExactlyEqualTo, 0.0d)]
         public void TranslateTest_TaskToTaskModel()
         {
             EntityMapper<TaskModel, Task> mapObj = new EntityMapper<TaskModel, Task>();

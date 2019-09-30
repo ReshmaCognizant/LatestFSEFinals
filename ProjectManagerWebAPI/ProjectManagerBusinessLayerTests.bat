@@ -63,5 +63,5 @@ exit /b %errorlevel%
 exit /b %errorlevel%
 
 :RunLaunchReport
-start "report" "%~dp0\GeneratedReports\ReportGenerator Output\index.htm"
+start "report" "%~dp0\GeneratedReports\ReportGenerator Output Business\index.htm"
 exit /b %errorlevel%

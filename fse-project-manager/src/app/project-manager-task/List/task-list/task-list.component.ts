@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Task } from '../../../Task/task';
 import { TaskService } from 'src/app/Task/task.service';
 import { Router } from "@angular/router"; 
+import { Select2OptionData } from 'ng-select2';
+import { ProjectService } from 'src/app/Project/project.service';
 
 @Component({
   selector: 'app-task-list',
@@ -10,13 +12,15 @@ import { Router } from "@angular/router";
 })
 export class TaskListComponent implements OnInit {
 
-  tasks: Task[];  
+  tasks: Task[]; 
+  searchProjects: Array<Select2OptionData>;  
   
-  constructor(private taskService: TaskService, private router: Router, ) { }  
+  constructor(private projectService: ProjectService, private taskService: TaskService, private router: Router, ) { }  
   
   ngOnInit() {
     localStorage.removeItem('editTaskID')   
     this.getTasks();
+    this.getProjectDynamicList();  
   }
 
   getTasks()
@@ -30,6 +34,17 @@ export class TaskListComponent implements OnInit {
       }       
     });
   }
+
+  getProjectDynamicList(){
+    this.projectService.getProjectList()  
+    .subscribe((data: Array<Select2OptionData>) => {
+      this.searchProjects = data;      
+      if(data.length == 0)  
+      {
+        alert("No user List found");         
+      }         
+    }); 
+}
 
   editTask(task: Task): void {  
     localStorage.removeItem('editTaskID');  

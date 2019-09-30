@@ -222,18 +222,26 @@ for (i = 0, l = charts.length; i < l; i++) {
 
 var assemblies = [
   {
+    "name": "AutoMapper",
+    "classes": [
+    ]},
+  {
     "name": "nunit.framework",
     "classes": [
     ]},
   {
+    "name": "ProjectManager.BusinessLayer",
+    "classes": [
+      { "name": "ProjectManager.BusinessLayer.EntityMapper`2", "rp": "ProjectManager.BusinessLayer_EntityMapper_2.htm", "cl": 13, "ucl": 0, "cal": 13, "tl": 27, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "ProjectManager.BusinessLayer.ProjectManagerService", "rp": "ProjectManager.BusinessLayer_ProjectManagerService.htm", "cl": 110, "ucl": 38, "cal": 148, "tl": 210, "ct": "LineCoverage", "mc": "-", "cb": 4, "tb": 14, "lch": [], "bch": [], "hc": [] },
+    ]},
+  {
     "name": "ProjectManager.DataLayer",
     "classes": [
-      { "name": "ProjectManager.DataLayer.ParentTask", "rp": "ProjectManager.DataLayer_ParentTask.htm", "cl": 4, "ucl": 0, "cal": 4, "tl": 29, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "ProjectManager.DataLayer.Project", "rp": "ProjectManager.DataLayer_Project.htm", "cl": 4, "ucl": 0, "cal": 4, "tl": 32, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "ProjectManager.DataLayer.ProjectManagerEntities", "rp": "ProjectManager.DataLayer_ProjectManagerEntities.htm", "cl": 3, "ucl": 2, "cal": 5, "tl": 33, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "ProjectManager.DataLayer.ProjectManagerRepository", "rp": "ProjectManager.DataLayer_ProjectManagerRepository.htm", "cl": 138, "ucl": 96, "cal": 234, "tl": 318, "ct": "LineCoverage", "mc": "-", "cb": 8, "tb": 22, "lch": [], "bch": [], "hc": [] },
-      { "name": "ProjectManager.DataLayer.Task", "rp": "ProjectManager.DataLayer_Task.htm", "cl": 0, "ucl": 0, "cal": 0, "tl": 0, "ct": "MethodCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "ProjectManager.DataLayer.User", "rp": "ProjectManager.DataLayer_User.htm", "cl": 0, "ucl": 0, "cal": 0, "tl": 0, "ct": "MethodCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+    ]},
+  {
+    "name": "ProjectManager.Shared",
+    "classes": [
     ]},
 ];
 
@@ -247,11 +255,11 @@ var riskHotspotMetrics = [
 
 var riskHotspots = [
   {
-    "assembly": "ProjectManager.DataLayer", "class": "ProjectManager.DataLayer.ProjectManagerRepository", "reportPath": "ProjectManager.DataLayer_ProjectManagerRepository.htm", "methodName": "System.Boolean ProjectManager.DataLayer.ProjectManagerRepository::DeleteProject(System.Int32)", "methodShortName": "DeleteProject(...)", "fileIndex": 0, "line": 140,
+    "assembly": "ProjectManager.BusinessLayer", "class": "ProjectManager.BusinessLayer.ProjectManagerService", "reportPath": "ProjectManager.BusinessLayer_ProjectManagerService.htm", "methodName": "System.Boolean ProjectManager.BusinessLayer.ProjectManagerService::AddProject(ProjectManager.Shared.ServiceContracts.ProjectModel)", "methodShortName": "AddProject(...)", "fileIndex": 0, "line": 19,
     "metrics": [
-      { "value": 6, "exceeded": false },
-      { "value": 16, "exceeded": false },
-      { "value": 17.19, "exceeded": true },
+      { "value": 11, "exceeded": false },
+      { "value": 64, "exceeded": false },
+      { "value": 22.89, "exceeded": true },
     ]},
 ];
 

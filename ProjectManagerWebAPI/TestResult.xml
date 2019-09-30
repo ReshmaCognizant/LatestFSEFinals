@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="40" result="Failed" total="40" passed="25" failed="15" inconclusive="0" skipped="0" asserts="39" engine-version="3.10.0.0" clr-version="4.0.30319.42000" start-time="2019-09-30 17:15:44Z" end-time="2019-09-30 17:15:52Z" duration="7.595446">
+  <command-line><![CDATA["C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\packages\NUnit.ConsoleRunner.3.10.0\tools\nunit3-console.exe" "C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\bin\Debug\ProjectManager.BusinessLayer.Tests.dll"]]></command-line>
+  <test-suite type="Assembly" id="0-1041" name="ProjectManager.BusinessLayer.Tests.dll" fullname="C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\bin\Debug\ProjectManager.BusinessLayer.Tests.dll" runstate="Runnable" testcasecount="40" result="Failed" site="Child" start-time="2019-09-30 17:15:46Z" end-time="2019-09-30 17:15:52Z" duration="5.333271" total="40" passed="25" failed="15" warnings="0" inconclusive="0" skipped="0" asserts="39">
+    <environment framework-version="3.12.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.16299.0" platform="Win32NT" cwd="C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI" machine-name="APMDP-ELPT50854" user="reraje" user-domain="ACEINA" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.6.1" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="16772" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1042" name="ProjectManager" fullname="ProjectManager" runstate="Runnable" testcasecount="40" result="Failed" site="Child" start-time="2019-09-30 17:15:46Z" end-time="2019-09-30 17:15:52Z" duration="5.313394" total="40" passed="25" failed="15" warnings="0" inconclusive="0" skipped="0" asserts="39">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="0-1043" name="BusinessLayer" fullname="ProjectManager.BusinessLayer" runstate="Runnable" testcasecount="40" result="Failed" site="Child" start-time="2019-09-30 17:15:46Z" end-time="2019-09-30 17:15:52Z" duration="5.312576" total="40" passed="25" failed="15" warnings="0" inconclusive="0" skipped="0" asserts="39">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="0-1044" name="Tests" fullname="ProjectManager.BusinessLayer.Tests" runstate="Runnable" testcasecount="40" result="Failed" site="Child" start-time="2019-09-30 17:15:46Z" end-time="2019-09-30 17:15:52Z" duration="5.312541" total="40" passed="25" failed="15" warnings="0" inconclusive="0" skipped="0" asserts="39">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="0-1000" name="ProjectManagerServiceTests" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" testcasecount="40" result="Failed" site="Child" start-time="2019-09-30 17:15:46Z" end-time="2019-09-30 17:15:52Z" duration="5.308582" total="40" passed="25" failed="15" warnings="0" inconclusive="0" skipped="0" asserts="39">
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="0-1011" name="AddParentTaskForInValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddParentTaskForInValidDataTest" methodname="AddParentTaskForInValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1160279227" result="Passed" start-time="2019-09-30 17:15:46Z" end-time="2019-09-30 17:15:49Z" duration="2.177398" asserts="1" />
+            <test-case id="0-1012" name="AddParentTaskForNullTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddParentTaskForNullTest" methodname="AddParentTaskForNullTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="29762996" result="Passed" start-time="2019-09-30 17:15:49Z" end-time="2019-09-30 17:15:49Z" duration="0.029452" asserts="1" />
+            <test-case id="0-1010" name="AddParentTaskForValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddParentTaskForValidDataTest" methodname="AddParentTaskForValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="699813039" result="Failed" start-time="2019-09-30 17:15:49Z" end-time="2019-09-30 17:15:49Z" duration="0.076029" asserts="1">
+              <failure>
+                <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddParentTaskForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 181
+]]></stack-trace>
+              </failure>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                  <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddParentTaskForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 181
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1008" name="AddProjectForInValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddProjectForInValidDataTest" methodname="AddProjectForInValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1798005213" result="Passed" start-time="2019-09-30 17:15:49Z" end-time="2019-09-30 17:15:49Z" duration="0.020101" asserts="1" />
+            <test-case id="0-1009" name="AddProjectForNullTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddProjectForNullTest" methodname="AddProjectForNullTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="30020622" result="Failed" label="Error" start-time="2019-09-30 17:15:49Z" end-time="2019-09-30 17:15:49Z" duration="0.025881" asserts="0">
+              <failure>
+                <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.ProjectManagerService.AddProject(ProjectModel projectModel) in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer\ProjectManagerService.cs:line 22
+   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddProjectForNullTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 165]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="0-1007" name="AddProjectForValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddProjectForValidDataTest" methodname="AddProjectForValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="120700121" result="Failed" start-time="2019-09-30 17:15:49Z" end-time="2019-09-30 17:15:49Z" duration="0.010891" asserts="1">
+              <failure>
+                <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddProjectForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 137
+]]></stack-trace>
+              </failure>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                  <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddProjectForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 137
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1002" name="AddTaskForInValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddTaskForInValidDataTest" methodname="AddTaskForInValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="876963141" result="Passed" start-time="2019-09-30 17:15:49Z" end-time="2019-09-30 17:15:49Z" duration="0.032324" asserts="1" />
+            <test-case id="0-1003" name="AddTaskForNullTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddTaskForNullTest" methodname="AddTaskForNullTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1054776410" result="Passed" start-time="2019-09-30 17:15:49Z" end-time="2019-09-30 17:15:49Z" duration="0.009713" asserts="1" />
+            <test-case id="0-1001" name="AddTaskForValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddTaskForValidDataTest" methodname="AddTaskForValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="419425248" result="Failed" start-time="2019-09-30 17:15:49Z" end-time="2019-09-30 17:15:49Z" duration="0.011396" asserts="1">
+              <failure>
+                <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddTaskForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 38
+]]></stack-trace>
+              </failure>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                  <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddTaskForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 38
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1005" name="AddUserForInValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddUserForInValidDataTest" methodname="AddUserForInValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="428913422" result="Passed" start-time="2019-09-30 17:15:49Z" end-time="2019-09-30 17:15:49Z" duration="0.018188" asserts="1" />
+            <test-case id="0-1006" name="AddUserForNullTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddUserForNullTest" methodname="AddUserForNullTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="85990772" result="Passed" start-time="2019-09-30 17:15:49Z" end-time="2019-09-30 17:15:49Z" duration="0.008289" asserts="1" />
+            <test-case id="0-1004" name="AddUserForValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddUserForValidDataTest" methodname="AddUserForValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="2019930107" result="Failed" start-time="2019-09-30 17:15:49Z" end-time="2019-09-30 17:15:49Z" duration="0.012895" asserts="1">
+              <failure>
+                <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddUserForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 89
+]]></stack-trace>
+              </failure>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                  <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.AddUserForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 89
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1040" name="DeleteUserTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.DeleteUserTest" methodname="DeleteUserTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="656983427" result="Passed" start-time="2019-09-30 17:15:49Z" end-time="2019-09-30 17:15:50Z" duration="1.211039" asserts="1" />
+            <test-case id="0-1021" name="GetProjectForInValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.GetProjectForInValidDataTest" methodname="GetProjectForInValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1371110606" result="Passed" start-time="2019-09-30 17:15:50Z" end-time="2019-09-30 17:15:50Z" duration="0.109103" asserts="1" />
+            <test-case id="0-1015" name="GetProjectsTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.GetProjectsTest" methodname="GetProjectsTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="664250194" result="Passed" start-time="2019-09-30 17:15:50Z" end-time="2019-09-30 17:15:50Z" duration="0.184173" asserts="1" />
+            <test-case id="0-1020" name="GetProjectTestForValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.GetProjectTestForValidDataTest" methodname="GetProjectTestForValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="246768553" result="Failed" start-time="2019-09-30 17:15:50Z" end-time="2019-09-30 17:15:50Z" duration="0.050618" asserts="1">
+              <failure>
+                <message><![CDATA[  Expected: not null
+  But was:  null
+]]></message>
+                <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.GetProjectTestForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 295
+]]></stack-trace>
+              </failure>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected: not null
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.GetProjectTestForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 295
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1013" name="GetTasksTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.GetTasksTest" methodname="GetTasksTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="327308092" result="Failed" start-time="2019-09-30 17:15:50Z" end-time="2019-09-30 17:15:50Z" duration="0.054415" asserts="1">
+              <failure>
+                <message><![CDATA[  Expected: not equal to 0
+  But was:  0
+]]></message>
+                <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.GetTasksTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 218
+]]></stack-trace>
+              </failure>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected: not equal to 0
+  But was:  0
+]]></message>
+                  <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.GetTasksTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 218
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1017" name="GetTaskTestForInValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.GetTaskTestForInValidDataTest" methodname="GetTaskTestForInValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1959781726" result="Passed" start-time="2019-09-30 17:15:50Z" end-time="2019-09-30 17:15:51Z" duration="0.061003" asserts="1" />
+            <test-case id="0-1016" name="GetTaskTestForValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.GetTaskTestForValidDataTest" methodname="GetTaskTestForValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="435705111" result="Failed" start-time="2019-09-30 17:15:51Z" end-time="2019-09-30 17:15:51Z" duration="0.026539" asserts="1">
+              <failure>
+                <message><![CDATA[  Expected: not null
+  But was:  null
+]]></message>
+                <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.GetTaskTestForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 251
+]]></stack-trace>
+              </failure>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected: not null
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.GetTaskTestForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 251
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1014" name="GetUsersTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.GetUsersTest" methodname="GetUsersTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="837229722" result="Passed" start-time="2019-09-30 17:15:51Z" end-time="2019-09-30 17:15:51Z" duration="0.299188" asserts="1" />
+            <test-case id="0-1019" name="GetUserTestForInValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.GetUserTestForInValidDataTest" methodname="GetUserTestForInValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1881960693" result="Passed" start-time="2019-09-30 17:15:51Z" end-time="2019-09-30 17:15:51Z" duration="0.021131" asserts="1" />
+            <test-case id="0-1018" name="GetUserTestForValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.GetUserTestForValidDataTest" methodname="GetUserTestForValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1030716121" result="Failed" start-time="2019-09-30 17:15:51Z" end-time="2019-09-30 17:15:51Z" duration="0.021530" asserts="1">
+              <failure>
+                <message><![CDATA[  Expected: not null
+  But was:  null
+]]></message>
+                <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.GetUserTestForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 273
+]]></stack-trace>
+              </failure>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected: not null
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.GetUserTestForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 273
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1026" name="SearchProjectsForInValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.SearchProjectsForInValidDataTest" methodname="SearchProjectsForInValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1638252847" result="Passed" start-time="2019-09-30 17:15:51Z" end-time="2019-09-30 17:15:51Z" duration="0.080436" asserts="1" />
+            <test-case id="0-1027" name="SearchProjectsForNullTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.SearchProjectsForNullTest" methodname="SearchProjectsForNullTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1965383803" result="Passed" start-time="2019-09-30 17:15:51Z" end-time="2019-09-30 17:15:51Z" duration="0.021340" asserts="1" />
+            <test-case id="0-1025" name="SearchProjectsForValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.SearchProjectsForValidDataTest" methodname="SearchProjectsForValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1029429872" result="Failed" start-time="2019-09-30 17:15:51Z" end-time="2019-09-30 17:15:51Z" duration="0.046328" asserts="1">
+              <failure>
+                <message><![CDATA[  Expected: not equal to 0
+  But was:  0
+]]></message>
+                <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.SearchProjectsForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 350
+]]></stack-trace>
+              </failure>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected: not equal to 0
+  But was:  0
+]]></message>
+                  <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.SearchProjectsForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 350
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1023" name="SearchUsersForInValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.SearchUsersForInValidDataTest" methodname="SearchUsersForInValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="278414629" result="Passed" start-time="2019-09-30 17:15:51Z" end-time="2019-09-30 17:15:51Z" duration="0.047968" asserts="1" />
+            <test-case id="0-1024" name="SearchUsersForNullTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.SearchUsersForNullTest" methodname="SearchUsersForNullTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1540648992" result="Passed" start-time="2019-09-30 17:15:51Z" end-time="2019-09-30 17:15:51Z" duration="0.043922" asserts="1" />
+            <test-case id="0-1022" name="SearchUsersForValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.SearchUsersForValidDataTest" methodname="SearchUsersForValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1370055695" result="Failed" start-time="2019-09-30 17:15:51Z" end-time="2019-09-30 17:15:51Z" duration="0.057880" asserts="1">
+              <failure>
+                <message><![CDATA[  Expected: not equal to 0
+  But was:  0
+]]></message>
+                <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.SearchUsersForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 317
+]]></stack-trace>
+              </failure>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected: not equal to 0
+  But was:  0
+]]></message>
+                  <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.SearchUsersForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 317
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1038" name="UpdateParentTaskForInValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateParentTaskForInValidDataTest" methodname="UpdateParentTaskForInValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="147748482" result="Passed" start-time="2019-09-30 17:15:51Z" end-time="2019-09-30 17:15:51Z" duration="0.103087" asserts="1" />
+            <test-case id="0-1039" name="UpdateParentTaskForNullTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateParentTaskForNullTest" methodname="UpdateParentTaskForNullTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1097254306" result="Passed" start-time="2019-09-30 17:15:51Z" end-time="2019-09-30 17:15:51Z" duration="0.010284" asserts="1" />
+            <test-case id="0-1037" name="UpdateParentTaskForValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateParentTaskForValidDataTest" methodname="UpdateParentTaskForValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1987049191" result="Failed" start-time="2019-09-30 17:15:51Z" end-time="2019-09-30 17:15:51Z" duration="0.045831" asserts="1">
+              <failure>
+                <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateParentTaskForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 543
+]]></stack-trace>
+              </failure>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                  <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateParentTaskForValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 543
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1035" name="UpdateProjectForInValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateProjectForInValidDataTest" methodname="UpdateProjectForInValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1552145551" result="Failed" start-time="2019-09-30 17:15:51Z" end-time="2019-09-30 17:15:51Z" duration="0.032422" asserts="1">
+              <failure>
+                <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateProjectForInValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 516
+]]></stack-trace>
+              </failure>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateProjectForInValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 516
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1036" name="UpdateProjectForNullTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateProjectForNullTest" methodname="UpdateProjectForNullTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1137489381" result="Passed" start-time="2019-09-30 17:15:51Z" end-time="2019-09-30 17:15:51Z" duration="0.032941" asserts="1" />
+            <test-case id="0-1034" name="UpdateProjectForValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateProjectForValidDataTest" methodname="UpdateProjectForValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="582016859" result="Passed" start-time="2019-09-30 17:15:51Z" end-time="2019-09-30 17:15:51Z" duration="0.030683" asserts="1" />
+            <test-case id="0-1029" name="UpdateTaskForInValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateTaskForInValidDataTest" methodname="UpdateTaskForInValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="301741068" result="Failed" start-time="2019-09-30 17:15:51Z" end-time="2019-09-30 17:15:51Z" duration="0.029640" asserts="1">
+              <failure>
+                <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateTaskForInValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 416
+]]></stack-trace>
+              </failure>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateTaskForInValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 416
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1030" name="UpdateTaskForNullTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateTaskForNullTest" methodname="UpdateTaskForNullTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1531677257" result="Passed" start-time="2019-09-30 17:15:51Z" end-time="2019-09-30 17:15:52Z" duration="0.029559" asserts="1" />
+            <test-case id="0-1028" name="UpdateTaskForValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateTaskForValidDataTest" methodname="UpdateTaskForValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1262984944" result="Passed" start-time="2019-09-30 17:15:52Z" end-time="2019-09-30 17:15:52Z" duration="0.022080" asserts="1" />
+            <test-case id="0-1032" name="UpdateUserForInValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateUserForInValidDataTest" methodname="UpdateUserForInValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="531884834" result="Failed" start-time="2019-09-30 17:15:52Z" end-time="2019-09-30 17:15:52Z" duration="0.036701" asserts="1">
+              <failure>
+                <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateUserForInValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 467
+]]></stack-trace>
+              </failure>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[   at ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateUserForInValidDataTest() in C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer.Tests\ProjectManagerServiceTests.cs:line 467
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1033" name="UpdateUserForNullTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateUserForNullTest" methodname="UpdateUserForNullTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="1485763738" result="Passed" start-time="2019-09-30 17:15:52Z" end-time="2019-09-30 17:15:52Z" duration="0.011386" asserts="1" />
+            <test-case id="0-1031" name="UpdateUserForValidDataTest" fullname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests.UpdateUserForValidDataTest" methodname="UpdateUserForValidDataTest" classname="ProjectManager.BusinessLayer.Tests.ProjectManagerServiceTests" runstate="Runnable" seed="611677388" result="Passed" start-time="2019-09-30 17:15:52Z" end-time="2019-09-30 17:15:52Z" duration="0.028596" asserts="1" />
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -24,7 +24,7 @@
           <td>{{task.endDate === "" ? "Not specified" : task.endDate | date:'dd-MM-yyyy'}}</td>                  
           <td>  
             <button (click)="editTask(task)" style="margin-left: 20px;" class="btn btn-info">Edit</button>  
-            <button (click)="deleteItem(item)" class="btn btn-info">Delete</button>            
+            <button (click)="endTask(task)" class="btn btn-info">EndTask</button>            
           </td>  
         </tr>  
       </tbody>  

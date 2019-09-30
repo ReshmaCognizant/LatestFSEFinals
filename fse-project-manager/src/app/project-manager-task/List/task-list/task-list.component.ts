@@ -51,4 +51,22 @@ export class TaskListComponent implements OnInit {
     localStorage.setItem('editTaskID', task.taskID.toString());  
     this.router.navigate(['projectmanagertask']);  
   }
+
+  endTask(task: Task) {  
+    task.endDate = new Date(Date.now());    
+    this.taskService.updateTask(task).subscribe((data: any) => {
+      if(data)
+      {  
+        alert("Task end successfully");          
+        location.reload();     
+      }
+      else
+      {
+        alert("End Task update failed due to server error, kindly try again");     
+      }
+    },  
+    error => {  
+      alert(error);  
+    });
+  }
 }

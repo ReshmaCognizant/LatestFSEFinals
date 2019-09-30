@@ -3,3 +3,4 @@
 3. Set ProjectManagerWebAPI as start up project and run. Port used is http://localhost:61012/
 5. Front End Code api service configured with http://localhost:61012/
 6. Coverage Tool used is Open Cover
+7. Git Hub URL is https://github.com/ReshmaCognizant/LatestFSEFinals

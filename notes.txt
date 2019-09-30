@@ -1,5 +1,5 @@
 1. Front End Code is in Angular 7.3.9
 2. port used is default port so we can run the UI in http://localhost:4200/
-3. Set ProjectManagerWebAPI as start up project and run
-4. port used is http://localhost:61012/
+3. Set ProjectManagerWebAPI as start up project and run. Port used is http://localhost:61012/
 5. Front End Code api service configured with http://localhost:61012/
+6. Coverage Tool used is Open Cover

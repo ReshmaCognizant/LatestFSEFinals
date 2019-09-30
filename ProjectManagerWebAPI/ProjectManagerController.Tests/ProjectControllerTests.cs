@@ -16,7 +16,7 @@ namespace ProjectManagerController.Tests
     [TestFixture]
     public class ProjectControllerTests
     {
-        private const string ServiceBaseURL = "http://localhost:50875/";
+        private const string ServiceBaseURL = "http://localhost:61012/";
 
         [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput, RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
         [CounterThroughputAssertion("TestingCounter", MustBe.GreaterThan, 10000000.0d)]

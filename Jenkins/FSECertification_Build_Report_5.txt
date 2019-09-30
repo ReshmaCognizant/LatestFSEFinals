@@ -1,0 +1,18 @@
+Started by GitHub push by ReshmaCognizant
+Running as SYSTEM
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\Finals FSE Certification
+No credentials specified
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/ReshmaCognizant/LatestFSEFinals.git # timeout=10
+Fetching upstream changes from https://github.com/ReshmaCognizant/LatestFSEFinals.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress -- https://github.com/ReshmaCognizant/LatestFSEFinals.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision ce7dc9cd26403e2aa5b73e3d355f8c454866229f (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f ce7dc9cd26403e2aa5b73e3d355f8c454866229f
+Commit message: "checked in files"
+ > git.exe rev-list --no-walk 3c3636522b3b87333371d063a29c0cac60cb0817 # timeout=10
+Finished: SUCCESS

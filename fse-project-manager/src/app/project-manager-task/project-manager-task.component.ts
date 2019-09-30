@@ -6,6 +6,12 @@ import { Select2OptionData } from 'ng-select2';
 import { ProjectService } from 'src/app/Project/project.service';
 import { UserService } from 'src/app/User/user.service';
 import * as $ from 'jquery';
+import { formatDate } from '@angular/common';
+
+interface Post {
+  startDate: Date;
+  endDate: Date;
+}
 
 @Component({
   selector: 'app-project-manager-task',
@@ -19,6 +25,12 @@ export class ProjectManagerTaskComponent implements OnInit {
   searchParentTasks: Array<Select2OptionData>;
 
   taskformlabel: string = 'Add Task';  
+
+  post: Post = {
+    startDate: new Date(Date.now()),
+    endDate: new Date(new Date(Date.now()).getTime() + 1000 * 60 * 60 * 24)
+  }
+
   constructor(private formBuilder: FormBuilder, private router: Router, private taskService: TaskService, private projectService: ProjectService, private userService: UserService) {  
   }  
   
@@ -32,8 +44,8 @@ export class ProjectManagerTaskComponent implements OnInit {
       setasparent: [],
       priority: [],
       parentID: [],
-      startDate: [],
-      endDate: [],
+      startDate: [formatDate(this.post.startDate, 'yyyy-MM-dd', 'en'), [Validators.required]],
+      endDate: [formatDate(this.post.endDate, 'yyyy-MM-dd', 'en'), [Validators.required]],
       userID: []           
     });  
     

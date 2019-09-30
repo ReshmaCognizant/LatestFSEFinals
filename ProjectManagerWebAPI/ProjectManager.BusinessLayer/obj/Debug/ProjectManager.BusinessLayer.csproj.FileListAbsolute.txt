@@ -32,3 +32,5 @@ C:\257889_ReshmaRajendran\FSEFinals\LatestFSEFinals\ProjectManagerWebAPI\Project
 C:\257889_ReshmaRajendran\FSEFinals\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer\obj\Debug\ProjectManager.BusinessLayer.pdb
 C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer\bin\Debug\DataModel.dll
 C:\Reshma\FinalCertification\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer\bin\Debug\Resolver.dll
+C:\257889_ReshmaRajendran\FSEFinals\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer\bin\Debug\DataModel.dll
+C:\257889_ReshmaRajendran\FSEFinals\LatestFSEFinals\ProjectManagerWebAPI\ProjectManager.BusinessLayer\bin\Debug\Resolver.dll

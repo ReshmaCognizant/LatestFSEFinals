@@ -1,8 +1,9 @@
 <div class="col-md-12 task-list">
   <br/>  
   <br/> 
-  <ng-select2 [data]="searchProjects" [placeholder]="'Search...'" [width]="300">	
-  </ng-select2> 
+  <label for="projectName">Project:</label>
+  <ng-select2 [ngModel]="selectedProject" [data]="searchProjects" [placeholder]="'Search...'" [width]="300" (ngModelChange)="onProjectSelectTask($event)">	
+  </ng-select2>
     Sort:<button class="btn-filter">Start Date</button ><button class="btn-filter">End Date</button><button class="btn-filter">Priority</button><button class="btn-filter">Completed</button>   
   <div class="col-md-12 table-responsive table-container">  
     <table class="table">  
@@ -24,7 +25,7 @@
           <td>{{task.endDate === "" ? "Not specified" : task.endDate | date:'dd-MM-yyyy'}}</td>                  
           <td>  
             <button (click)="editTask(task)" style="margin-left: 20px;" class="btn btn-info">Edit</button>  
-            <button (click)="deleteItem(item)" class="btn btn-info">Delete</button>            
+            <button (click)="endTask(task)" class="btn btn-info">EndTask</button>            
           </td>  
         </tr>  
       </tbody>  

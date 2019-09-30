@@ -1,7 +1,8 @@
 <div class="col-md-12">  
     <br/>  
     <br/>
-    <ng-select2 [data]="searchProjects" [placeholder]="'Search...'" [width]="300">	
+    <label for="projectName">Project:</label> 
+    <ng-select2 [ngModel]="selectedProject" [data]="searchProjects" [placeholder]="'Search...'" [width]="300" (ngModelChange)="onProjectSelect($event)">	
     </ng-select2>
       Sort:<button class="btn-filter">Start Date</button ><button class="btn-filter">End Date</button><button class="btn-filter">Priority</button><button class="btn-filter">Completed</button>
    

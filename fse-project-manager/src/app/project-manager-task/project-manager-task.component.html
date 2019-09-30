@@ -41,6 +41,7 @@
   
     <button class="btn btn-success" [disabled]='addForm.invalid' *ngIf="btnvisibility" (click)="onSubmit()">Add Task</button>  
     <button class="btn btn-success" [disabled]='addForm.invalid' *ngIf="!btnvisibility" (click)="onUpdate()">Reset</button>  
+    <button class="btn btn-success" (click)="onReset()">Reset</button>    
   
   </form>  
 </div>

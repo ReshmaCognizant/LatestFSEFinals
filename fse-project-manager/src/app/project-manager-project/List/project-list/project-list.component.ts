@@ -74,4 +74,26 @@ suspendProject(project: Project): void {
     localStorage.setItem('editProjectID', project.projectID.toString());  
     this.router.navigate(['projectmanagerproject']);  
   }
+
+  onProjectSelect(projectSelected){
+    if (projectSelected != null)
+    {
+      this.projectService.getProjects()  
+      .subscribe((data: Project[]) => {
+        this.projects = data;
+        if(projectSelected.value != null)
+        {
+        this.projects = this.projects.filter(x=> x.projectID.toString() == projectSelected.value); 
+        }
+        else
+        {
+        this.projects = this.projects.filter(x=> x.projectID.toString() == projectSelected);
+        }      
+        if(data.length == 0)  
+        {
+          alert("No projects found");         
+        }         
+      });            
+    }
+  }
 }

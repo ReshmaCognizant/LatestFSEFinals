@@ -46,6 +46,28 @@ export class TaskListComponent implements OnInit {
     }); 
 }
 
+onProjectSelectTask(projectSelected){
+  if (projectSelected != null)
+  {
+    this.taskService.getTasks()  
+    .subscribe((data: Task[]) => {
+      this.tasks = data;
+      if(projectSelected.value != null)
+      {
+      this.tasks = this.tasks.filter(x=> x.projectID.toString() == projectSelected.value); 
+      }
+      else
+      {
+      this.tasks = this.tasks.filter(x=> x.projectID.toString() == projectSelected);
+      }      
+      if(data.length == 0)  
+      {
+        alert("No tasks found");         
+      }         
+    });            
+  }
+}
+
   editTask(task: Task): void {  
     localStorage.removeItem('editTaskID');  
     localStorage.setItem('editTaskID', task.taskID.toString());  
